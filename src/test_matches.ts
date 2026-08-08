@@ -1,4 +1,4 @@
-import { planets } from "./defaultplanets.ts";
+import { planets } from "./data/planets-all.ts";
 import {compatibility, type Planet} from "./planet.ts";
 
 for (let i = 0; i < 20; ++i) {
