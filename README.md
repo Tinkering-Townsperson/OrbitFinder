@@ -25,3 +25,10 @@ Traits:
 - moons (children)
 - craters
 - age
+
+
+Possible "extension" features (optional):
+
+- [ ] Multiple end cutscenes
+- [ ] Faces on the planets
+- [ ] Upload user planets
