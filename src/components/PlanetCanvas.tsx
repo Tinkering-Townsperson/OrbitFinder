@@ -1,21 +1,9 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-
-export interface PlanetConfig {
-  size: number;              // Planet scale (0.6 to 2.2)
-  terrainRoughness: number;  // Perlin terrain frequency/roughness (0 to 1)
-  waterLevel: number;        // Threshold below which terrain is water (0 to 1)
-  landColor: string;         // Primary land/surface color
-  rotationSpeed: number;    // Continuous slow rotation speed
-  moons: number;            // Number of moons (0-10)
-  craters: number;          // Number of craters (0-100)
-  name: string;             // Planet name
-  age: number;              // Planet age in millions of years (1 to 12000)
-  type: string;             // 'Terrestrial', 'Gas Giant', or 'Ice Giant'
-}
+import type { Planet } from '../planet';
 
 interface PlanetCanvasProps {
-  config: PlanetConfig;
+  config: Planet;
 }
 
 function createPlanetTexture(
@@ -33,7 +21,7 @@ function createPlanetTexture(
   const bumpCtx = bumpCanvas.getContext('2d')!;
 
   const landColor = new THREE.Color(landColorHex);
-  const waterColor = new THREE.Color('#10437a'); // Deep ocean blue
+  const waterColor = new THREE.Color('#10437a'); 
 
   const imgData = ctx.createImageData(canvas.width, canvas.height);
   const data = imgData.data;
@@ -92,7 +80,6 @@ function createPlanetTexture(
     return val / maxAmp;
   };
 
-  // Generate Craters (Only for Terrestrial)
   const craters: { cx: number; cy: number; cz: number; radius: number; depth: number }[] = [];
   if (planetType === 'Terrestrial' && cratersConfig > 0) {
     for (let i = 0; i < cratersConfig; i++) {
@@ -124,7 +111,7 @@ function createPlanetTexture(
       let r: number, g: number, b: number;
       let bumpVal: number;
 
-      if (planetType === 'Gas Giant' || planetType === 'Ice Giant') {
+      if (planetType === 'gas' || planetType === 'ice') {
         // Banded noise for giants
         // Distort latitude (ny) with some noise
         const distortion = valueNoise(nx * 2, ny * 2, nz * 2) * (1.5 + roughness * 2);
@@ -132,7 +119,7 @@ function createPlanetTexture(
         // Create bands using sine and noise for Gas Giants
         const bandVal = (Math.sin(lat) * 0.5 + 0.5) * 0.5 + noise3D(nx, ny * 2, nz) * 0.5;
 
-        if (planetType === 'Ice Giant') {
+        if (planetType === 'ice') {
           const iceDistortion = valueNoise(nx * 2, ny * 2, nz * 2) * (0.5 + roughness);
           const iceLat = ny * (4 + roughness * 5) + iceDistortion;
           const iceBandVal = (Math.sin(iceLat) * 0.5 + 0.5) * 0.7 + noise3D(nx, ny * 2, nz) * 0.3;
@@ -141,7 +128,7 @@ function createPlanetTexture(
           iceColor.lerp(landColor, 0.3);
           r = iceColor.r; g = iceColor.g; b = iceColor.b;
           bumpVal = 0.5 + noise3D(nx * 4, ny * 4, nz * 4) * 0.05 * roughness; 
-        } else {
+        } else if (planetType === 'gas') {
           // Gas giant uses landColor directly modulated by bands
           const darkColor = landColor.clone().multiplyScalar(0.4);
           const lightColor = landColor.clone().multiplyScalar(1.2);
@@ -314,9 +301,9 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
     // Base Planet Mesh (High resolution for displacement)
     const planetGeo = new THREE.SphereGeometry(1.6, 256, 128);
     const planetTextures = createPlanetTexture(
-      config.landColor,
-      config.waterLevel,
-      config.terrainRoughness,
+      config.colour,
+      config.water,
+      config.terrain,
       config.type,
       config.craters
     );
@@ -404,7 +391,7 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
 
       if (planetMeshRef.current) {
         // Natural planet spin on its axis
-        planetMeshRef.current.rotation.y += configRef.current.rotationSpeed || 0.002;
+        planetMeshRef.current.rotation.y += 0.002;
         
         if (!isDraggingRef.current) {
           // Apply momentum to camera orbit (inverted so dragging feels natural)
@@ -490,9 +477,9 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
         if (mat.map) mat.map.dispose();
         if (mat.displacementMap) mat.displacementMap.dispose();
         const newTextures = createPlanetTexture(
-          config.landColor,
-          config.waterLevel,
-          config.terrainRoughness,
+          config.colour,
+          config.water,
+          config.terrain,
           config.type,
           config.craters
         );

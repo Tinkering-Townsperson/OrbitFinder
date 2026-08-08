@@ -40,7 +40,7 @@ export const planets: Planet[] = [
         size: 0.16,
         terrain: 0.7,
         type: "terrestrial",
-        colour: "#b7410e",
+        colour: "#cb511c",
         water: 0.02,
         moons: 2,
         craters: 0.6,
