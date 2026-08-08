@@ -75,7 +75,7 @@ function opposite(trait_a: number, trait_b: number) {
 }
 
 function adds_to_one(trait_a: number, trait_b: number) {
-    return trait_a + trait_b;
+    return 1 - Math.abs((trait_a + trait_b) - 1);
 }
 
 const SIZE_WEIGHT: number = 0.35;
@@ -85,7 +85,7 @@ const WATER_WEIGHT: number = 0.1;
 const CRATERS_WEIGHT: number = 0.1;
 const MOONS_WEIGHT: number = 0.1;
 
-function compatibility(planet1: Planet, planet2: Planet) {
+export function compatibility(planet1: Planet, planet2: Planet) {
     const size_compat = similarity(planet1.size, planet2.size) * SIZE_WEIGHT;
     const terrain_compat = adds_to_one(planet1.terrain, planet2.terrain) * TERRAIN_WEIGHT;
     const age_compat = (1 - (Math.max(Math.abs(planet1.age - planet2.age) - 2000, 0) / 10000)) * AGE_WEIGHT;
