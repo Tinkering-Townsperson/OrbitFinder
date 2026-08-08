@@ -1,4 +1,5 @@
 export type PlanetType = "terrestrial" | "gas" | "ice";
+export type FavouredTrait = "age" | "size" | "terrain" | "colour" | "water" | "moon"
 
 export interface Planet {
     name: string;
@@ -10,7 +11,7 @@ export interface Planet {
     water: number;
     moons: number;
     craters: number;
-    favoured: string;
+    favoured: FavouredTrait;
 }
 
 /* RULE TYPES:
