@@ -157,8 +157,14 @@ import type { FavouredTrait } from "../src/planet.ts";
 
 const TRAITS: FavouredTrait[] = ["age", "size", "terrain", "water", "colour", "moon"];
 
-function randomizeFavoured(rand: () => number): FavouredTrait {
-    return TRAITS[Math.floor(rand() * TRAITS.length)];
+function randomizeFavoured(rand: () => number): FavouredTrait[] {
+    let favoured = [TRAITS[Math.floor(rand() * TRAITS.length)], TRAITS[Math.floor(rand() * TRAITS.length)]];
+
+    while (favoured[0] == favoured[1]) {
+        favoured = [TRAITS[Math.floor(rand() * TRAITS.length)], TRAITS[Math.floor(rand() * TRAITS.length)]];
+    }
+
+    return favoured
 }
 
 function classifyType(radiusEarth: number): PlanetType {
