@@ -8,19 +8,19 @@ export function Design() {
   const navigate = useNavigate();
 
   const [config, setConfig] = useState<Planet>({
-    size: 1.2,
+    size: 0.375, // Corresponds to 1.2 visual size (0.6 + 0.375 * 1.6)
     terrain: 0.45,
-    water: 0.45,
+    water: 0.5,  // Corresponds to 0.45 visual water (0.5 * 0.9)
     colour: '#2b8a3e',
     moons: 2,
-    craters: 20,
+    craters: 0.2, // Corresponds to 20 visual craters
     name: 'Kepler-452b',
     age: 1500,
     type: 'terrestrial',
   });
 
   const handleContinue = () => {
-    navigate('/match');
+    navigate('/match', { state: { userPlanet: config } });
   };
 
   const getProgress = (value: number, min: number, max: number) => {
@@ -74,16 +74,16 @@ export function Design() {
         <div>
           <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
             <span>Size</span>
-            <span className="text-[#f5b1eb] font-mono">{config.size.toFixed(1)}x</span>
+            <span className="text-[#f5b1eb] font-mono">{(0.6 + config.size * 1.6).toFixed(1)}x</span>
           </div>
           <input
             type="range"
-            min="0.6"
-            max="2.2"
-            step="0.1"
+            min="0"
+            max="1"
+            step="0.05"
             value={config.size}
             onChange={(e) => setConfig({ ...config, size: parseFloat(e.target.value) })}
-            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.size, 0.6, 2.2)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.size, 0.6, 2.2)}%)` }}
+            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.size, 0, 1)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.size, 0, 1)}%)` }}
             className="w-full appearance-none cursor-pointer h-2 rounded-md"
           />
         </div>
@@ -110,17 +110,17 @@ export function Design() {
         {config.type === 'terrestrial' && (
           <div>
             <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
-              <span>Craters</span>
-              <span className="text-[#f5b1eb] font-mono">{config.craters}</span>
+               <span>Craters</span>
+              <span className="text-[#f5b1eb] font-mono">{Math.round(config.craters * 100)}</span>
             </div>
             <input
               type="range"
               min="0"
-              max="100"
-              step="1"
+              max="1"
+              step="0.05"
               value={config.craters}
-              onChange={(e) => setConfig({ ...config, craters: parseInt(e.target.value, 10) })}
-              style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.craters, 0, 100)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.craters, 0, 100)}%)` }}
+              onChange={(e) => setConfig({ ...config, craters: parseFloat(e.target.value) })}
+              style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.craters, 0, 1)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.craters, 0, 1)}%)` }}
               className="w-full appearance-none cursor-pointer h-2 rounded-md"
             />
           </div>
@@ -135,11 +135,11 @@ export function Design() {
           <input
             type="range"
             min="0"
-            max="0.9"
+            max="1"
             step="0.05"
             value={config.water}
             onChange={(e) => setConfig({ ...config, water: parseFloat(e.target.value) })}
-            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.water, 0, 0.9)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.water, 0, 0.9)}%)` }}
+            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.water, 0, 1)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.water, 0, 1)}%)` }}
             className="w-full appearance-none cursor-pointer h-2 rounded-md"
           />
         </div>

@@ -302,10 +302,10 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
     const planetGeo = new THREE.SphereGeometry(1.6, 256, 128);
     const planetTextures = createPlanetTexture(
       config.colour,
-      config.water,
+      config.water * 0.9,
       config.terrain,
       config.type,
-      config.craters
+      Math.round(config.craters * 100)
     );
     const planetMat = new THREE.MeshStandardMaterial({
       map: planetTextures.colorMap,
@@ -316,7 +316,7 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
     });
 
     const planetMesh = new THREE.Mesh(planetGeo, planetMat);
-    planetMesh.scale.setScalar(config.size);
+    planetMesh.scale.setScalar(0.6 + config.size * 1.6);
     systemGroup.add(planetMesh);
     planetMeshRef.current = planetMesh;
 
@@ -471,17 +471,17 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
   useEffect(() => {
     const timeoutId = window.setTimeout(() => {
       if (planetMeshRef.current) {
-        planetMeshRef.current.scale.setScalar(config.size);
+        planetMeshRef.current.scale.setScalar(0.6 + config.size * 1.6);
 
         const mat = planetMeshRef.current.material as THREE.MeshStandardMaterial;
         if (mat.map) mat.map.dispose();
         if (mat.displacementMap) mat.displacementMap.dispose();
         const newTextures = createPlanetTexture(
           config.colour,
-          config.water,
+          config.water * 0.9,
           config.terrain,
           config.type,
-          config.craters
+          Math.round(config.craters * 100)
         );
         mat.map = newTextures.colorMap;
         mat.displacementMap = newTextures.bumpMap;
