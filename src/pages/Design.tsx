@@ -11,11 +11,12 @@ export function Design() {
     terrainRoughness: 0.45,
     waterLevel: 0.45,
     landColor: '#2b8a3e',
-    waterColor: '#1864ab',
-    atmosphereColor: '#4dabf7',
-    showAtmosphere: true,
-    atmosphereGlow: 1.0,
+    moons: 2,
+    craters: 20,
     rotationSpeed: 0.002,
+    name: 'Kepler-452b',
+    age: 1500,
+    type: 'Terrestrial',
   });
 
   const handleContinue = () => {
@@ -26,13 +27,49 @@ export function Design() {
     return ((value - min) / (max - min)) * 100;
   };
 
+  const formatAge = (age: number) => {
+    if (age < 1000) return `${age} Million Yrs`;
+    return `${(age / 1000).toFixed(1)} Billion Yrs`;
+  };
+
+
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-[#0d0f12] text-white font-sans select-none">
       {/* 3D WebGL Planet Scene */}
       <PlanetCanvas config={config} />
 
       {/* Simple, Non-Tabulated Control Card */}
-      <aside className="absolute top-8 left-6 sm:left-8 w-80 sm:w-96 bg-[#16191e]/85 backdrop-blur-2xl border border-white/10 rounded-xs p-6 z-20 shadow-2xl shadow-black/60 space-y-4">
+      <aside className="absolute top-6 left-6 sm:left-8 w-80 sm:w-96 bg-[#16191e]/85 backdrop-blur-2xl border border-white/10 rounded-xs p-6 z-20 shadow-2xl shadow-black/60 space-y-4 max-h-[90vh] overflow-y-auto">
+        {/* Name Input */}
+        <div>
+          <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
+            <span>Name</span>
+          </div>
+          <input
+            type="text"
+            value={config.name}
+            onChange={(e) => setConfig({ ...config, name: e.target.value })}
+            className="w-full bg-black/40 border border-white/10 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#f5b1eb]"
+            placeholder="Planet Name"
+          />
+        </div>
+
+        {/* Type Select */}
+        <div>
+          <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
+            <span>Type</span>
+          </div>
+          <select
+            value={config.type}
+            onChange={(e) => setConfig({ ...config, type: e.target.value })}
+            className="w-full bg-black/40 border border-white/10 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#f5b1eb] cursor-pointer appearance-none"
+          >
+            <option value="Terrestrial">Terrestrial</option>
+            <option value="Gas Giant">Gas Giant</option>
+            <option value="Ice Giant">Ice Giant</option>
+          </select>
+        </div>
+
         {/* Planet Size */}
         <div>
           <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
@@ -69,6 +106,26 @@ export function Design() {
           />
         </div>
 
+        {/* Craters (Only show for Terrestrial) */}
+        {config.type === 'Terrestrial' && (
+          <div>
+            <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
+              <span>Craters</span>
+              <span className="text-[#f5b1eb] font-mono">{config.craters}</span>
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value={config.craters}
+              onChange={(e) => setConfig({ ...config, craters: parseInt(e.target.value, 10) })}
+              style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.craters, 0, 100)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.craters, 0, 100)}%)` }}
+              className="w-full appearance-none cursor-pointer h-2 rounded-md"
+            />
+          </div>
+        )}
+
         {/* Water Level */}
         <div>
           <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
@@ -90,7 +147,7 @@ export function Design() {
         {/* Color Swatches Grid */}
         <div className="pt-2 border-t border-white/10 space-y-3">
           <div className="flex items-center justify-between">
-            <span className="text-sm font-bold text-white/90 font-fraunces">Land Color</span>
+            <span className="text-sm font-bold text-white/90 font-fraunces">Base Color</span>
             <input
               type="color"
               value={config.landColor}
@@ -98,24 +155,44 @@ export function Design() {
               className="w-8 h-8 rounded-md cursor-pointer bg-transparent border border-white/20 p-0 overflow-hidden"
             />
           </div>
+        </div>
 
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-bold text-white/90 font-fraunces">Water Color</span>
+        {/* Age */}
+        <div className="pt-2 border-t border-white/10 space-y-3">
+          <div>
+            <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
+              <span>Age</span>
+              <span className="text-[#f5b1eb] font-mono text-xs">{formatAge(config.age)}</span>
+            </div>
             <input
-              type="color"
-              value={config.waterColor}
-              onChange={(e) => setConfig({ ...config, waterColor: e.target.value })}
-              className="w-8 h-8 rounded-md cursor-pointer bg-transparent border border-white/20 p-0 overflow-hidden"
+              type="range"
+              min="1"
+              max="12000"
+              step="10"
+              value={config.age}
+              onChange={(e) => setConfig({ ...config, age: parseInt(e.target.value, 10) })}
+              style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.age, 1, 12000)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.age, 1, 12000)}%)` }}
+              className="w-full appearance-none cursor-pointer h-2 rounded-md"
             />
           </div>
+        </div>
 
-          <div className="flex items-center justify-between">
-            <span className="text-sm font-bold text-white/90 font-fraunces">Atmosphere Color</span>
+        {/* Moons */}
+        <div className="pt-2 border-t border-white/10 space-y-3">
+          <div>
+            <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
+              <span>Moons</span>
+              <span className="text-[#f5b1eb] font-mono text-xs">{config.moons}</span>
+            </div>
             <input
-              type="color"
-              value={config.atmosphereColor}
-              onChange={(e) => setConfig({ ...config, atmosphereColor: e.target.value })}
-              className="w-8 h-8 rounded-md cursor-pointer bg-transparent border border-white/20 p-0 overflow-hidden"
+              type="range"
+              min="0"
+              max="10"
+              step="1"
+              value={config.moons}
+              onChange={(e) => setConfig({ ...config, moons: parseInt(e.target.value, 10) })}
+              style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.moons, 0, 10)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.moons, 0, 10)}%)` }}
+              className="w-full appearance-none cursor-pointer h-2 rounded-md"
             />
           </div>
         </div>
@@ -124,7 +201,7 @@ export function Design() {
       {/* Floating Continue Button */}
       <footer className="absolute bottom-8 right-8 z-20">
         <Button variant="primary" onClick={handleContinue} className="text-lg px-9 py-4 shadow-2xl shadow-[#FD3A73]/40">
-          Continue 🔥
+          Continue
         </Button>
       </footer>
     </div>
