@@ -21,7 +21,7 @@ Traits:
 - **terrain - adds-to-one**
 - type of planet
 - colours
-- water
+- **water - opposite**
 - moons (children)
 - atmosphere
 - distance to star (parent issues)
