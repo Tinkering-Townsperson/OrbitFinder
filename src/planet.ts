@@ -12,54 +12,6 @@ export interface Planet {
     craters: number;
 }
 
-const mercury: Planet = {
-    name: "Mercury",
-    age: 4600,
-    size: 0.3,
-    terrain: 0.3,
-    type: "terrestrial",
-    colour: "",
-    water: 0,
-    moons: 0,
-    craters: 0.7,
-}
-
-const venus: Planet = {
-    name: "Venus",
-    age: 4600,
-    size: 0.7,
-    terrain: 0.3,
-    type: "terrestrial",
-    colour: "",
-    water: 0.1,
-    moons: 0,
-    craters: 0.6,
-}
-
-const earth: Planet = {
-    name: "Earth",
-    age: 4600,
-    size: 0.7,
-    terrain: 0.2,
-    type: "terrestrial",
-    colour: "",
-    water: 0.7,
-    moons: 1,
-    craters: 0.1,
-}
-
-const mars: Planet = {
-    name: "Mars",
-    age: 4600,
-    size: 0.5,
-    terrain: 0.4,
-    type: "terrestrial",
-    colour: "",
-    water: 0.5,
-    moons: 1,
-    craters: 0.6,
-}
-
 /* RULE TYPES:
 - Similarity (difference as close to zero as possible)
 - Opposite (difference as large as possible)
@@ -75,7 +27,7 @@ function opposite(trait_a: number, trait_b: number) {
 }
 
 function adds_to_one(trait_a: number, trait_b: number) {
-    return trait_a + trait_b;
+    return 1 - Math.abs((trait_a + trait_b) - 1);
 }
 
 const SIZE_WEIGHT: number = 0.35;
@@ -85,7 +37,7 @@ const WATER_WEIGHT: number = 0.1;
 const CRATERS_WEIGHT: number = 0.1;
 const MOONS_WEIGHT: number = 0.1;
 
-function compatibility(planet1: Planet, planet2: Planet) {
+export function compatibility(planet1: Planet, planet2: Planet) {
     const size_compat = similarity(planet1.size, planet2.size) * SIZE_WEIGHT;
     const terrain_compat = adds_to_one(planet1.terrain, planet2.terrain) * TERRAIN_WEIGHT;
     const age_compat = (1 - (Math.max(Math.abs(planet1.age - planet2.age) - 2000, 0) / 10000)) * AGE_WEIGHT;
@@ -102,9 +54,3 @@ function compatibility(planet1: Planet, planet2: Planet) {
 
     return overall;
 }
-
-console.log("Earth/Mercury score " + Math.round((compatibility(mercury, earth) * 100)).toString() + "%")
-console.log("Earth/Venus score " + Math.round((compatibility(venus, earth) * 100)).toString() + "%");
-console.log("Earth/Mars score " + Math.round((compatibility(mars, earth) * 100)).toString() + "%");
-
-// TODO: Remove console.logs because clutter
