@@ -1,6 +1,6 @@
-import type { Planet } from "./planet.ts";
+import type { Planet } from "../planet";
 
-export const planets: Planet[] = [
+export const solarSystemPlanets: Planet[] = [
     {
         name: "Mercury",
         age: 4600,

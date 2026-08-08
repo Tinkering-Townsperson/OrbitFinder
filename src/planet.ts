@@ -1,4 +1,4 @@
-type PlanetType = "terrestrial" | "gas" | "ice";
+export type PlanetType = "terrestrial" | "gas" | "ice";
 
 export interface Planet {
     name: string;
