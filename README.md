@@ -14,5 +14,15 @@ Layout:
       -  Decision options?
 -  Match screen -> other wise continue
 -  idk what happens after?
--  
 
+Traits:
+(bold = implementing immediately as proof of concept)
+- **size/temper - similarity**
+- **terrain - adds-to-one**
+- type of planet
+- colours
+- water
+- moons (children)
+- atmosphere
+- distance to star (parent issues)
+- age
