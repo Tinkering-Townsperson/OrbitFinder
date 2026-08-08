@@ -10,7 +10,7 @@
 // Re-running this script always produces the same output for the same planet.
 //
 // Requires Node 18+ (uses global fetch). Run with e.g.:
-//   npx tsx scripts/generate-planets.ts > src/data/planets-real.ts
+//   node --experimental-strip-types scripts/generate-planets.ts > src/data/planets-real.ts
 //
 // API docs: https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html
 
@@ -31,7 +31,7 @@ const ADQL = `
     .replace(/\s+/g, " ")
     .trim();
 
-const TARGET_COUNT = 130;
+const TARGET_COUNT = 1000; // generates 563 for some reason but ok
 
 interface RawRow {
     pl_name: string;
@@ -152,6 +152,12 @@ function mulberry32(seed: number) {
 }
 
 // ---------- field derivation ----------
+
+const TRAITS: string[] = ["age", "size", "terrain", "water", "colour", "moons"]
+
+function randomizeFavoured(rand: () => number) {
+    return TRAITS[Math.floor(rand() * TRAITS.length)];
+}
 
 function classifyType(radiusEarth: number): PlanetType {
     if (radiusEarth < 1.75) return "terrestrial";
@@ -313,6 +319,7 @@ function toPlanet(row: RawRow): Planet {
         water: deriveWater(row.pl_eqt, type, rand),
         moons: deriveMoons(type, rand),
         craters: deriveCraters(type, rand),
+        favoured: randomizeFavoured(rand)
     };
 }
 

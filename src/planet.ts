@@ -10,6 +10,7 @@ export interface Planet {
     water: number;
     moons: number;
     craters: number;
+    favoured: string;
 }
 
 /* RULE TYPES:
@@ -35,7 +36,6 @@ const TERRAIN_WEIGHT: number = 0.15;
 const AGE_WEIGHT: number = 0.15;
 const WATER_WEIGHT: number = 0.15;
 const COLOUR_WEIGHT: number = 0.15;
-const CRATERS_WEIGHT: number = 0.10;
 const MOONS_WEIGHT: number = 0.10;
 
 function hexToHue(hex: string): number {
@@ -66,24 +66,17 @@ function color_compatibility(hex1: string, hex2: string): number {
     return Math.abs(Math.cos((h1 - h2) * Math.PI / 180));
 }
 
+function conditional_weight(weight: number, trait: string, favoured: string) {
+    return weight + (trait == favoured ? 0.1 : 0);
+}
+
 export function compatibility(planet1: Planet, planet2: Planet) {
-    const size_compat = similarity(planet1.size, planet2.size) * SIZE_WEIGHT;
-    const terrain_compat = adds_to_one(planet1.terrain, planet2.terrain) * TERRAIN_WEIGHT;
-    const age_compat = Math.max(0, 1 - (Math.max(Math.abs(planet1.age - planet2.age) - 500, 0) / 4000)) * AGE_WEIGHT;
-    const water_compat = opposite(planet1.water, planet2.water) * WATER_WEIGHT;
-    const moon_compat = similarity(planet1.moons/10, planet2.moons/10) * MOONS_WEIGHT;
-    const color_compat = color_compatibility(planet1.colour, planet2.colour) * COLOUR_WEIGHT;
-    
-    let overall: number =  age_compat + size_compat + terrain_compat + water_compat + moon_compat + color_compat;
+    const size_compat = similarity(planet1.size, planet2.size) * conditional_weight(SIZE_WEIGHT, "size", planet2.favoured);
+    const terrain_compat = adds_to_one(planet1.terrain, planet2.terrain) * conditional_weight(TERRAIN_WEIGHT, "terrain", planet2.favoured);
+    const age_compat = Math.max(0, 1 - (Math.max(Math.abs(planet1.age - planet2.age) - 500, 0) / 4000)) * conditional_weight(AGE_WEIGHT, "age", planet2.favoured);
+    const water_compat = Math.max(opposite(planet1.water, planet2.water) * 2, 1) * conditional_weight(WATER_WEIGHT, "water", planet2.favoured);
+    const moon_compat = similarity(planet1.moons/10, planet2.moons/10) * conditional_weight(MOONS_WEIGHT, "moons", planet2.favoured);
+    const color_compat = color_compatibility(planet1.colour, planet2.colour) * conditional_weight(COLOUR_WEIGHT, "colour", planet2.favoured);
 
-    if (planet1.type == "terrestrial" && planet2.type == "terrestrial") {
-        const crater_compat = similarity(planet1.craters, planet2.craters) * CRATERS_WEIGHT;
-        overall += crater_compat;
-    } else {
-        // If not terrestrial, craters aren't evaluated. 
-        // We normalize the score so the max is still 100%.
-        overall /= (1 - CRATERS_WEIGHT);
-    }
-
-    return overall;
+    return age_compat + size_compat + terrain_compat + water_compat + moon_compat + color_compat;
 }
