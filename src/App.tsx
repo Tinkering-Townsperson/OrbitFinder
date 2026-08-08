@@ -2,17 +2,16 @@ import { useMemo } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { Button } from "./components/Button";
-import { SamplePage } from "./pages/SamplePage";
+import { Design } from "./pages/Design";
 
 function Stars() {
-  // Generate 100 random stars only once when the component mounts
   const stars = useMemo(() => {
     return Array.from({ length: 100 }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 6 + 0.5, // Between 0.5px and 2.5px
-      opacity: Math.random() * 0.6 + 0.2, // Between 0.2 and 0.8
+      size: Math.random() * 6 + 0.5, 
+      opacity: Math.random() * 0.6 + 0.2, 
     }));
   }, []);
 
@@ -48,8 +47,8 @@ function Home() {
             It starts with a <span className="italic">swipe</span>. 
           </p>
           <div className="flex justify-center gap-6 pt-6">
-            <Link to="/next">
-              <Button variant="primary">Go to Sample Page</Button>
+            <Link to="/design">
+              <Button variant="primary">Design Your Planet &rarr;</Button>
             </Link>
           </div>
         </div>
@@ -63,7 +62,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/next" element={<SamplePage />} />
+        <Route path="/design" element={<Design />} />
+        <Route path="/next" element={<Design />} />
       </Routes>
     </BrowserRouter>
   );

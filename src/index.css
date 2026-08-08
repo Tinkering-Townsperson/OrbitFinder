@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+/* Allow custom border-radius and background styles on range sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: transparent;
+  border: none;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  background: transparent;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-top: -4px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
+}
