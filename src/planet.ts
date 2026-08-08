@@ -11,24 +11,6 @@ interface Planet {
     distance_to_star: number;
 }
 
-/* RULE TYPES:
-    - Similarity (difference as close to zero as possible)
-    - Opposite (difference as large as possible)
-    - Adds-to-one (sum as close to one as possible)
-    */
-
-function similarity(trait_a: number, trait_b: number) {
-    return 1 - Math.abs(trait_a - trait_b);
-}
-
-function opposite(trait_a: number, trait_b: number) {
-    return Math.abs(trait_a - trait_b);
-}
-
-function adds_to_one(trait_a: number, trait_b: number) {
-    return trait_a + trait_b;
-}
-
 const mercury: Planet = {
     name: "Mercury",
     age: 25,
@@ -81,16 +63,40 @@ const mars: Planet = {
     distance_to_star: 11
 }
 
-console.log("Mercury/Earth size score " + (similarity(mercury.size, earth.size) * 100).toString() + "%")
-console.log("Mercury/Earth terrain score" + (adds_to_one(mercury.terrain, earth.terrain) * 100).toString() + "%")
-console.log("Mercury/Earth water score " + (opposite(mercury.water, earth.water) * 100).toString() + "%")
+/* RULE TYPES:
+    - Similarity (difference as close to zero as possible)
+    - Opposite (difference as large as possible)
+    - Adds-to-one (sum as close to one as possible)
+    */
+
+function similarity(trait_a: number, trait_b: number) {
+    return 1 - Math.abs(trait_a - trait_b);
+}
+
+function opposite(trait_a: number, trait_b: number) {
+    return Math.abs(trait_a - trait_b);
+}
+
+function adds_to_one(trait_a: number, trait_b: number) {
+    return trait_a + trait_b;
+}
+
+const SIZE_WEIGHT: number = 0.45;
+const TERRAIN_WEIGHT: number = 0.4;
+const WATER_WEIGHT: number = 0.15;
+
+function compatibility(planet1: Planet, planet2: Planet) {
+    const size_compatibility = similarity(planet1.size, planet2.size) * SIZE_WEIGHT;
+    const terrain_compatibility = adds_to_one(planet1.terrain, planet2.terrain) * TERRAIN_WEIGHT;
+    const water_compatibility = opposite(planet1.water, planet2.water) * WATER_WEIGHT;
+
+    return size_compatibility + terrain_compatibility + water_compatibility;
+}
+
+console.log("Earth/Mercury score " + (compatibility(mercury, earth) * 100).toString() + "%")
 console.log()
-console.log("Venus/Earth size score " + (similarity(venus.size, earth.size) * 100).toString() + "%");
-console.log("Venus/Earth terrain score " + (adds_to_one(venus.terrain, earth.terrain) * 100).toString() + "%");
-console.log("Venus/Earth water score " + (opposite(venus.water, earth.water) * 100).toString() + "%")
+console.log("Earth/Venus score " + (compatibility(venus, earth) * 100).toString() + "%");
 console.log()
-console.log("Earth/Mars size score " + (similarity(mars.size, earth.size) * 100).toString() + "%");
-console.log("Earth/Mars terrain score " + (adds_to_one(mars.terrain, earth.terrain) * 100).toString() + "%");
-console.log("Earth/Mars water score " + (opposite(mars.water, earth.water) * 100).toString() + "%")
+console.log("Earth/Mars score " + (compatibility(mars, earth) * 100).toString() + "%");
 
 // TODO: Remove console.logs because clutter
