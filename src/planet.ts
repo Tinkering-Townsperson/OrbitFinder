@@ -12,54 +12,6 @@ export interface Planet {
     craters: number;
 }
 
-const mercury: Planet = {
-    name: "Mercury",
-    age: 4600,
-    size: 0.3,
-    terrain: 0.3,
-    type: "terrestrial",
-    colour: "",
-    water: 0,
-    moons: 0,
-    craters: 0.7,
-}
-
-const venus: Planet = {
-    name: "Venus",
-    age: 4600,
-    size: 0.7,
-    terrain: 0.3,
-    type: "terrestrial",
-    colour: "",
-    water: 0.1,
-    moons: 0,
-    craters: 0.6,
-}
-
-const earth: Planet = {
-    name: "Earth",
-    age: 4600,
-    size: 0.7,
-    terrain: 0.2,
-    type: "terrestrial",
-    colour: "",
-    water: 0.7,
-    moons: 1,
-    craters: 0.1,
-}
-
-const mars: Planet = {
-    name: "Mars",
-    age: 4600,
-    size: 0.5,
-    terrain: 0.4,
-    type: "terrestrial",
-    colour: "",
-    water: 0.5,
-    moons: 1,
-    craters: 0.6,
-}
-
 /* RULE TYPES:
 - Similarity (difference as close to zero as possible)
 - Opposite (difference as large as possible)
@@ -102,9 +54,3 @@ export function compatibility(planet1: Planet, planet2: Planet) {
 
     return overall;
 }
-
-console.log("Earth/Mercury score " + Math.round((compatibility(mercury, earth) * 100)).toString() + "%")
-console.log("Earth/Venus score " + Math.round((compatibility(venus, earth) * 100)).toString() + "%");
-console.log("Earth/Mars score " + Math.round((compatibility(mars, earth) * 100)).toString() + "%");
-
-// TODO: Remove console.logs because clutter
