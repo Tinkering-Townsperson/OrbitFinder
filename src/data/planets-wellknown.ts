@@ -33,6 +33,7 @@ export const curatedKnownPlanets: Planet[] = [
         water: 0,
         moons: 0, // REAL: no exomoons confirmed
         craters: 0,
+        favoured: "colour"
     },
     {
         // 51 Pegasi b (Dimidium) — the first exoplanet discovered orbiting a
@@ -48,6 +49,7 @@ export const curatedKnownPlanets: Planet[] = [
         water: 0,
         moons: 0,
         craters: 0,
+        favoured: "water"
     },
     {
         // Proxima Centauri b — closest known exoplanet to Earth (4.2 ly),
@@ -64,7 +66,8 @@ export const curatedKnownPlanets: Planet[] = [
         colour: "#8a7d6e", // derived: neutral rocky tone — no atmosphere or surface has actually been observed
         water: 0.05, // flagged: highly speculative; the planet may well be airless given the host star's flare activity
         moons: 0,
-        craters: 0.6, // derived
+        craters: 0.6, // derived,
+        favoured: "moon"
     },
     {
         // TRAPPIST-1 e — one of seven Earth-sized planets in the TRAPPIST-1
@@ -81,7 +84,8 @@ export const curatedKnownPlanets: Planet[] = [
         colour: "#5b7a5f", // derived: aspirational Earth-like tone — no real colour/atmosphere data yet
         water: 0.4, // flagged: unconfirmed; reflects "best current candidate for habitability," not a detection
         moons: 0,
-        craters: 0.3, // derived
+        craters: 0.3, // derived,
+        favoured: "terrain"
     },
     {
         // Kepler-452b — dubbed "Earth's cousin" at discovery: orbits a
@@ -97,7 +101,8 @@ export const curatedKnownPlanets: Planet[] = [
         colour: "#6b8e4e", // derived: aspirational Earth-like tone, not a measurement
         water: 0.35, // flagged: unconfirmed, reflects habitable-zone status only
         moons: 0,
-        craters: 0.2, // derived
+        craters: 0.2, // derived,
+        favoured: "water"
     },
     {
         // 55 Cancri e — a tidally-locked lava-world super-Earth, permanent
@@ -114,7 +119,8 @@ export const curatedKnownPlanets: Planet[] = [
         colour: "#4a1508", // derived: illustrative molten/scorched tone, not a measured colour
         water: 0, // REAL-informed: surface temperatures far too high for liquid water
         moons: 0,
-        craters: 0, // REAL-informed: an actively molten surface would erase any impact craters
+        craters: 0, // REAL-informed: an actively molten surface would erase any impact craters,
+        favoured: "age"
     },
     {
         // WASP-76 b — an ultra-hot Jupiter famous for real "iron rain": iron
@@ -129,6 +135,7 @@ export const curatedKnownPlanets: Planet[] = [
         water: 0,
         moons: 0,
         craters: 0,
+        favoured: "size"
     },
     {
         // TrES-2 b (also Kepler-1b) — the darkest known exoplanet, with a
@@ -145,6 +152,7 @@ export const curatedKnownPlanets: Planet[] = [
         water: 0,
         moons: 0,
         craters: 0,
+        favoured: "size"
     },
     {
         // GJ 1214 b — archetypal "water world" candidate: a warm mini-Neptune
@@ -162,6 +170,7 @@ export const curatedKnownPlanets: Planet[] = [
         water: 0.5, // flagged: the most speculative value in this list — "water world" is one hypothesis among several
         moons: 0,
         craters: 0,
+        favoured: "size"
     },
     {
         // Kepler-16b — a real circumbinary planet: it orbits TWO stars, making
@@ -176,5 +185,6 @@ export const curatedKnownPlanets: Planet[] = [
         water: 0,
         moons: 0,
         craters: 0,
+        favoured: "size"
     },
 ];

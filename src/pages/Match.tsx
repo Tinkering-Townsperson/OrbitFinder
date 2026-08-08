@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PlanetCanvas } from '../components/PlanetCanvas';
 import { planets } from '../data/planets-all';
-import { compatibility, type Planet } from '../planet';
+import { compatibility, getPerspectives, type Planet } from '../planet';
 
 export function Match() {
   const location = useLocation();
@@ -19,6 +19,10 @@ export function Match() {
       const score = compatibility(userPlanet, randomPlanet);
       setMatchScore(score);
       console.log(`Compatibility Score with ${randomPlanet.name}:`, Math.round(score * 100) + '%');
+      
+      const perspectives = getPerspectives(userPlanet, randomPlanet);
+      console.log(`[Perspective] How much ${userPlanet.name} likes ${randomPlanet.name}:`, Math.round(perspectives.userPerspective * 100) + '%');
+      console.log(`[Perspective] How much ${randomPlanet.name} likes ${userPlanet.name}:`, Math.round(perspectives.matchPerspective * 100) + '%');
     }
   };
 
@@ -67,6 +71,20 @@ export function Match() {
               <span>{planet.type} • {(0.6 + planet.size * 1.6).toFixed(1)}x</span>
               {userPlanet && <span className="text-xs text-[#f5b1eb]/50">vs {(0.6 + userPlanet.size * 1.6).toFixed(1)}x</span>}
             </p>
+            <div className="flex flex-col gap-1 mt-2">
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] uppercase tracking-widest text-[#f5b1eb] font-bold border border-[#f5b1eb]/30 px-2 py-0.5 rounded-full bg-[#f5b1eb]/10">
+                  Favors: {planet.favoured}
+                </span>
+              </div>
+              {userPlanet && (
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold border border-white/10 px-2 py-0.5 rounded-full bg-white/5">
+                    You Favor: {userPlanet.favoured}
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="flex gap-3 items-center mt-2">

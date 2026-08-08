@@ -10,7 +10,8 @@ const earth: Planet = {
     colour: '#3f6b46',
     water: 0.7,
     moons: 1,
-    craters: 0.1
+    craters: 0.1,
+    favoured: 'water'
 };
 
 const jupiter: Planet = {

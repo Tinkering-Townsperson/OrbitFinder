@@ -153,9 +153,11 @@ function mulberry32(seed: number) {
 
 // ---------- field derivation ----------
 
-const TRAITS: string[] = ["age", "size", "terrain", "water", "colour", "moons"]
+import type { FavouredTrait } from "../src/planet.ts";
 
-function randomizeFavoured(rand: () => number) {
+const TRAITS: FavouredTrait[] = ["age", "size", "terrain", "water", "colour", "moon"];
+
+function randomizeFavoured(rand: () => number): FavouredTrait {
     return TRAITS[Math.floor(rand() * TRAITS.length)];
 }
 

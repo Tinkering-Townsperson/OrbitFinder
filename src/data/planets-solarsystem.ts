@@ -11,6 +11,7 @@ export const solarSystemPlanets: Planet[] = [
         water: 0,
         moons: 0,
         craters: 0.95,
+        favoured: "water"
     },
     {
         name: "Venus",
@@ -22,6 +23,7 @@ export const solarSystemPlanets: Planet[] = [
         water: 0,
         moons: 0,
         craters: 0.1,
+        favoured: "moon"
     },
     {
         name: "Earth",
@@ -33,6 +35,7 @@ export const solarSystemPlanets: Planet[] = [
         water: 0.71,
         moons: 1,
         craters: 0.05,
+        favoured: "colour"
     },
     {
         name: "Mars",
@@ -44,6 +47,7 @@ export const solarSystemPlanets: Planet[] = [
         water: 0.02,
         moons: 2,
         craters: 0.6,
+        favoured: "age"
     },
     {
         name: "Jupiter",
@@ -55,6 +59,7 @@ export const solarSystemPlanets: Planet[] = [
         water: 0,
         moons: 10,
         craters: 0,
+        favoured: "colour"
     },
     {
         name: "Saturn",
@@ -66,6 +71,7 @@ export const solarSystemPlanets: Planet[] = [
         water: 0,
         moons: 10,
         craters: 0,
+        favoured: "terrain"
     },
     {
         name: "Uranus",
@@ -77,6 +83,7 @@ export const solarSystemPlanets: Planet[] = [
         water: 0,
         moons: 10,
         craters: 0,
+        favoured: "water"
     },
     {
         name: "Neptune",
@@ -88,5 +95,6 @@ export const solarSystemPlanets: Planet[] = [
         water: 0,
         moons: 10,
         craters: 0,
+        favoured: "water"
     },
 ];
