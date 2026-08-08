@@ -1,9 +1,11 @@
+type PlanetType = "terrestrial" | "gas" | "ice";
+
 interface Planet {
     name: string;
     age: number;
     size: number;
     terrain: number;
-    type: string;  // terrestrial/gas/ice
+    type: PlanetType;
     colour: string;
     water: number;
     moons: number;
@@ -19,7 +21,7 @@ const mercury: Planet = {
     colour: "",
     water: 0,
     moons: 0,
-    craters: 0.2,
+    craters: 0.7,
 }
 
 const venus: Planet = {
@@ -31,7 +33,7 @@ const venus: Planet = {
     colour: "",
     water: 0.1,
     moons: 0,
-    craters: 0.3,
+    craters: 0.6,
 }
 
 const earth: Planet = {
@@ -43,7 +45,7 @@ const earth: Planet = {
     colour: "",
     water: 0.7,
     moons: 1,
-    craters: 0.5,
+    craters: 0.1,
 }
 
 const mars: Planet = {
@@ -55,7 +57,7 @@ const mars: Planet = {
     colour: "",
     water: 0.5,
     moons: 1,
-    craters: 0.3,
+    craters: 0.6,
 }
 
 /* RULE TYPES:
@@ -87,11 +89,18 @@ function compatibility(planet1: Planet, planet2: Planet) {
     const size_compat = similarity(planet1.size, planet2.size) * SIZE_WEIGHT;
     const terrain_compat = adds_to_one(planet1.terrain, planet2.terrain) * TERRAIN_WEIGHT;
     const age_compat = (1 - (Math.max(Math.abs(planet1.age - planet2.age) - 2000, 0) / 10000)) * AGE_WEIGHT;
-    console.log(age_compat / AGE_WEIGHT);
     const water_compat = opposite(planet1.water, planet2.water) * WATER_WEIGHT;
-    const crater_compat = similarity(planet1.craters, planet2.craters) * CRATERS_WEIGHT;
     const moon_compat = similarity(planet1.moons/10, planet2.moons/10) * MOONS_WEIGHT;
-    return age_compat + size_compat + terrain_compat + water_compat + crater_compat + moon_compat;
+    let overall: number =  age_compat + size_compat + terrain_compat + water_compat + moon_compat;
+
+    if (planet1.type == "terrestrial" && planet2.type == "terrestrial") {
+        const crater_compat = similarity(planet1.craters, planet2.craters) * CRATERS_WEIGHT;
+        overall += crater_compat;
+    } else {
+        overall /= (1 - CRATERS_WEIGHT);
+    }
+
+    return overall;
 }
 
 console.log("Earth/Mercury score " + Math.round((compatibility(mercury, earth) * 100)).toString() + "%")
