@@ -59,22 +59,51 @@ export function Match() {
                 {planet.name} 
               </h2>
             </div>
-            <div className="text-xl font-normal text-white/50 tracking-wide mt-1">{formatAge(planet.age)}</div>
-            <p className="text-[#f5b1eb] font-semibold tracking-wider text-sm uppercase mt-1">
-              {planet.type} • {(0.6 + planet.size * 1.6).toFixed(1)}x
+            <div className="text-xl font-normal text-white/50 tracking-wide mt-1 flex items-baseline gap-3">
+              <span>{formatAge(planet.age)}</span>
+              {userPlanet && <span className="text-sm text-white/30">vs {formatAge(userPlanet.age)}</span>}
+            </div>
+            <p className="text-[#f5b1eb] font-semibold tracking-wider text-sm uppercase mt-1 flex items-baseline gap-3">
+              <span>{planet.type} • {(0.6 + planet.size * 1.6).toFixed(1)}x</span>
+              {userPlanet && <span className="text-xs text-[#f5b1eb]/50">vs {(0.6 + userPlanet.size * 1.6).toFixed(1)}x</span>}
             </p>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center mt-2">
             <div className="w-8 h-8 rounded-sm border border-white/20 shadow-inner" style={{ backgroundColor: planet.colour }} />
+            {userPlanet && (
+              <>
+                <span className="text-white/20 text-xs font-bold uppercase tracking-widest mx-1">vs</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded-sm border border-white/10 shadow-inner opacity-50" title="Your Color" style={{ backgroundColor: userPlanet.colour }} />
+                  <span className="text-[10px] text-white/30 tracking-widest uppercase">You</span>
+                </div>
+              </>
+            )}
           </div>
 
           {/* Traits Grid */}
           <div className="grid grid-cols-2 gap-3 mt-4">
-            <TraitBadge label="Terrain" value={`${Math.round(planet.terrain * 100)}%`} />
-            <TraitBadge label="Water" value={`${Math.round(planet.water * 100)}%`} />
-            <TraitBadge label="Moons" value={`${planet.moons} Orbiting`} />
-            <TraitBadge label="Craters" value={planet.type === 'terrestrial' ? `${Math.round(planet.craters * 100)}` : '0'} />
+            <TraitBadge 
+              label="Terrain" 
+              value={`${Math.round(planet.terrain * 100)}%`} 
+              userValue={userPlanet ? `${Math.round(userPlanet.terrain * 100)}%` : undefined} 
+            />
+            <TraitBadge 
+              label="Water" 
+              value={`${Math.round(planet.water * 100)}%`} 
+              userValue={userPlanet ? `${Math.round(userPlanet.water * 100)}%` : undefined} 
+            />
+            <TraitBadge 
+              label="Moons" 
+              value={`${planet.moons} Orbiting`} 
+              userValue={userPlanet ? `${userPlanet.moons}` : undefined} 
+            />
+            <TraitBadge 
+              label="Craters" 
+              value={planet.type === 'terrestrial' ? `${Math.round(planet.craters * 100)}` : '0'} 
+              userValue={userPlanet ? (userPlanet.type === 'terrestrial' ? `${Math.round(userPlanet.craters * 100)}` : '0') : undefined} 
+            />
           </div>
         </div>
 
@@ -105,11 +134,14 @@ export function Match() {
 }
 
 // Helper component for traits
-function TraitBadge({ label, value, className = '' }: { label: string, value: string, className?: string }) {
+function TraitBadge({ label, value, userValue, className = '' }: { label: string, value: string, userValue?: string, className?: string }) {
   return (
     <div className={`bg-transparent border border-white/10 rounded-sm p-4 flex flex-col justify-center ${className}`}>
       <span className="text-[10px] uppercase tracking-wider text-white/40 font-bold mb-1">{label}</span>
-      <span className="text-sm font-medium text-white/90">{value}</span>
+      <div className="flex justify-between items-center">
+        <span className="text-sm font-medium text-white/90">{value}</span>
+        {userValue && <span className="text-[10px] text-white/30 font-medium">You: {userValue}</span>}
+      </div>
     </div>
   );
 }
