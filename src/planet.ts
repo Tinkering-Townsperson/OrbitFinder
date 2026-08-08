@@ -3,12 +3,11 @@ interface Planet {
     age: number;
     size: number;
     terrain: number;
-    type: string;  // terrestrial/gas
+    type: string;  // terrestrial/gas/ice
     colour: string;
     water: number;
     moons: number;
-    atmosphere: number;
-    distance_to_star: number;
+    craters: number;
 }
 
 const mercury: Planet = {
@@ -20,8 +19,7 @@ const mercury: Planet = {
     colour: "",
     water: 0,
     moons: 0,
-    atmosphere: 0.2,
-    distance_to_star: 2
+    craters: 0.2,
 }
 
 const venus: Planet = {
@@ -33,8 +31,7 @@ const venus: Planet = {
     colour: "",
     water: 0.1,
     moons: 0,
-    atmosphere: 0.3,
-    distance_to_star: 4
+    craters: 0.3,
 }
 
 const earth: Planet = {
@@ -46,8 +43,7 @@ const earth: Planet = {
     colour: "",
     water: 0.7,
     moons: 1,
-    atmosphere: 0.5,
-    distance_to_star: 7
+    craters: 0.5,
 }
 
 const mars: Planet = {
@@ -59,8 +55,7 @@ const mars: Planet = {
     colour: "",
     water: 0.5,
     moons: 1,
-    atmosphere: 0.3,
-    distance_to_star: 11
+    craters: 0.3,
 }
 
 /* RULE TYPES:
@@ -81,19 +76,22 @@ function adds_to_one(trait_a: number, trait_b: number) {
     return trait_a + trait_b;
 }
 
+const SIZE_WEIGHT: number = 0.35;
+const TERRAIN_WEIGHT: number = 0.25;
 const AGE_WEIGHT: number = 0.1;
-const SIZE_WEIGHT: number = 0.4;
-const TERRAIN_WEIGHT: number = 0.3;
 const WATER_WEIGHT: number = 0.1;
+const CRATERS_WEIGHT: number = 0.1;
 const MOONS_WEIGHT: number = 0.1;
 
 function compatibility(planet1: Planet, planet2: Planet) {
-    const age_compat = (1 - (Math.max(Math.abs(planet1.age - planet2.age) - 2000, 0) / 10000)) * AGE_WEIGHT;
     const size_compat = similarity(planet1.size, planet2.size) * SIZE_WEIGHT;
     const terrain_compat = adds_to_one(planet1.terrain, planet2.terrain) * TERRAIN_WEIGHT;
+    const age_compat = (1 - (Math.max(Math.abs(planet1.age - planet2.age) - 2000, 0) / 10000)) * AGE_WEIGHT;
+    console.log(age_compat / AGE_WEIGHT);
     const water_compat = opposite(planet1.water, planet2.water) * WATER_WEIGHT;
+    const crater_compat = similarity(planet1.craters, planet2.craters) * CRATERS_WEIGHT;
     const moon_compat = similarity(planet1.moons/10, planet2.moons/10) * MOONS_WEIGHT;
-    return age_compat + size_compat + terrain_compat + water_compat + moon_compat;
+    return age_compat + size_compat + terrain_compat + water_compat + crater_compat + moon_compat;
 }
 
 console.log("Earth/Mercury score " + Math.round((compatibility(mercury, earth) * 100)).toString() + "%")

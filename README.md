@@ -23,6 +23,5 @@ Traits:
 - colours
 - **water - opposite**
 - moons (children)
-- atmosphere
-- distance to star (parent issues)
+- craters
 - age
