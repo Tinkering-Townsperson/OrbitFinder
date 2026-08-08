@@ -1,6 +1,6 @@
 type PlanetType = "terrestrial" | "gas" | "ice";
 
-interface Planet {
+export interface Planet {
     name: string;
     age: number;
     size: number;
