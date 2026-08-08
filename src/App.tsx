@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { Button } from "./components/Button";
 import { Design } from "./pages/Design";
+import { Match } from "./pages/Match";
 
 function Stars() {
   const stars = useMemo(() => {
@@ -63,7 +64,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/design" element={<Design />} />
-        <Route path="/next" element={<Design />} />
+        <Route path="/match" element={<Match />} />
       </Routes>
     </BrowserRouter>
   );

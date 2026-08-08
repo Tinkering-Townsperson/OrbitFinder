@@ -1,26 +1,26 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/Button';
-import { PlanetCanvas, type PlanetConfig } from '../components/PlanetCanvas';
+import { PlanetCanvas } from '../components/PlanetCanvas';
+import type { Planet } from '../planet';
 
 export function Design() {
   const navigate = useNavigate();
 
-  const [config, setConfig] = useState<PlanetConfig>({
+  const [config, setConfig] = useState<Planet>({
     size: 1.2,
-    terrainRoughness: 0.45,
-    waterLevel: 0.45,
-    landColor: '#2b8a3e',
+    terrain: 0.45,
+    water: 0.45,
+    colour: '#2b8a3e',
     moons: 2,
     craters: 20,
-    rotationSpeed: 0.002,
     name: 'Kepler-452b',
     age: 1500,
-    type: 'Terrestrial',
+    type: 'terrestrial',
   });
 
   const handleContinue = () => {
-    navigate('/');
+    navigate('/match');
   };
 
   const getProgress = (value: number, min: number, max: number) => {
@@ -61,12 +61,12 @@ export function Design() {
           </div>
           <select
             value={config.type}
-            onChange={(e) => setConfig({ ...config, type: e.target.value })}
-            className="w-full bg-black/40 border border-white/10 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#f5b1eb] cursor-pointer appearance-none"
+            onChange={(e) => setConfig({ ...config, type: e.target.value as any })}
+            className="w-full bg-black/40 border border-white/10 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#f5b1eb] appearance-none"
           >
-            <option value="Terrestrial">Terrestrial</option>
-            <option value="Gas Giant">Gas Giant</option>
-            <option value="Ice Giant">Ice Giant</option>
+            <option value="terrestrial">Terrestrial</option>
+            <option value="gas">Gas Giant</option>
+            <option value="ice">Ice Giant</option>
           </select>
         </div>
 
@@ -92,22 +92,22 @@ export function Design() {
         <div>
           <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
             <span>Terrain</span>
-            <span className="text-[#f5b1eb] font-mono">{Math.round(config.terrainRoughness * 100)}%</span>
+            <span className="text-[#f5b1eb] font-mono">{Math.round(config.terrain * 100)}%</span>
           </div>
           <input
             type="range"
             min="0"
             max="1"
             step="0.05"
-            value={config.terrainRoughness}
-            onChange={(e) => setConfig({ ...config, terrainRoughness: parseFloat(e.target.value) })}
-            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.terrainRoughness, 0, 1)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.terrainRoughness, 0, 1)}%)` }}
+            value={config.terrain}
+            onChange={(e) => setConfig({ ...config, terrain: parseFloat(e.target.value) })}
+            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.terrain, 0, 1)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.terrain, 0, 1)}%)` }}
             className="w-full appearance-none cursor-pointer h-2 rounded-md"
           />
         </div>
 
         {/* Craters (Only show for Terrestrial) */}
-        {config.type === 'Terrestrial' && (
+        {config.type === 'terrestrial' && (
           <div>
             <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
               <span>Craters</span>
@@ -130,16 +130,16 @@ export function Design() {
         <div>
           <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
             <span>Water</span>
-            <span className="text-[#f5b1eb] font-mono">{Math.round(config.waterLevel * 100)}%</span>
+            <span className="text-[#f5b1eb] font-mono">{Math.round(config.water * 100)}%</span>
           </div>
           <input
             type="range"
             min="0"
             max="0.9"
             step="0.05"
-            value={config.waterLevel}
-            onChange={(e) => setConfig({ ...config, waterLevel: parseFloat(e.target.value) })}
-            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.waterLevel, 0, 0.9)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.waterLevel, 0, 0.9)}%)` }}
+            value={config.water}
+            onChange={(e) => setConfig({ ...config, water: parseFloat(e.target.value) })}
+            style={{ background: `linear-gradient(to right, #f5b1eb ${getProgress(config.water, 0, 0.9)}%, rgba(0, 0, 0, 0.4) ${getProgress(config.water, 0, 0.9)}%)` }}
             className="w-full appearance-none cursor-pointer h-2 rounded-md"
           />
         </div>
@@ -150,8 +150,8 @@ export function Design() {
             <span className="text-sm font-bold text-white/90 font-fraunces">Base Color</span>
             <input
               type="color"
-              value={config.landColor}
-              onChange={(e) => setConfig({ ...config, landColor: e.target.value })}
+              value={config.colour}
+              onChange={(e) => setConfig({ ...config, colour: e.target.value })}
               className="w-8 h-8 rounded-md cursor-pointer bg-transparent border border-white/20 p-0 overflow-hidden"
             />
           </div>
@@ -200,7 +200,7 @@ export function Design() {
 
       {/* Floating Continue Button */}
       <footer className="absolute bottom-8 right-8 z-20">
-        <Button variant="primary" onClick={handleContinue} className="text-lg px-9 py-4 shadow-2xl shadow-[#FD3A73]/40">
+        <Button variant="primary" onClick={handleContinue} className="text-lg px-9 py-4">
           Continue
         </Button>
       </footer>
