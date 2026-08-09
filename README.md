@@ -35,5 +35,5 @@ Possible "extension" features (optional):
 
 - [ ] Multiple end cutscenes
 - [ ] Faces on the planets
-- [ ] Upload user planets
+- [x] Upload user planets
 - [ ] 
