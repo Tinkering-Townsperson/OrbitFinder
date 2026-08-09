@@ -12,6 +12,10 @@ export function Match() {
   const [currentMatch, setCurrentMatch] = useState<Planet | null>(null);
   const [perspectives, setPerspectives] = useState<{ userPerspective: number, matchPerspective: number } | null>(null);
   const [matchResult, setMatchResult] = useState<'matched' | 'rejected' | null>(null);
+  
+  const [matchHistory, setMatchHistory] = useState<Planet[]>([]);
+  const [showHistory, setShowHistory] = useState(false);
+  const [viewingHistoryPlanet, setViewingHistoryPlanet] = useState<Planet | null>(null);
 
   const pickRandomPlanet = () => {
     const randomPlanet = planets[Math.floor(Math.random() * planets.length)];
@@ -34,11 +38,12 @@ export function Match() {
   };
 
   const handleMatchAttempt = () => {
-    if (!perspectives) return;
+    if (!perspectives || !currentMatch) return;
     // Calculate the probability of the other planet matching you
     const prob = Math.pow(perspectives.matchPerspective, 3);
     if (Math.random() < prob) {
       setMatchResult('matched');
+      setMatchHistory(prev => [currentMatch, ...prev]);
     } else {
       setMatchResult('rejected');
     }
@@ -51,7 +56,7 @@ export function Match() {
 
   if (!currentMatch) return null;
 
-  const planet = currentMatch;
+  const planet = viewingHistoryPlanet || currentMatch;
 
   const formatAge = (age: number) => {
     if (age < 1000) return `${age} Million Yrs`;
@@ -63,26 +68,79 @@ export function Match() {
       
       {/* Left Panel: Info and Actions */}
       <div className="w-1/3 min-w-[350px] max-w-[450px] h-full bg-[#16191e] border-r border-white/10 flex flex-col relative z-20 shadow-2xl">
-        {/* Top Logo and Edit Button */}
-        <div className="p-8 pb-4 flex justify-between items-center">
+        <div className="p-8 pb-4 flex justify-between items-center z-40 relative">
           <h1 className="text-3xl font-bold tracking-tighter text-[#8f6589] bg-clip-text font-fraunces drop-shadow-md">
             OrbitFinder
           </h1>
-          {userPlanet && (
+          <div className="flex gap-3">
             <button 
-              onClick={() => navigate('/design', { 
-                state: { 
-                  config: userPlanet, 
-                  planetId: location.state?.planetId, 
-                  isPublic: location.state?.isPublic 
-                } 
-              })}
-              className="text-xs uppercase tracking-widest font-bold text-white/50 transition-colors border border-white/20 rounded-md px-3 py-1.5"
+              onClick={() => setShowHistory(!showHistory)}
+              className="text-xs uppercase tracking-widest font-bold text-[#f5b1eb] transition-colors border border-[#f5b1eb]/30 rounded-md px-3 py-1.5 bg-[#f5b1eb]/10 hover:bg-[#f5b1eb]/20"
             >
-              Edit
+              Matches ({matchHistory.length})
             </button>
-          )}
+            {userPlanet && (
+              <button 
+                onClick={() => navigate('/design', { 
+                  state: { 
+                    config: userPlanet, 
+                    planetId: location.state?.planetId, 
+                    isPublic: location.state?.isPublic 
+                  } 
+                })}
+                className="text-xs uppercase tracking-widest font-bold text-white/50 transition-colors border border-white/20 rounded-md px-3 py-1.5 hover:bg-white/5"
+              >
+                Edit
+              </button>
+            )}
+          </div>
         </div>
+
+        {/* Match History Slide-out Panel */}
+        {showHistory && (
+          <div className="absolute inset-0 z-30 bg-[#16191e] flex flex-col pt-24 border-r border-white/10 shadow-2xl">
+            <div className="px-8 pb-4 flex justify-between items-center border-b border-white/10 shrink-0">
+              <h2 className="text-xl font-bold font-fraunces text-white">Your Matches</h2>
+              <button 
+                onClick={() => setShowHistory(false)}
+                className="text-xs uppercase tracking-widest font-bold text-white/50 transition-colors hover:text-white"
+              >
+                Close
+              </button>
+            </div>
+            <div className="flex-grow p-6 overflow-y-auto flex flex-col gap-3">
+              {matchHistory.length === 0 ? (
+                <div className="text-center text-white/40 mt-10 text-sm">
+                  No matches yet.<br/>Keep swiping!
+                </div>
+              ) : (
+                matchHistory.map((p, idx) => (
+                  <div 
+                    key={idx} 
+                    onClick={() => {
+                      setViewingHistoryPlanet(p);
+                      setShowHistory(false);
+                    }}
+                    className="flex items-center gap-4 p-3 border border-white/10 rounded-md bg-white/5 cursor-pointer hover:bg-white/10 transition-colors"
+                  >
+                    <div 
+                      className="w-10 h-10 rounded-full shrink-0 shadow-inner border border-white/20"
+                      style={{ backgroundColor: p.colour }}
+                    />
+                    <div className="flex-grow min-w-0">
+                      <h3 className="font-bold text-white truncate text-sm">{p.name || 'Unnamed Planet'}</h3>
+                      <div className="flex items-center gap-2 text-[10px] text-white/50 mt-1 uppercase tracking-widest font-mono">
+                        <span>{p.type}</span>
+                        <span className="text-white/20">•</span>
+                        <span>{(0.6 + p.size * 1.6).toFixed(1)}x</span>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Content (Name, Traits) */}
         <div className="flex-grow p-10 flex flex-col gap-10 overflow-y-auto">
@@ -174,19 +232,30 @@ export function Match() {
 
         {/* Action Buttons */}
         <div className="p-10 flex justify-center gap-10 bg-[#16191e]">
-          <button 
-            onClick={handleNext}
-            className="flex-1 py-5 rounded-md bg-transparent border border-white/20 flex items-center justify-center text-[#ff6b6b] "
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
-          
-          <button 
-            onClick={handleMatchAttempt}
-            className="flex-1 py-5 rounded-md bg-transparent border border-[#f5b1eb]/50 flex items-center justify-center text-[#f5b1eb]"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-          </button>
+          {viewingHistoryPlanet ? (
+            <button 
+              onClick={() => setViewingHistoryPlanet(null)}
+              className="flex-1 py-4 bg-white/10 hover:bg-white/20 text-white rounded-md font-bold uppercase tracking-widest transition-colors w-full border border-white/20"
+            >
+              Back to Swiping
+            </button>
+          ) : (
+            <>
+              <button 
+                onClick={handleNext}
+                className="flex-1 py-5 rounded-md bg-transparent border border-white/20 flex items-center justify-center text-[#ff6b6b] hover:bg-white/5 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+              
+              <button 
+                onClick={handleMatchAttempt}
+                className="flex-1 py-5 rounded-md bg-transparent border border-[#f5b1eb]/50 flex items-center justify-center text-[#f5b1eb] hover:bg-[#f5b1eb]/10 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </>
+          )}
         </div>
       </div>
 
