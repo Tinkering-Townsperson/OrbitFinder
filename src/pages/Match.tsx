@@ -161,13 +161,13 @@ export function Match() {
             <div className="flex flex-col gap-2 mt-4">
               <div className="flex items-center gap-2">
                 <span className="text-[10px] uppercase tracking-widest text-[#f5b1eb] font-bold border border-[#f5b1eb]/40 px-2 py-0.5 rounded-sm bg-[#f5b1eb]/10">
-                  Favors: {planet.favoured?.join(', ')}
+                  Important Factors: {planet.favoured?.join(', ')}
                 </span>
               </div>
               {userPlanet && (
                 <div className="flex items-center gap-2 mt-1">
                   <span className="text-[10px] uppercase tracking-widest text-white/70 font-bold border border-white/20 px-2 py-0.5 rounded-sm bg-white/10">
-                    You Favor: {userPlanet.favoured?.join(', ')}
+                    Your Important Factors: {userPlanet.favoured?.join(', ')}
                   </span>
                 </div>
               )}

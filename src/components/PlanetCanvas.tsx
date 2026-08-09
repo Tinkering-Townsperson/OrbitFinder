@@ -573,10 +573,10 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
         }
       }
       setIsGenerating(false);
-    }, 150); // Debounce 150ms
+    }, 800); // Debounce 800ms
 
     return () => window.clearTimeout(timeoutId);
-  }, [config]);
+  }, [config.size, config.type, config.craters, config.water, config.terrain, config.colour, config.moons]);
 
 
   return (
