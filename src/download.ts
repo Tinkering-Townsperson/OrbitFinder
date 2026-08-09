@@ -41,3 +41,12 @@ export async function fetchNextPage(lastDoc: QueryDocumentSnapshot<DocumentData>
 
     return { planets, lastDoc: lastDocNew };
 }
+
+export async function fetchAllPlanets(): Promise<Planet[]> {
+    const colRef = collection(db, "ug-planets"); // "planets" = your collection name
+    const snapshot = await getDocs(colRef);
+
+    return snapshot.docs.map((doc) => ({
+        ...(doc.data() as Planet),
+    }));
+}
