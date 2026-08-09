@@ -1,7 +1,6 @@
-import { useEffect, useRef } from 'react';
-import * as THREE from 'three';
-import type { Planet } from '../planet';
-
+import { useEffect, useRef, useState } from "react";
+import * as THREE from "three";
+import type { Planet } from "../planet";
 interface PlanetCanvasProps {
   config: Planet;
 }
@@ -11,22 +10,25 @@ function createPlanetTexture(
   waterLevel: number,
   roughness: number,
   planetType: string,
-  cratersConfig: number
+  cratersConfig: number,
 ): { colorMap: THREE.CanvasTexture; bumpMap: THREE.CanvasTexture } {
-  const canvas = document.createElement('canvas');
-  const bumpCanvas = document.createElement('canvas');
+  const canvas = document.createElement("canvas");
+  const bumpCanvas = document.createElement("canvas");
   canvas.width = bumpCanvas.width = 1024;
   canvas.height = bumpCanvas.height = 512;
-  const ctx = canvas.getContext('2d')!;
-  const bumpCtx = bumpCanvas.getContext('2d')!;
+  const ctx = canvas.getContext("2d")!;
+  const bumpCtx = bumpCanvas.getContext("2d")!;
 
   const landColor = new THREE.Color(landColorHex);
-  const waterColor = new THREE.Color('#10437a'); 
+  const waterColor = new THREE.Color("#10437a");
 
   const imgData = ctx.createImageData(canvas.width, canvas.height);
   const data = imgData.data;
-  
-  const bumpImgData = bumpCtx.createImageData(bumpCanvas.width, bumpCanvas.height);
+
+  const bumpImgData = bumpCtx.createImageData(
+    bumpCanvas.width,
+    bumpCanvas.height,
+  );
   const bumpData = bumpImgData.data;
 
   const baseFreq = 1.5 + roughness * 4;
@@ -41,10 +43,16 @@ function createPlanetTexture(
   const smooth = (t: number) => t * t * (3 - 2 * t);
 
   const valueNoise = (x: number, y: number, z: number) => {
-    const ix = Math.floor(x); const iy = Math.floor(y); const iz = Math.floor(z);
-    const fx = x - ix; const fy = y - iy; const fz = z - iz;
+    const ix = Math.floor(x);
+    const iy = Math.floor(y);
+    const iz = Math.floor(z);
+    const fx = x - ix;
+    const fy = y - iy;
+    const fz = z - iz;
 
-    const sx = smooth(fx); const sy = smooth(fy); const sz = smooth(fz);
+    const sx = smooth(fx);
+    const sy = smooth(fy);
+    const sz = smooth(fz);
 
     const n000 = hash(ix, iy, iz);
     const n100 = hash(ix + 1, iy, iz);
@@ -80,8 +88,14 @@ function createPlanetTexture(
     return val / maxAmp;
   };
 
-  const craters: { cx: number; cy: number; cz: number; radius: number; depth: number }[] = [];
-  if (planetType === 'Terrestrial' && cratersConfig > 0) {
+  const craters: {
+    cx: number;
+    cy: number;
+    cz: number;
+    radius: number;
+    depth: number;
+  }[] = [];
+  if (planetType === "terrestrial" && cratersConfig > 0) {
     for (let i = 0; i < cratersConfig; i++) {
       const theta = Math.random() * Math.PI * 2;
       const phi = Math.acos(2 * Math.random() - 1);
@@ -90,7 +104,7 @@ function createPlanetTexture(
         cy: Math.cos(phi),
         cz: Math.sin(phi) * Math.sin(theta),
         radius: 0.02 + Math.random() * 0.08,
-        depth: 0.1 + Math.random() * 0.3
+        depth: 0.1 + Math.random() * 0.3,
       });
     }
   }
@@ -113,30 +127,42 @@ function createPlanetTexture(
       let g: number = 0;
       let bumpVal: number = 0;
 
-      if (planetType === 'gas' || planetType === 'ice') {
+      if (planetType === "gas" || planetType === "ice") {
         // Banded noise for giants
         // Distort latitude (ny) with some noise
-        const distortion = valueNoise(nx * 2, ny * 2, nz * 2) * (1.5 + roughness * 2);
+        const distortion =
+          valueNoise(nx * 2, ny * 2, nz * 2) * (1.5 + roughness * 2);
         const lat = ny * (10 + roughness * 10) + distortion;
         // Create bands using sine and noise for Gas Giants
-        const bandVal = (Math.sin(lat) * 0.5 + 0.5) * 0.5 + noise3D(nx, ny * 2, nz) * 0.5;
+        const bandVal =
+          (Math.sin(lat) * 0.5 + 0.5) * 0.5 + noise3D(nx, ny * 2, nz) * 0.5;
 
-        if (planetType === 'ice') {
-          const iceDistortion = valueNoise(nx * 2, ny * 2, nz * 2) * (0.5 + roughness);
+        if (planetType === "ice") {
+          const iceDistortion =
+            valueNoise(nx * 2, ny * 2, nz * 2) * (0.5 + roughness);
           const iceLat = ny * (4 + roughness * 5) + iceDistortion;
-          const iceBandVal = (Math.sin(iceLat) * 0.5 + 0.5) * 0.7 + noise3D(nx, ny * 2, nz) * 0.3;
+          const iceBandVal =
+            (Math.sin(iceLat) * 0.5 + 0.5) * 0.7 +
+            noise3D(nx, ny * 2, nz) * 0.3;
 
-          const iceColor = new THREE.Color('#48a3e6').lerp(new THREE.Color('#1f4b8e'), iceBandVal);
+          const iceColor = new THREE.Color("#48a3e6").lerp(
+            new THREE.Color("#1f4b8e"),
+            iceBandVal,
+          );
           iceColor.lerp(landColor, 0.3);
-          r = iceColor.r; g = iceColor.g; b = iceColor.b;
-          bumpVal = 0.5 + noise3D(nx * 4, ny * 4, nz * 4) * 0.05 * roughness; 
-        } else if (planetType === 'gas') {
+          r = iceColor.r;
+          g = iceColor.g;
+          b = iceColor.b;
+          bumpVal = 0.5 + noise3D(nx * 4, ny * 4, nz * 4) * 0.05 * roughness;
+        } else if (planetType === "gas") {
           // Gas giant uses landColor directly modulated by bands
           const darkColor = landColor.clone().multiplyScalar(0.4);
           const lightColor = landColor.clone().multiplyScalar(1.2);
           const finalColor = darkColor.lerp(lightColor, bandVal);
-          
-          r = finalColor.r; g = finalColor.g; b = finalColor.b;
+
+          r = finalColor.r;
+          g = finalColor.g;
+          b = finalColor.b;
           bumpVal = 0.5 + noise3D(nx * 3, ny * 3, nz * 3) * 0.1 * roughness;
         }
       } else {
@@ -146,7 +172,7 @@ function createPlanetTexture(
           const crater = craters[i];
           const dot = nx * crater.cx + ny * crater.cy + nz * crater.cz;
           const dist = Math.acos(Math.max(-1, Math.min(1, dot)));
-          
+
           if (dist < crater.radius) {
             const cr = dist / crater.radius;
             let craterEffect = 0;
@@ -155,9 +181,10 @@ function createPlanetTexture(
               craterEffect = -crater.depth * (1 - normalizedR * normalizedR);
             } else {
               const normalizedR = (cr - 0.8) / 0.2;
-              craterEffect = crater.depth * 0.5 * Math.sin(normalizedR * Math.PI);
+              craterEffect =
+                crater.depth * 0.5 * Math.sin(normalizedR * Math.PI);
             }
-            heightVal += craterEffect * (1.0 - waterLevel * 0.5); 
+            heightVal += craterEffect * (1.0 - waterLevel * 0.5);
           }
         }
 
@@ -171,7 +198,8 @@ function createPlanetTexture(
           b = waterColor.b * deepShade;
           bumpVal = 0.5;
         } else {
-          const elevation = (heightVal - waterLevel) / Math.max(1 - waterLevel, 0.01);
+          const elevation =
+            (heightVal - waterLevel) / Math.max(1 - waterLevel, 0.01);
           const landShade = Math.max(0.4, 1.2 - elevation * 0.8);
           r = Math.min(1, landColor.r * landShade);
           g = Math.min(1, landColor.g * landShade);
@@ -184,7 +212,7 @@ function createPlanetTexture(
       data[idx + 1] = Math.floor(g * 255);
       data[idx + 2] = Math.floor(b * 255);
       data[idx + 3] = 255;
-      
+
       const bumpByte = Math.max(0, Math.min(255, Math.floor(bumpVal * 255)));
       bumpData[idx] = bumpData[idx + 1] = bumpData[idx + 2] = bumpByte;
       bumpData[idx + 3] = 255;
@@ -197,7 +225,7 @@ function createPlanetTexture(
   const colorMap = new THREE.CanvasTexture(canvas);
   colorMap.wrapS = THREE.RepeatWrapping;
   colorMap.wrapT = THREE.ClampToEdgeWrapping;
-  
+
   const bumpMap = new THREE.CanvasTexture(bumpCanvas);
   bumpMap.wrapS = THREE.RepeatWrapping;
   bumpMap.wrapT = THREE.ClampToEdgeWrapping;
@@ -211,13 +239,17 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
     configRef.current = config;
   }, [config]);
 
+  const [isGenerating, setIsGenerating] = useState(true);
+
   const mountRef = useRef<HTMLDivElement>(null);
   const planetMeshRef = useRef<THREE.Mesh | null>(null);
   const moonsGroupRef = useRef<THREE.Group | null>(null);
   const systemGroupRef = useRef<THREE.Group | null>(null);
   const cameraRigRef = useRef<THREE.Group | null>(null);
   const sunLightRef = useRef<THREE.DirectionalLight | null>(null);
-  const moonDataRef = useRef<{ mesh: THREE.Mesh; distance: number; speed: number; angle: number }[]>([]);
+  const moonDataRef = useRef<
+    { mesh: THREE.Mesh; distance: number; speed: number; angle: number }[]
+  >([]);
 
   const isDraggingRef = useRef(false);
   const previousMousePositionRef = useRef({ x: 0, y: 0 });
@@ -234,7 +266,7 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
       45,
       container.clientWidth / container.clientHeight,
       0.1,
-      1000
+      1000,
     );
     camera.position.z = 7;
 
@@ -251,15 +283,18 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
     const starPositions = new Float32Array(starCount * 3);
     for (let i = 0; i < starCount * 3; i += 3) {
       // Spawn stars on a massive distant sphere so they don't clip through the solar system
-      const radius = 400 + Math.random() * 400; 
+      const radius = 400 + Math.random() * 400;
       const theta = Math.random() * Math.PI * 2;
-      const phi = Math.acos((Math.random() * 2) - 1);
-      
+      const phi = Math.acos(Math.random() * 2 - 1);
+
       starPositions[i] = radius * Math.sin(phi) * Math.cos(theta);
       starPositions[i + 1] = radius * Math.sin(phi) * Math.sin(theta);
       starPositions[i + 2] = radius * Math.cos(phi);
     }
-    starsGeo.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+    starsGeo.setAttribute(
+      "position",
+      new THREE.BufferAttribute(starPositions, 3),
+    );
     const starsMat = new THREE.PointsMaterial({
       color: 0xffffff,
       size: 1.5,
@@ -293,7 +328,7 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
     const systemGroup = new THREE.Group();
     scene.add(systemGroup);
     systemGroupRef.current = systemGroup;
-    
+
     // Camera Rig (rotates independently of planet to maintain view angle)
     const cameraRig = new THREE.Group();
     systemGroup.add(cameraRig);
@@ -307,7 +342,7 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
       config.water * 0.9,
       config.terrain,
       config.type,
-      Math.round(config.craters * 100)
+      Math.round(config.craters * 100),
     );
     const planetMat = new THREE.MeshStandardMaterial({
       map: planetTextures.colorMap,
@@ -334,20 +369,20 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
       camera.updateProjectionMatrix();
       renderer.setSize(container.clientWidth, container.clientHeight);
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Mouse / Touch Drag Events
     const onPointerDown = (e: MouseEvent | TouchEvent) => {
       isDraggingRef.current = true;
-      const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
-      const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+      const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
+      const clientY = "touches" in e ? e.touches[0].clientY : e.clientY;
       previousMousePositionRef.current = { x: clientX, y: clientY };
     };
 
     const onPointerMove = (e: MouseEvent | TouchEvent) => {
       if (!isDraggingRef.current || !planetMeshRef.current) return;
-      const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
-      const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
+      const clientX = "touches" in e ? e.touches[0].clientX : e.clientX;
+      const clientY = "touches" in e ? e.touches[0].clientY : e.clientY;
 
       const deltaX = clientX - previousMousePositionRef.current.x;
       const deltaY = clientY - previousMousePositionRef.current.y;
@@ -359,9 +394,12 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
 
       userRotationOffsetRef.current.y -= rotationVelocityRef.current.y;
       userRotationOffsetRef.current.x -= rotationVelocityRef.current.x;
-      
+
       // Clamp vertical camera rotation to prevent flipping upside down
-      userRotationOffsetRef.current.x = Math.max(-Math.PI / 2 + 0.1, Math.min(Math.PI / 2 - 0.1, userRotationOffsetRef.current.x));
+      userRotationOffsetRef.current.x = Math.max(
+        -Math.PI / 2 + 0.1,
+        Math.min(Math.PI / 2 - 0.1, userRotationOffsetRef.current.x),
+      );
 
       previousMousePositionRef.current = { x: clientX, y: clientY };
     };
@@ -371,20 +409,20 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
     };
 
     const domElement = renderer.domElement;
-    domElement.addEventListener('mousedown', onPointerDown);
-    domElement.addEventListener('mousemove', onPointerMove);
-    window.addEventListener('mouseup', onPointerUp);
+    domElement.addEventListener("mousedown", onPointerDown);
+    domElement.addEventListener("mousemove", onPointerMove);
+    window.addEventListener("mouseup", onPointerUp);
 
-    domElement.addEventListener('touchstart', onPointerDown);
-    domElement.addEventListener('touchmove', onPointerMove);
-    window.addEventListener('touchend', onPointerUp);
+    domElement.addEventListener("touchstart", onPointerDown);
+    domElement.addEventListener("touchmove", onPointerMove);
+    window.addEventListener("touchend", onPointerUp);
 
     // Zoom on wheel
     const onWheel = (e: WheelEvent) => {
       camera.position.z += e.deltaY * 0.01;
       camera.position.z = Math.max(2.5, Math.min(camera.position.z, 20)); // Limit zoom
     };
-    domElement.addEventListener('wheel', onWheel, { passive: true });
+    domElement.addEventListener("wheel", onWheel, { passive: true });
 
     // Render & Animation Loop
     let animationFrameId: number;
@@ -394,13 +432,16 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
       if (planetMeshRef.current) {
         // Natural planet spin on its axis
         planetMeshRef.current.rotation.y += 0.002;
-        
+
         if (!isDraggingRef.current) {
           // Apply momentum to camera orbit (inverted so dragging feels natural)
           userRotationOffsetRef.current.y -= rotationVelocityRef.current.y;
           userRotationOffsetRef.current.x -= rotationVelocityRef.current.x;
-          userRotationOffsetRef.current.x = Math.max(-Math.PI / 2 + 0.1, Math.min(Math.PI / 2 - 0.1, userRotationOffsetRef.current.x));
-          
+          userRotationOffsetRef.current.x = Math.max(
+            -Math.PI / 2 + 0.1,
+            Math.min(Math.PI / 2 - 0.1, userRotationOffsetRef.current.x),
+          );
+
           rotationVelocityRef.current.x *= 0.92;
           rotationVelocityRef.current.y *= 0.92;
         }
@@ -410,26 +451,33 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
         const orbitAngle = Date.now() * 0.0001; // Orbit speed
         const px = Math.cos(orbitAngle) * 35;
         const pz = Math.sin(orbitAngle) * 35;
-        
+
         systemGroupRef.current.position.x = px;
         systemGroupRef.current.position.z = pz;
-        
+
         if (sunLightRef.current) {
           sunLightRef.current.target.position.set(px, 0, pz);
         }
 
         // Keep camera looking at the lit side of the planet, plus user's custom rotation offset
         if (cameraRigRef.current) {
-          cameraRigRef.current.rotation.y = orbitAngle + Math.PI * 0.75 + userRotationOffsetRef.current.y;
+          cameraRigRef.current.rotation.y =
+            orbitAngle + Math.PI * 0.75 + userRotationOffsetRef.current.y;
           cameraRigRef.current.rotation.x = userRotationOffsetRef.current.x;
         }
       }
 
-      moonDataRef.current.forEach(moon => {
+      moonDataRef.current.forEach((moon) => {
         moon.angle += moon.speed;
-        moon.mesh.position.x = Math.cos(moon.angle) * moon.distance * Math.cos(moon.mesh.userData.inclination);
+        moon.mesh.position.x =
+          Math.cos(moon.angle) *
+          moon.distance *
+          Math.cos(moon.mesh.userData.inclination);
         moon.mesh.position.z = Math.sin(moon.angle) * moon.distance;
-        moon.mesh.position.y = Math.cos(moon.angle) * moon.distance * Math.sin(moon.mesh.userData.inclination);
+        moon.mesh.position.y =
+          Math.cos(moon.angle) *
+          moon.distance *
+          Math.sin(moon.mesh.userData.inclination);
         moon.mesh.rotation.y += 0.01;
       });
 
@@ -441,16 +489,16 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
 
-      domElement.removeEventListener('mousedown', onPointerDown);
-      domElement.removeEventListener('mousemove', onPointerMove);
-      window.removeEventListener('mouseup', onPointerUp);
+      domElement.removeEventListener("mousedown", onPointerDown);
+      domElement.removeEventListener("mousemove", onPointerMove);
+      window.removeEventListener("mouseup", onPointerUp);
 
-      domElement.removeEventListener('touchstart', onPointerDown);
-      domElement.removeEventListener('touchmove', onPointerMove);
-      window.removeEventListener('touchend', onPointerUp);
-      domElement.removeEventListener('wheel', onWheel);
+      domElement.removeEventListener("touchstart", onPointerDown);
+      domElement.removeEventListener("touchmove", onPointerMove);
+      window.removeEventListener("touchend", onPointerUp);
+      domElement.removeEventListener("wheel", onWheel);
 
       if (container.contains(renderer.domElement)) {
         container.removeChild(renderer.domElement);
@@ -471,11 +519,13 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
 
   // Update Mesh & Texture on Config Change (Debounced to prevent lag)
   useEffect(() => {
+    setIsGenerating(true);
     const timeoutId = window.setTimeout(() => {
       if (planetMeshRef.current) {
         planetMeshRef.current.scale.setScalar(0.6 + config.size * 1.6);
 
-        const mat = planetMeshRef.current.material as THREE.MeshStandardMaterial;
+        const mat = planetMeshRef.current
+          .material as THREE.MeshStandardMaterial;
         if (mat.map) mat.map.dispose();
         if (mat.displacementMap) mat.displacementMap.dispose();
         const newTextures = createPlanetTexture(
@@ -483,19 +533,22 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
           config.water * 0.9,
           config.terrain,
           config.type,
-          Math.round(config.craters * 100)
+          Math.round(config.craters * 100),
         );
         mat.map = newTextures.colorMap;
         mat.displacementMap = newTextures.bumpMap;
         mat.needsUpdate = true;
       }
 
-      if (moonsGroupRef.current && moonDataRef.current.length !== config.moons) {
+      if (
+        moonsGroupRef.current &&
+        moonDataRef.current.length !== config.moons
+      ) {
         const moonsGroup = moonsGroupRef.current;
         // Clear old moons
         moonsGroup.clear();
         moonDataRef.current = [];
-        
+
         const moonGeo = new THREE.SphereGeometry(1, 32, 32);
         const moonMat = new THREE.MeshStandardMaterial({
           color: 0xcccccc,
@@ -507,26 +560,38 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
           const mesh = new THREE.Mesh(moonGeo, moonMat);
           const moonSize = 0.05 + Math.random() * 0.1;
           mesh.scale.setScalar(moonSize);
-          
+
           const visualRadius = 0.6 + config.size * 1.6;
-          const distance = visualRadius + 0.5 + Math.random() * 1.8;
-          const speed = (0.005 + Math.random() * 0.015) * (Math.random() > 0.5 ? 1 : -1);
+          const distance = visualRadius + 2 + Math.random() * 2;
+          const speed =
+            (0.005 + Math.random() * 0.015) * (Math.random() > 0.5 ? 1 : -1);
           const angle = Math.random() * Math.PI * 2;
           mesh.userData.inclination = (Math.random() - 0.5) * Math.PI * 0.5;
-          
+
           moonsGroup.add(mesh);
           moonDataRef.current.push({ mesh, distance, speed, angle });
         }
       }
+      setIsGenerating(false);
     }, 150); // Debounce 150ms
 
     return () => window.clearTimeout(timeoutId);
   }, [config]);
 
+
   return (
-    <div
-      ref={mountRef}
-      className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing"
-    />
+    <div className="absolute inset-0 w-full h-full">
+      <div
+        ref={mountRef}
+        className="w-full h-full cursor-grab active:cursor-grabbing"
+      />
+
+      {/* Loading Overlay */}
+      {isGenerating && (
+        <div className="absolute inset-0 bg-[#0d0f12]/60 backdrop-blur-md z-50 flex flex-col items-center justify-center transition-opacity duration-300">
+          <div className="w-12 h-12 border-4 border-[#f5b1eb]/20 border-t-[#f5b1eb] rounded-full animate-spin mb-6"></div>
+        </div>
+      )}
+    </div>
   );
 }

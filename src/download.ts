@@ -15,7 +15,7 @@ const PAGE_SIZE = 10;
 
 export async function fetchFirstPage() {
     const q = query(
-        collection(db, "planets"),
+        collection(db, "ug-planets"),
         orderBy("name"),      // you must orderBy something for cursors to work
         limit(PAGE_SIZE)
     );
@@ -29,7 +29,7 @@ export async function fetchFirstPage() {
 
 export async function fetchNextPage(lastDoc: QueryDocumentSnapshot<DocumentData>) {
     const q = query(
-        collection(db, "planets"),
+        collection(db, "ug-planets"),
         orderBy("name"),
         startAfter(lastDoc),   // start right after the last doc we saw
         limit(PAGE_SIZE)
