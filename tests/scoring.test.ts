@@ -1,4 +1,4 @@
-import { compatibility, type Planet } from '../src/planet';
+import { getPerspectives, type Planet } from '../src/planet';
 import { realPlanets } from '../src/data/planets-real';
 
 const earth: Planet = {
@@ -11,7 +11,7 @@ const earth: Planet = {
     water: 0.7,
     moons: 1,
     craters: 0.1,
-    favoured: 'water'
+    favoured: ["water"]
 };
 
 const jupiter: Planet = {
@@ -77,50 +77,49 @@ const ancientGas: Planet = {
 function runDistribution(basePlanet: Planet, targetPlanets: Planet[], description: string) {
     console.log(`\n--- ${description} (${targetPlanets.length} planets) ---`);
 
-    const buckets = {
-        '90-100% (Soulmates)': 0,
-        '80-89% (Great)': 0,
-        '70-79% (Good)': 0,
-        '60-69% (Okay)': 0,
-        '50-59% (Neutral)': 0,
-        '40-49% (Poor)': 0,
-        '0-39% (Terrible)': 0
+    const diffBuckets = {
+        '0-5% (Mutual Agreement)': 0,
+        '5-10% (Slight Difference)': 0,
+        '10-15% (Noticeable Gap)': 0,
+        '15-20% (One-Sided)': 0,
+        '20%+ (Extremely One-Sided)': 0
     };
 
-    let totalScore = 0;
-    let minScore = 1;
-    let maxScore = 0;
-    let bestPlanet: Planet | null = null;
+    let totalDiff = 0;
+    let maxDiff = 0;
+    let maxDiffPlanet: Planet | null = null;
 
     targetPlanets.forEach(p => {
-        const score = compatibility(basePlanet, p);
-        totalScore += score;
-        if (score < minScore) minScore = score;
-        if (score > maxScore) {
-            maxScore = score;
-            bestPlanet = p;
+        const { userPerspective, matchPerspective } = getPerspectives(basePlanet, p);
+        const diff = Math.abs(userPerspective - matchPerspective);
+        
+        totalDiff += diff;
+        if (diff > maxDiff) {
+            maxDiff = diff;
+            maxDiffPlanet = p;
         }
         
-        if (score >= 0.9) buckets['90-100% (Soulmates)']++;
-        else if (score >= 0.8) buckets['80-89% (Great)']++;
-        else if (score >= 0.7) buckets['70-79% (Good)']++;
-        else if (score >= 0.6) buckets['60-69% (Okay)']++;
-        else if (score >= 0.5) buckets['50-59% (Neutral)']++;
-        else if (score >= 0.4) buckets['40-49% (Poor)']++;
-        else buckets['0-39% (Terrible)']++;
+        if (diff < 0.05) diffBuckets['0-5% (Mutual Agreement)']++;
+        else if (diff < 0.10) diffBuckets['5-10% (Slight Difference)']++;
+        else if (diff < 0.15) diffBuckets['10-15% (Noticeable Gap)']++;
+        else if (diff < 0.20) diffBuckets['15-20% (One-Sided)']++;
+        else diffBuckets['20%+ (Extremely One-Sided)']++;
     });
 
-    Object.entries(buckets).forEach(([label, count]) => {
+    Object.entries(diffBuckets).forEach(([label, count]) => {
         const bar = '█'.repeat(Math.ceil((count / targetPlanets.length) * 50));
-        console.log(`${label.padEnd(20)} | ${count.toString().padStart(4)} | ${bar}`);
+        console.log(`${label.padEnd(28)} | ${count.toString().padStart(4)} | ${bar}`);
     });
 
-    console.log(`Avg: ${(totalScore / targetPlanets.length * 100).toFixed(1)}% | Min: ${(minScore * 100).toFixed(1)}% | Max: ${(maxScore * 100).toFixed(1)}%`);
+    console.log(`\nAverage Difference: ${(totalDiff / targetPlanets.length * 100).toFixed(1)}%`);
     
-    if (bestPlanet) {
-        console.log(`\n🏆 BEST MATCH: ${bestPlanet.name}`);
-        console.log(`Score: ${(maxScore * 100).toFixed(2)}%`);
-        console.log(`Traits: Type=${bestPlanet.type}, Size=${bestPlanet.size}, Water=${bestPlanet.water}, Terrain=${bestPlanet.terrain}, Moons=${bestPlanet.moons}, Craters=${bestPlanet.craters}, Color=${bestPlanet.colour}, Age=${bestPlanet.age}`);
+    if (maxDiffPlanet) {
+        const p = getPerspectives(basePlanet, maxDiffPlanet);
+        console.log(`\n💔 MOST ONE-SIDED MATCH: ${maxDiffPlanet.name}`);
+        console.log(`Difference: ${(maxDiff * 100).toFixed(2)}%`);
+        console.log(`How much Earth likes it: ${(p.userPerspective * 100).toFixed(1)}%`);
+        console.log(`How much it likes Earth: ${(p.matchPerspective * 100).toFixed(1)}%`);
+        console.log(`Traits: Type=${maxDiffPlanet.type}, Water=${maxDiffPlanet.water}, Favors=[${maxDiffPlanet.favoured.join(', ')}]`);
     }
 }
 

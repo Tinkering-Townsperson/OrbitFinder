@@ -2,27 +2,24 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { PlanetCanvas } from '../components/PlanetCanvas';
 import { planets } from '../data/planets-all';
-import { compatibility, getPerspectives, type Planet } from '../planet';
+import { getPerspectives, type Planet } from '../planet';
 
 export function Match() {
   const location = useLocation();
   const userPlanet = location.state?.userPlanet as Planet | undefined;
 
   const [currentMatch, setCurrentMatch] = useState<Planet | null>(null);
-  const [matchScore, setMatchScore] = useState<number | null>(null);
+  const [perspectives, setPerspectives] = useState<{ userPerspective: number, matchPerspective: number } | null>(null);
 
   const pickRandomPlanet = () => {
     const randomPlanet = planets[Math.floor(Math.random() * planets.length)];
     setCurrentMatch(randomPlanet);
     
     if (userPlanet) {
-      const score = compatibility(userPlanet, randomPlanet);
-      setMatchScore(score);
-      console.log(`Compatibility Score with ${randomPlanet.name}:`, Math.round(score * 100) + '%');
-      
-      const perspectives = getPerspectives(userPlanet, randomPlanet);
-      console.log(`[Perspective] How much ${userPlanet.name} likes ${randomPlanet.name}:`, Math.round(perspectives.userPerspective * 100) + '%');
-      console.log(`[Perspective] How much ${randomPlanet.name} likes ${userPlanet.name}:`, Math.round(perspectives.matchPerspective * 100) + '%');
+      const p = getPerspectives(userPlanet, randomPlanet);
+      setPerspectives(p);
+      console.log(`[Perspective] How much ${userPlanet.name} likes ${randomPlanet.name}:`, Math.round(p.userPerspective * 100) + '%');
+      console.log(`[Perspective] How much ${randomPlanet.name} likes ${userPlanet.name}:`, Math.round(p.matchPerspective * 100) + '%');
     }
   };
 
@@ -74,13 +71,13 @@ export function Match() {
             <div className="flex flex-col gap-1 mt-2">
               <div className="flex items-center gap-2">
                 <span className="text-[10px] uppercase tracking-widest text-[#f5b1eb] font-bold border border-[#f5b1eb]/30 px-2 py-0.5 rounded-full bg-[#f5b1eb]/10">
-                  Favors: {planet.favoured}
+                  Favors: {planet.favoured?.join(', ')}
                 </span>
               </div>
               {userPlanet && (
                 <div className="flex items-center gap-2 mt-1">
                   <span className="text-[10px] uppercase tracking-widest text-white/40 font-bold border border-white/10 px-2 py-0.5 rounded-full bg-white/5">
-                    You Favor: {userPlanet.favoured}
+                    You Favor: {userPlanet.favoured?.join(', ')}
                   </span>
                 </div>
               )}
@@ -123,6 +120,24 @@ export function Match() {
               userValue={userPlanet ? (userPlanet.type === 'terrestrial' ? `${Math.round(userPlanet.craters * 100)}` : '0') : undefined} 
             />
           </div>
+
+          {/* Perspective Scores */}
+          {userPlanet && perspectives && (
+            <div className="mt-4 bg-white/5 border border-white/10 rounded-md p-4">
+              <h3 className="text-xs uppercase tracking-widest text-white/50 font-bold mb-3 text-center">Compatibility Analysis</h3>
+              <div className="flex justify-between items-center gap-4">
+                <div className="flex-1 flex flex-col items-center">
+                  <span className="text-[10px] text-white/40 uppercase font-semibold mb-1 text-center leading-tight">How much you<br/>like them</span>
+                  <span className="text-xl font-mono text-[#f5b1eb] font-bold">{Math.round(perspectives.userPerspective * 100)}%</span>
+                </div>
+                <div className="w-[1px] h-10 bg-white/10"></div>
+                <div className="flex-1 flex flex-col items-center">
+                  <span className="text-[10px] text-white/40 uppercase font-semibold mb-1 text-center leading-tight">How much they<br/>like you</span>
+                  <span className="text-xl font-mono text-[#cf7cc2] font-bold">{Math.round(perspectives.matchPerspective * 100)}%</span>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Action Buttons */}

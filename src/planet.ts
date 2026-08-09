@@ -32,12 +32,15 @@ function adds_to_one(trait_a: number, trait_b: number) {
     return 1 - Math.abs((trait_a + trait_b) - 1);
 }
 
-const SIZE_WEIGHT: number = 0.20;
-const TERRAIN_WEIGHT: number = 0.15;
-const AGE_WEIGHT: number = 0.15;
-const WATER_WEIGHT: number = 0.15;
-const COLOUR_WEIGHT: number = 0.15;
-const MOONS_WEIGHT: number = 0.10;
+const BASE_WEIGHTS = {
+    size: 0.20,
+    terrain: 0.15,
+    age: 0.15,
+    water: 0.15,
+    colour: 0.15,
+    moon: 0.10,
+    craters: 0.10
+};
 
 function hexToHue(hex: string): number {
     const r = parseInt(hex.substring(1,3), 16) / 255;
@@ -67,17 +70,42 @@ function color_compatibility(hex1: string, hex2: string): number {
     return Math.abs(Math.cos((h1 - h2) * Math.PI / 180));
 }
 
-function conditional_weight(weight: number, trait: string, favoured: FavouredTrait[]) {
-    return weight + (trait in favoured ? 0.1 : 0);
+export function getPerspectives(planet1: Planet, planet2: Planet) {
+    const isTerrestrial = planet1.type === "terrestrial" && planet2.type === "terrestrial";
+    const scores = {
+        size: similarity(planet1.size, planet2.size),
+        terrain: adds_to_one(planet1.terrain, planet2.terrain),
+        age: Math.max(0, 1 - (Math.max(Math.abs(planet1.age - planet2.age) - 500, 0) / 4000)),
+        water: opposite(planet1.water, planet2.water),
+        moon: similarity(planet1.moons/10, planet2.moons/10),
+        colour: color_compatibility(planet1.colour, planet2.colour),
+        craters: isTerrestrial ? similarity(planet1.craters, planet2.craters) : 0
+    };
+
+    const calcFor = (favouredTraits: FavouredTrait[]) => {
+        const weights = { ...BASE_WEIGHTS };
+        for (const t of favouredTraits) {
+            if (weights[t as keyof typeof weights] !== undefined) {
+                weights[t as keyof typeof weights] += 0.40;
+            }
+        }
+        let totalW = 0;
+        let score = 0;
+        for (const [trait, w] of Object.entries(weights)) {
+            if (!isTerrestrial && trait === "craters") continue;
+            totalW += w;
+        }
+        for (const [trait, rawScore] of Object.entries(scores)) {
+            if (!isTerrestrial && trait === "craters") continue;
+            score += rawScore * (weights[trait as keyof typeof weights] / totalW);
+        }
+        return score;
+    };
+
+    return {
+        userPerspective: calcFor(planet1.favoured || []),
+        matchPerspective: calcFor(planet2.favoured || [])
+    };
 }
 
-export function compatibility(planet1: Planet, planet2: Planet) {
-    const size_compat = similarity(planet1.size, planet2.size) * conditional_weight(SIZE_WEIGHT, "size", planet2.favoured);
-    const terrain_compat = adds_to_one(planet1.terrain, planet2.terrain) * conditional_weight(TERRAIN_WEIGHT, "terrain", planet2.favoured);
-    const age_compat = Math.max(0, 1 - (Math.max(Math.abs(planet1.age - planet2.age) - 500, 0) / 4000)) * conditional_weight(AGE_WEIGHT, "age", planet2.favoured);
-    const water_compat = Math.max(opposite(planet1.water, planet2.water) * 2, 1) * conditional_weight(WATER_WEIGHT, "water", planet2.favoured);
-    const moon_compat = similarity(planet1.moons/10, planet2.moons/10) * conditional_weight(MOONS_WEIGHT, "moons", planet2.favoured);
-    const color_compat = color_compatibility(planet1.colour, planet2.colour) * conditional_weight(COLOUR_WEIGHT, "colour", planet2.favoured);
 
-    return age_compat + size_compat + terrain_compat + water_compat + moon_compat + color_compat;
-}

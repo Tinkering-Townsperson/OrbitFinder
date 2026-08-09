@@ -16,7 +16,10 @@ export const realPlanets: Planet[] = [
     "water": 0.77,
     "moons": 2,
     "craters": 0.07,
-    "favoured": "water"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"GJ 3929 b\"",
@@ -28,7 +31,10 @@ export const realPlanets: Planet[] = [
     "water": 0.65,
     "moons": 4,
     "craters": 0.23,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"GJ 806 b\"",
@@ -40,7 +46,10 @@ export const realPlanets: Planet[] = [
     "water": 0.71,
     "moons": 3,
     "craters": 0.75,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"GJ 9827 b\"",
@@ -52,7 +61,10 @@ export const realPlanets: Planet[] = [
     "water": 0.27,
     "moons": 8,
     "craters": 0.63,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"HD 136352 b\"",
@@ -64,7 +76,10 @@ export const realPlanets: Planet[] = [
     "water": 0.34,
     "moons": 8,
     "craters": 0.42,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 137496 b\"",
@@ -76,7 +91,10 @@ export const realPlanets: Planet[] = [
     "water": 0.57,
     "moons": 1,
     "craters": 0.53,
-    "favoured": "age"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 20329 b\"",
@@ -88,7 +106,10 @@ export const realPlanets: Planet[] = [
     "water": 0.69,
     "moons": 1,
     "craters": 0.21,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"HD 213885 b\"",
@@ -100,7 +121,10 @@ export const realPlanets: Planet[] = [
     "water": 0.8,
     "moons": 10,
     "craters": 0.82,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 219134 b\"",
@@ -112,7 +136,10 @@ export const realPlanets: Planet[] = [
     "water": 0.01,
     "moons": 3,
     "craters": 0.97,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HD 224018 b\"",
@@ -124,7 +151,10 @@ export const realPlanets: Planet[] = [
     "water": 0.9,
     "moons": 4,
     "craters": 0.1,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HD 260655 b\"",
@@ -136,7 +166,10 @@ export const realPlanets: Planet[] = [
     "water": 0.53,
     "moons": 1,
     "craters": 0.32,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HD 3167 b\"",
@@ -148,7 +181,10 @@ export const realPlanets: Planet[] = [
     "water": 0.12,
     "moons": 8,
     "craters": 0.03,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"HD 80653 b\"",
@@ -160,7 +196,10 @@ export const realPlanets: Planet[] = [
     "water": 0.67,
     "moons": 1,
     "craters": 0.8,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HD 93963 A b\"",
@@ -172,7 +211,10 @@ export const realPlanets: Planet[] = [
     "water": 0.74,
     "moons": 4,
     "craters": 0.96,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"HIP 29442 c\"",
@@ -184,7 +226,10 @@ export const realPlanets: Planet[] = [
     "water": 0.37,
     "moons": 5,
     "craters": 0.72,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"K2-131 b\"",
@@ -196,7 +241,10 @@ export const realPlanets: Planet[] = [
     "water": 0.01,
     "moons": 2,
     "craters": 0.85,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"K2-136 b\"",
@@ -208,7 +256,10 @@ export const realPlanets: Planet[] = [
     "water": 0.24,
     "moons": 3,
     "craters": 0.01,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"K2-141 b\"",
@@ -220,7 +271,10 @@ export const realPlanets: Planet[] = [
     "water": 0.58,
     "moons": 10,
     "craters": 0.29,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-157 b\"",
@@ -232,7 +286,10 @@ export const realPlanets: Planet[] = [
     "water": 0.68,
     "moons": 2,
     "craters": 0.05,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"K2-19 d\"",
@@ -244,7 +301,10 @@ export const realPlanets: Planet[] = [
     "water": 0.63,
     "moons": 3,
     "craters": 0.85,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"K2-199 b\"",
@@ -256,7 +316,10 @@ export const realPlanets: Planet[] = [
     "water": 0.54,
     "moons": 6,
     "craters": 0.08,
-    "favoured": "moon"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-233 b\"",
@@ -268,7 +331,10 @@ export const realPlanets: Planet[] = [
     "water": 0.74,
     "moons": 7,
     "craters": 0.72,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"K2-265 b\"",
@@ -280,7 +346,10 @@ export const realPlanets: Planet[] = [
     "water": 0.22,
     "moons": 7,
     "craters": 0.45,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-38 b\"",
@@ -292,7 +361,10 @@ export const realPlanets: Planet[] = [
     "water": 0.61,
     "moons": 9,
     "craters": 0.61,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"KOI-4777.01\"",
@@ -304,7 +376,10 @@ export const realPlanets: Planet[] = [
     "water": 0.5,
     "moons": 2,
     "craters": 0.05,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"KOI-94 b\"",
@@ -316,7 +391,10 @@ export const realPlanets: Planet[] = [
     "water": 0.83,
     "moons": 9,
     "craters": 0.38,
-    "favoured": "terrain"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"Kepler-10 b\"",
@@ -328,7 +406,10 @@ export const realPlanets: Planet[] = [
     "water": 0.1,
     "moons": 9,
     "craters": 0.73,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"Kepler-102 b\"",
@@ -340,7 +421,10 @@ export const realPlanets: Planet[] = [
     "water": 0.05,
     "moons": 6,
     "craters": 0.3,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"Kepler-107 b\"",
@@ -352,7 +436,10 @@ export const realPlanets: Planet[] = [
     "water": 0.46,
     "moons": 1,
     "craters": 0.75,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-1876 b\"",
@@ -364,7 +451,10 @@ export const realPlanets: Planet[] = [
     "water": 0.14,
     "moons": 4,
     "craters": 0.16,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"Kepler-21 b\"",
@@ -376,7 +466,10 @@ export const realPlanets: Planet[] = [
     "water": 0.88,
     "moons": 6,
     "craters": 0.24,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-323 b\"",
@@ -388,7 +481,10 @@ export const realPlanets: Planet[] = [
     "water": 0.57,
     "moons": 3,
     "craters": 0.55,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-37 b\"",
@@ -400,7 +496,10 @@ export const realPlanets: Planet[] = [
     "water": 0.44,
     "moons": 2,
     "craters": 0.07,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-409 b\"",
@@ -412,7 +511,10 @@ export const realPlanets: Planet[] = [
     "water": 0.5,
     "moons": 9,
     "craters": 0.14,
-    "favoured": "moon"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"Kepler-62 b\"",
@@ -424,7 +526,10 @@ export const realPlanets: Planet[] = [
     "water": 0.92,
     "moons": 1,
     "craters": 0.92,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-93 b\"",
@@ -436,7 +541,10 @@ export const realPlanets: Planet[] = [
     "water": 0.15,
     "moons": 5,
     "craters": 0.91,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"L 98-59 b\"",
@@ -448,7 +556,10 @@ export const realPlanets: Planet[] = [
     "water": 0.07,
     "moons": 0,
     "craters": 0.1,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"LHS 1140 b\"",
@@ -460,7 +571,10 @@ export const realPlanets: Planet[] = [
     "water": 0.34,
     "moons": 5,
     "craters": 0.79,
-    "favoured": "age"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"LHS 1903 b\"",
@@ -472,7 +586,10 @@ export const realPlanets: Planet[] = [
     "water": 0.35,
     "moons": 4,
     "craters": 0.23,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"LHS 3844 b\"",
@@ -484,7 +601,10 @@ export const realPlanets: Planet[] = [
     "water": 0.49,
     "moons": 0,
     "craters": 0.47,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"LP 890-9 b\"",
@@ -496,7 +616,10 @@ export const realPlanets: Planet[] = [
     "water": 0.72,
     "moons": 7,
     "craters": 0.26,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"LTT 3780 b\"",
@@ -508,7 +631,10 @@ export const realPlanets: Planet[] = [
     "water": 0.19,
     "moons": 5,
     "craters": 0.91,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1080 b\"",
@@ -520,7 +646,10 @@ export const realPlanets: Planet[] = [
     "water": 0.9,
     "moons": 0,
     "craters": 0.63,
-    "favoured": "age"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1203 b\"",
@@ -532,7 +661,10 @@ export const realPlanets: Planet[] = [
     "water": 0.03,
     "moons": 5,
     "craters": 0.29,
-    "favoured": "size"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1238 b\"",
@@ -544,7 +676,10 @@ export const realPlanets: Planet[] = [
     "water": 0.47,
     "moons": 5,
     "craters": 0.23,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1411 b\"",
@@ -556,7 +691,10 @@ export const realPlanets: Planet[] = [
     "water": 0.68,
     "moons": 1,
     "craters": 0.14,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1416 b\"",
@@ -568,7 +706,10 @@ export const realPlanets: Planet[] = [
     "water": 0.37,
     "moons": 3,
     "craters": 0.48,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1444 b\"",
@@ -580,7 +721,10 @@ export const realPlanets: Planet[] = [
     "water": 0.51,
     "moons": 6,
     "craters": 0.18,
-    "favoured": "moon"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1453 b\"",
@@ -592,7 +736,10 @@ export const realPlanets: Planet[] = [
     "water": 0.78,
     "moons": 5,
     "craters": 0.09,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1685 b\"",
@@ -604,7 +751,10 @@ export const realPlanets: Planet[] = [
     "water": 0.29,
     "moons": 0,
     "craters": 0.79,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1749 b\"",
@@ -616,7 +766,10 @@ export const realPlanets: Planet[] = [
     "water": 0.13,
     "moons": 0,
     "craters": 0.16,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1776 b\"",
@@ -628,7 +781,10 @@ export const realPlanets: Planet[] = [
     "water": 0.38,
     "moons": 4,
     "craters": 0.8,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1807 b\"",
@@ -640,7 +796,10 @@ export const realPlanets: Planet[] = [
     "water": 0.72,
     "moons": 4,
     "craters": 0.73,
-    "favoured": "colour"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-198 b\"",
@@ -652,7 +811,10 @@ export const realPlanets: Planet[] = [
     "water": 0.18,
     "moons": 8,
     "craters": 0.44,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2095 b\"",
@@ -664,7 +826,10 @@ export const realPlanets: Planet[] = [
     "water": 0.68,
     "moons": 3,
     "craters": 0.61,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2322 b\"",
@@ -676,7 +841,10 @@ export const realPlanets: Planet[] = [
     "water": 0.64,
     "moons": 9,
     "craters": 0.37,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2345 b\"",
@@ -688,7 +856,10 @@ export const realPlanets: Planet[] = [
     "water": 0.68,
     "moons": 0,
     "craters": 0.92,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-238 b\"",
@@ -700,7 +871,10 @@ export const realPlanets: Planet[] = [
     "water": 0.41,
     "moons": 9,
     "craters": 0.45,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2431 b\"",
@@ -712,7 +886,10 @@ export const realPlanets: Planet[] = [
     "water": 0.2,
     "moons": 8,
     "craters": 0.55,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-244 b\"",
@@ -724,7 +901,10 @@ export const realPlanets: Planet[] = [
     "water": 0.03,
     "moons": 1,
     "craters": 0.68,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-4311 b\"",
@@ -736,7 +916,10 @@ export const realPlanets: Planet[] = [
     "water": 0.53,
     "moons": 2,
     "craters": 0.25,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-500 b\"",
@@ -748,7 +931,10 @@ export const realPlanets: Planet[] = [
     "water": 0.17,
     "moons": 7,
     "craters": 0.19,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-512 b\"",
@@ -760,7 +946,10 @@ export const realPlanets: Planet[] = [
     "water": 0.52,
     "moons": 2,
     "craters": 0.29,
-    "favoured": "size"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-5720 b\"",
@@ -772,7 +961,10 @@ export const realPlanets: Planet[] = [
     "water": 0.92,
     "moons": 10,
     "craters": 0.24,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-5788 b\"",
@@ -784,7 +976,10 @@ export const realPlanets: Planet[] = [
     "water": 0.61,
     "moons": 7,
     "craters": 0.19,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-6008 b\"",
@@ -796,7 +991,10 @@ export const realPlanets: Planet[] = [
     "water": 0.75,
     "moons": 4,
     "craters": 0.89,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-836 b\"",
@@ -808,7 +1006,10 @@ export const realPlanets: Planet[] = [
     "water": 0.59,
     "moons": 2,
     "craters": 0.09,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"Wolf 327 b\"",
@@ -820,7 +1021,10 @@ export const realPlanets: Planet[] = [
     "water": 0.19,
     "moons": 4,
     "craters": 1,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"AU Mic b\"",
@@ -832,7 +1036,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"CoRoT-22 b\"",
@@ -844,7 +1051,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"CoRoT-24 b\"",
@@ -856,7 +1066,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"EPIC 229004835 b\"",
@@ -868,7 +1081,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"EPIC 249893012 b\"",
@@ -880,7 +1096,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"GJ 143 b\"",
@@ -892,7 +1111,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HD 106315 b\"",
@@ -904,7 +1126,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 110067 b\"",
@@ -916,7 +1141,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HD 110113 b\"",
@@ -928,7 +1156,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"HD 183579 b\"",
@@ -940,7 +1171,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 191939 b\"",
@@ -952,7 +1186,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"HD 207496 b\"",
@@ -964,7 +1201,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"HD 207897 b\"",
@@ -976,7 +1216,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"HD 21520 b\"",
@@ -988,7 +1231,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 22946 d\"",
@@ -1000,7 +1246,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 25463 b\"",
@@ -1012,7 +1261,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HD 28109 b\"",
@@ -1024,7 +1276,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 35843 c\"",
@@ -1036,7 +1291,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 5278 b\"",
@@ -1048,7 +1306,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 6061 b\"",
@@ -1060,7 +1321,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 63433 b\"",
@@ -1072,7 +1336,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HD 63935 b\"",
@@ -1084,7 +1351,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 73344 b\"",
@@ -1096,7 +1366,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HD 73583 b\"",
@@ -1108,7 +1381,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"HD 77946 b\"",
@@ -1120,7 +1396,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"HD 86226 c\"",
@@ -1132,7 +1411,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 88986 b\"",
@@ -1144,7 +1426,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"HD 97658 b\"",
@@ -1156,7 +1441,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"HIP 116454 b\"",
@@ -1168,7 +1456,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"HIP 8152 b\"",
@@ -1180,7 +1471,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"HIP 94235 b\"",
@@ -1192,7 +1486,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"HIP 9618 b\"",
@@ -1204,7 +1501,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"HIP 97166 b\"",
@@ -1216,7 +1516,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"HR 858 b\"",
@@ -1228,7 +1531,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"K2-100 b\"",
@@ -1240,7 +1546,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"K2-110 b\"",
@@ -1252,7 +1561,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"K2-111 b\"",
@@ -1264,7 +1576,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"K2-12 b\"",
@@ -1276,7 +1591,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"K2-180 b\"",
@@ -1288,7 +1606,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"K2-182 b\"",
@@ -1300,7 +1621,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"K2-222 b\"",
@@ -1312,7 +1636,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-24 b\"",
@@ -1324,7 +1651,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"K2-25 b\"",
@@ -1336,7 +1666,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"K2-263 b\"",
@@ -1348,7 +1681,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"K2-290 b\"",
@@ -1360,7 +1696,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"K2-292 b\"",
@@ -1372,7 +1711,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"K2-3 b\"",
@@ -1384,7 +1726,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"K2-79 b\"",
@@ -1396,7 +1741,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-98 b\"",
@@ -1408,7 +1756,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"Kepler-101 b\"",
@@ -1420,7 +1771,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-109 b\"",
@@ -1432,7 +1786,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-1655 b\"",
@@ -1444,7 +1801,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-1661 b\"",
@@ -1456,7 +1816,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-19 b\"",
@@ -1468,7 +1831,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-20 b\"",
@@ -1480,7 +1846,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"Kepler-22 b\"",
@@ -1492,7 +1861,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-278 b\"",
@@ -1504,7 +1876,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-38 b\"",
@@ -1516,7 +1891,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"Kepler-391 b\"",
@@ -1528,7 +1906,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"Kepler-4 b\"",
@@ -1540,7 +1921,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"Kepler-411 b\"",
@@ -1552,7 +1936,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-454 b\"",
@@ -1564,7 +1951,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"Kepler-538 b\"",
@@ -1576,7 +1966,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-553 b\"",
@@ -1588,7 +1981,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"Kepler-68 b\"",
@@ -1600,7 +1996,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"LP 714-47 b\"",
@@ -1612,7 +2011,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"LTT 9779 b\"",
@@ -1624,7 +2026,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"NGTS-14 A b\"",
@@ -1636,7 +2041,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"NGTS-34 b\"",
@@ -1648,7 +2056,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"Ross 176 b\"",
@@ -1660,7 +2071,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1052 b\"",
@@ -1672,7 +2086,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1062 b\"",
@@ -1684,7 +2101,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-1064 b\"",
@@ -1696,7 +2116,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1075 b\"",
@@ -1708,7 +2131,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1117 b\"",
@@ -1720,7 +2146,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1130 b\"",
@@ -1732,7 +2161,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1221 b\"",
@@ -1744,7 +2176,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1246 c\"",
@@ -1756,7 +2191,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1249 b\"",
@@ -1768,7 +2206,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-125 b\"",
@@ -1780,7 +2221,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1260 b\"",
@@ -1792,7 +2236,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1266 b\"",
@@ -1804,7 +2251,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1269 b\"",
@@ -1816,7 +2266,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1272 b\"",
@@ -1828,7 +2281,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1279 b\"",
@@ -1840,7 +2296,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1288 b\"",
@@ -1852,7 +2311,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-132 b\"",
@@ -1864,7 +2326,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1347 b\"",
@@ -1876,7 +2341,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1410.01\"",
@@ -1888,7 +2356,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1439 b\"",
@@ -1900,7 +2371,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1443 b\"",
@@ -1912,7 +2386,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1451 b\"",
@@ -1924,7 +2401,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1470 b\"",
@@ -1936,7 +2416,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-1472 b\"",
@@ -1948,7 +2431,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1648 b\"",
@@ -1960,7 +2446,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1669 c\"",
@@ -1972,7 +2461,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1670 b\"",
@@ -1984,7 +2476,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1694 b\"",
@@ -1996,7 +2491,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-1728 b\"",
@@ -2008,7 +2506,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1736 b\"",
@@ -2020,7 +2521,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1742 b\"",
@@ -2032,7 +2536,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1751 b\"",
@@ -2044,7 +2551,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1753 b\"",
@@ -2056,7 +2566,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1759 b\"",
@@ -2068,7 +2581,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1794 b\"",
@@ -2080,7 +2596,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1801 b\"",
@@ -2092,7 +2611,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1803 b\"",
@@ -2104,7 +2626,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1824 b\"",
@@ -2116,7 +2641,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2000 b\"",
@@ -2128,7 +2656,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2015 b\"",
@@ -2140,7 +2671,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2019 b\"",
@@ -2152,7 +2686,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-2076 b\"",
@@ -2164,7 +2701,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2088 b\"",
@@ -2176,7 +2716,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2093 c\"",
@@ -2188,7 +2731,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2128 b\"",
@@ -2200,7 +2746,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-2134 b\"",
@@ -2212,7 +2761,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2136 b\"",
@@ -2224,7 +2776,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2141 b\"",
@@ -2236,7 +2791,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2196 b\"",
@@ -2248,7 +2806,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-220 b\"",
@@ -2260,7 +2821,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2443 b\"",
@@ -2272,7 +2836,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2458 b\"",
@@ -2284,7 +2851,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-283 b\"",
@@ -2296,7 +2866,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-3261 b\"",
@@ -2308,7 +2881,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-329 b\"",
@@ -2320,7 +2896,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-332 b\"",
@@ -2332,7 +2911,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-333 b\"",
@@ -2344,7 +2926,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-3493 b\"",
@@ -2356,7 +2941,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-3568 b\"",
@@ -2368,7 +2956,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-3785 b\"",
@@ -2380,7 +2971,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-4010 b\"",
@@ -2392,7 +2986,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-421 b\"",
@@ -2404,7 +3001,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-4438 b\"",
@@ -2416,7 +3016,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-4495 b\"",
@@ -2428,7 +3031,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-451 b\"",
@@ -2440,7 +3046,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-480 b\"",
@@ -2452,7 +3061,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-5076 b\"",
@@ -2464,7 +3076,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-521 b\"",
@@ -2476,7 +3091,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-532 b\"",
@@ -2488,7 +3106,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-544 b\"",
@@ -2500,7 +3121,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-5624 b\"",
@@ -2512,7 +3136,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-5678 b\"",
@@ -2524,7 +3151,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-5734 b\"",
@@ -2536,7 +3166,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-5789 c\"",
@@ -2548,7 +3181,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-5795 b\"",
@@ -2560,7 +3196,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-5800 b\"",
@@ -2572,7 +3211,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-5817 b\"",
@@ -2584,7 +3226,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-6041 b\"",
@@ -2596,7 +3241,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-6054.01\"",
@@ -2608,7 +3256,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-6651 b\"",
@@ -2620,7 +3271,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-669 b\"",
@@ -2632,7 +3286,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-733 b\"",
@@ -2644,7 +3301,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-756 b\"",
@@ -2656,7 +3316,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-757 b\"",
@@ -2668,7 +3331,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-776 b\"",
@@ -2680,7 +3346,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-815 b\"",
@@ -2692,7 +3361,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-824 b\"",
@@ -2704,7 +3376,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-908 b\"",
@@ -2716,7 +3391,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-912 b\"",
@@ -2728,7 +3406,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-969 b\"",
@@ -2740,7 +3421,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"Wolf 503 b\"",
@@ -2752,7 +3436,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"2MASS J0249-0557 c\"",
@@ -2764,7 +3451,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"2MASS J12073346-3932539 b\"",
@@ -2776,7 +3466,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"BD+60 1417 b\"",
@@ -2788,7 +3481,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"BD-14 3065 b\"",
@@ -2800,7 +3496,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"CFHTWIR-Oph 98 b\"",
@@ -2812,7 +3511,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"COCONUTS-2 b\"",
@@ -2824,7 +3526,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"CT Cha b\"",
@@ -2836,7 +3541,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"CoRoT-10 b\"",
@@ -2848,7 +3556,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"CoRoT-11 b\"",
@@ -2860,7 +3571,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"CoRoT-12 b\"",
@@ -2872,7 +3586,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"CoRoT-13 b\"",
@@ -2884,7 +3601,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"CoRoT-14 b\"",
@@ -2896,7 +3616,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"CoRoT-17 b\"",
@@ -2908,7 +3631,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"CoRoT-19 b\"",
@@ -2920,7 +3646,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"CoRoT-23 b\"",
@@ -2932,7 +3661,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"CoRoT-25 b\"",
@@ -2944,7 +3676,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"CoRoT-26 b\"",
@@ -2956,7 +3691,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"CoRoT-27 b\"",
@@ -2968,7 +3706,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"CoRoT-35 b\"",
@@ -2980,7 +3721,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"CoRoT-36 b\"",
@@ -2992,7 +3736,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"CoRoT-4 b\"",
@@ -3004,7 +3751,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"CoRoT-5 b\"",
@@ -3016,7 +3766,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"CoRoT-9 b\"",
@@ -3028,7 +3781,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"EPIC 246851721 b\"",
@@ -3040,7 +3796,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"GPX-1 b\"",
@@ -3052,7 +3811,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"GQ Lup b\"",
@@ -3064,7 +3826,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"GU Psc b\"",
@@ -3076,7 +3841,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"HAT-P-12 b\"",
@@ -3088,7 +3856,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"HAT-P-18 b\"",
@@ -3100,7 +3871,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HAT-P-19 b\"",
@@ -3112,7 +3886,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"HAT-P-20 b\"",
@@ -3124,7 +3901,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HAT-P-23 b\"",
@@ -3136,7 +3916,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"HAT-P-28 b\"",
@@ -3148,7 +3931,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"HAT-P-42 b\"",
@@ -3160,7 +3946,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"HAT-P-44 b\"",
@@ -3172,7 +3961,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"HAT-P-45 b\"",
@@ -3184,7 +3976,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"HAT-P-46 b\"",
@@ -3196,7 +3991,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"HAT-P-47 b\"",
@@ -3208,7 +4006,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"HAT-P-50 b\"",
@@ -3220,7 +4021,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"HAT-P-51 b\"",
@@ -3232,7 +4036,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HAT-P-52 b\"",
@@ -3244,7 +4051,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"HAT-P-53 b\"",
@@ -3256,7 +4066,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"HAT-P-54 b\"",
@@ -3268,7 +4081,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HAT-P-55 b\"",
@@ -3280,7 +4096,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HAT-P-58 b\"",
@@ -3292,7 +4111,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"HAT-P-59 b\"",
@@ -3304,7 +4126,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"HAT-P-60 b\"",
@@ -3316,7 +4141,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"HAT-P-61 b\"",
@@ -3328,7 +4156,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"HAT-P-62 b\"",
@@ -3340,7 +4171,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"HAT-P-63 b\"",
@@ -3352,7 +4186,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"HAT-P-64 b\"",
@@ -3364,7 +4201,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"HAT-P-65 b\"",
@@ -3376,7 +4216,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"HAT-P-66 b\"",
@@ -3388,7 +4231,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"HAT-P-68 b\"",
@@ -3400,7 +4246,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"HAT-P-69 b\"",
@@ -3412,7 +4261,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"HAT-P-70 b\"",
@@ -3424,7 +4276,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-10 b\"",
@@ -3436,7 +4291,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-13 b\"",
@@ -3448,7 +4306,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-14 b\"",
@@ -3460,7 +4321,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-15 b\"",
@@ -3472,7 +4336,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"HATS-16 b\"",
@@ -3484,7 +4351,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-17 b\"",
@@ -3496,7 +4366,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-2 b\"",
@@ -3508,7 +4381,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-23 b\"",
@@ -3520,7 +4396,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-24 b\"",
@@ -3532,7 +4411,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-25 b\"",
@@ -3544,7 +4426,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-26 b\"",
@@ -3556,7 +4441,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-27 b\"",
@@ -3568,7 +4456,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-28 b\"",
@@ -3580,7 +4471,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-29 b\"",
@@ -3592,7 +4486,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-3 b\"",
@@ -3604,7 +4501,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"HATS-30 b\"",
@@ -3616,7 +4516,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"HATS-31 b\"",
@@ -3628,7 +4531,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-32 b\"",
@@ -3640,7 +4546,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-33 b\"",
@@ -3652,7 +4561,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-34 b\"",
@@ -3664,7 +4576,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-35 b\"",
@@ -3676,7 +4591,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-37 A b\"",
@@ -3688,7 +4606,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-38 b\"",
@@ -3700,7 +4621,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-39 b\"",
@@ -3712,7 +4636,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-4 b\"",
@@ -3724,7 +4651,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-40 b\"",
@@ -3736,7 +4666,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-41 b\"",
@@ -3748,7 +4681,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-42 b\"",
@@ -3760,7 +4696,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-43 b\"",
@@ -3772,7 +4711,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-44 b\"",
@@ -3784,7 +4726,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-45 b\"",
@@ -3796,7 +4741,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-46 b\"",
@@ -3808,7 +4756,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-47 b\"",
@@ -3820,7 +4771,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-48 A b\"",
@@ -3832,7 +4786,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-49 b\"",
@@ -3844,7 +4801,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-5 b\"",
@@ -3856,7 +4816,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-51 b\"",
@@ -3868,7 +4831,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-52 b\"",
@@ -3880,7 +4846,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-53 b\"",
@@ -3892,7 +4861,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"HATS-54 b\"",
@@ -3904,7 +4876,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-55 b\"",
@@ -3916,7 +4891,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-56 b\"",
@@ -3928,7 +4906,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"HATS-57 b\"",
@@ -3940,7 +4921,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-58 A b\"",
@@ -3952,7 +4936,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-59 b\"",
@@ -3964,7 +4951,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-6 b\"",
@@ -3976,7 +4966,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-60 b\"",
@@ -3988,7 +4981,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"HATS-61 b\"",
@@ -4000,7 +4996,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-62 b\"",
@@ -4012,7 +5011,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-63 b\"",
@@ -4024,7 +5026,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"HATS-64 b\"",
@@ -4036,7 +5041,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-65 b\"",
@@ -4048,7 +5056,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-66 b\"",
@@ -4060,7 +5071,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"HATS-67 b\"",
@@ -4072,7 +5086,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"HATS-68 b\"",
@@ -4084,7 +5101,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-69 b\"",
@@ -4096,7 +5116,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-7 b\"",
@@ -4108,7 +5131,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-70 b\"",
@@ -4120,7 +5146,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-71 b\"",
@@ -4132,7 +5161,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-72 b\"",
@@ -4144,7 +5176,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-74 A b\"",
@@ -4156,7 +5191,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-75 b\"",
@@ -4168,7 +5206,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-76 b\"",
@@ -4180,7 +5221,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HATS-77 b\"",
@@ -4192,7 +5236,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"HATS-8 b\"",
@@ -4204,7 +5251,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"HD 118203 b\"",
@@ -4216,7 +5266,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"HD 1397 b\"",
@@ -4228,7 +5281,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"HD 17156 b\"",
@@ -4240,7 +5296,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"HD 202772 A b\"",
@@ -4252,7 +5311,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"HD 203030 b\"",
@@ -4264,7 +5326,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 2685 b\"",
@@ -4276,7 +5341,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"HD 332231 b\"",
@@ -4288,7 +5356,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"HD 89345 b\"",
@@ -4300,7 +5371,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"HIP 65 A b\"",
@@ -4312,7 +5386,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"HIP 65426 b\"",
@@ -4324,7 +5401,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"HR 8799 e\"",
@@ -4336,7 +5416,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"K2-114 b\"",
@@ -4348,7 +5431,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-115 b\"",
@@ -4360,7 +5446,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"K2-140 b\"",
@@ -4372,7 +5461,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"K2-232 b\"",
@@ -4384,7 +5476,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"K2-237 b\"",
@@ -4396,7 +5491,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"K2-238 b\"",
@@ -4408,7 +5506,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"K2-260 b\"",
@@ -4420,7 +5521,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-261 b\"",
@@ -4432,7 +5536,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"K2-280 b\"",
@@ -4444,7 +5551,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-287 b\"",
@@ -4456,7 +5566,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"K2-29 b\"",
@@ -4468,7 +5581,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"K2-30 b\"",
@@ -4480,7 +5596,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"K2-329 b\"",
@@ -4492,7 +5611,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"K2-419 A b\"",
@@ -4504,7 +5626,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"K2-60 b\"",
@@ -4516,7 +5641,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"K2-97 b\"",
@@ -4528,7 +5656,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"K2-99 b\"",
@@ -4540,7 +5671,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"KELT-10 b\"",
@@ -4552,7 +5686,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"KELT-12 b\"",
@@ -4564,7 +5701,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"KELT-14 b\"",
@@ -4576,7 +5716,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"KELT-16 b\"",
@@ -4588,7 +5731,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"KELT-17 b\"",
@@ -4600,7 +5746,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"KELT-18 b\"",
@@ -4612,7 +5761,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"KELT-20 b\"",
@@ -4624,7 +5776,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"KELT-21 b\"",
@@ -4636,7 +5791,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"KELT-23 A b\"",
@@ -4648,7 +5806,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"KELT-24 b\"",
@@ -4660,7 +5821,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"KELT-4 A b\"",
@@ -4672,7 +5836,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"KELT-9 b\"",
@@ -4684,7 +5851,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"KOI-1257 b\"",
@@ -4696,7 +5866,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"KOI-3680 b\"",
@@ -4708,7 +5881,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-111 c\"",
@@ -4720,7 +5896,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"Kepler-117 b\"",
@@ -4732,7 +5911,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-1514 b\"",
@@ -4744,7 +5926,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-1654 b\"",
@@ -4756,7 +5941,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-167 e\"",
@@ -4768,7 +5956,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-1704 b\"",
@@ -4780,7 +5971,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"Kepler-39 b\"",
@@ -4792,7 +5986,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-40 b\"",
@@ -4804,7 +6001,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"Kepler-41 b\"",
@@ -4816,7 +6016,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"Kepler-423 b\"",
@@ -4828,7 +6031,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-425 b\"",
@@ -4840,7 +6046,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-426 b\"",
@@ -4852,7 +6061,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-427 b\"",
@@ -4864,7 +6076,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-428 b\"",
@@ -4876,7 +6091,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-433 b\"",
@@ -4888,7 +6106,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"Kepler-434 b\"",
@@ -4900,7 +6121,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-435 b\"",
@@ -4912,7 +6136,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-44 b\"",
@@ -4924,7 +6151,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-45 b\"",
@@ -4936,7 +6166,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-46 b\"",
@@ -4948,7 +6181,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"Kepler-51 b\"",
@@ -4960,7 +6196,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"Kepler-74 b\"",
@@ -4972,7 +6211,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"Kepler-75 b\"",
@@ -4984,7 +6226,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"Kepler-77 b\"",
@@ -4996,7 +6241,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"Kepler-849 b\"",
@@ -5008,7 +6256,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"Kepler-87 b\"",
@@ -5020,7 +6271,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"NGTS-10 b\"",
@@ -5032,7 +6286,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"NGTS-11 b\"",
@@ -5044,7 +6301,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"NGTS-12 b\"",
@@ -5056,7 +6316,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"NGTS-13 b\"",
@@ -5068,7 +6331,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"NGTS-15 b\"",
@@ -5080,7 +6346,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"NGTS-16 b\"",
@@ -5092,7 +6361,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"NGTS-17 b\"",
@@ -5104,7 +6376,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"NGTS-18 b\"",
@@ -5116,7 +6391,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"NGTS-2 b\"",
@@ -5128,7 +6406,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"NGTS-20 b\"",
@@ -5140,7 +6421,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"NGTS-21 b\"",
@@ -5152,7 +6436,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"NGTS-23 b\"",
@@ -5164,7 +6451,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"NGTS-24 b\"",
@@ -5176,7 +6466,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"NGTS-25 b\"",
@@ -5188,7 +6481,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"NGTS-26 b\"",
@@ -5200,7 +6496,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"NGTS-27 b\"",
@@ -5212,7 +6511,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"NGTS-30 b\"",
@@ -5224,7 +6526,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"NGTS-31 b\"",
@@ -5236,7 +6541,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"NGTS-32 b\"",
@@ -5248,7 +6556,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"NGTS-33 b\"",
@@ -5260,7 +6571,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"NGTS-35 b\"",
@@ -5272,7 +6586,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"NGTS-38 b\"",
@@ -5284,7 +6601,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"NGTS-39 b\"",
@@ -5296,7 +6616,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"NGTS-6 b\"",
@@ -5308,7 +6631,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"NGTS-8 b\"",
@@ -5320,7 +6646,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"NGTS-9 b\"",
@@ -5332,7 +6661,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"OGLE-TR-132 b\"",
@@ -5344,7 +6676,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"PDS 70 b\"",
@@ -5356,7 +6691,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"PH1 b\"",
@@ -5368,7 +6706,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"PH2 b\"",
@@ -5380,7 +6721,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"Qatar-10 b\"",
@@ -5392,7 +6736,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"Qatar-2 b\"",
@@ -5404,7 +6751,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"Qatar-3 b\"",
@@ -5416,7 +6766,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"Qatar-4 b\"",
@@ -5428,7 +6781,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"Qatar-5 b\"",
@@ -5440,7 +6796,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"Qatar-6 b\"",
@@ -5452,7 +6811,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"Qatar-7 b\"",
@@ -5464,7 +6826,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"Qatar-8 b\"",
@@ -5476,7 +6841,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"Qatar-9 b\"",
@@ -5488,7 +6856,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"TIC 139270665 b\"",
@@ -5500,7 +6871,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TIC 147027702 b\"",
@@ -5512,7 +6886,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"TIC 183374187 b\"",
@@ -5524,7 +6901,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TIC 237913194 b\"",
@@ -5536,7 +6916,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"TIC 245076932 b\"",
@@ -5548,7 +6931,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"TIC 257060897 b\"",
@@ -5560,7 +6946,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TIC 393818343 b\"",
@@ -5572,7 +6961,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TIC 46432937 b\"",
@@ -5584,7 +6976,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TIC 4672985 b\"",
@@ -5596,7 +6991,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TIC 52059926 b\"",
@@ -5608,7 +7006,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TIC 87422071 b\"",
@@ -5620,7 +7021,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TIC 9344899 b\"",
@@ -5632,7 +7036,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1107 b\"",
@@ -5644,7 +7051,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1135 b\"",
@@ -5656,7 +7066,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1173 b\"",
@@ -5668,7 +7081,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1194 b\"",
@@ -5680,7 +7096,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1199 b\"",
@@ -5692,7 +7111,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1248 b\"",
@@ -5704,7 +7126,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1268 b\"",
@@ -5716,7 +7141,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1273 b\"",
@@ -5728,7 +7156,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1294 b\"",
@@ -5740,7 +7171,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1295 b\"",
@@ -5752,7 +7186,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1296 b\"",
@@ -5764,7 +7201,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1298 b\"",
@@ -5776,7 +7216,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1333 b\"",
@@ -5788,7 +7231,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1386 b\"",
@@ -5800,7 +7246,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1420 b\"",
@@ -5812,7 +7261,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1431 b\"",
@@ -5824,7 +7276,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-150.01\"",
@@ -5836,7 +7291,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-157 b\"",
@@ -5848,7 +7306,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-159 b\"",
@@ -5860,7 +7321,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-1601 b\"",
@@ -5872,7 +7336,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-163 b\"",
@@ -5884,7 +7351,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-169 b\"",
@@ -5896,7 +7366,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-172 b\"",
@@ -5908,7 +7381,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1775 b\"",
@@ -5920,7 +7396,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-1789 b\"",
@@ -5932,7 +7411,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-181 b\"",
@@ -5944,7 +7426,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-1811 b\"",
@@ -5956,7 +7441,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1820 b\"",
@@ -5968,7 +7456,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1823 b\"",
@@ -5980,7 +7471,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1836 b\"",
@@ -5992,7 +7486,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1842 b\"",
@@ -6004,7 +7501,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-1855 b\"",
@@ -6016,7 +7516,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-1898 b\"",
@@ -6028,7 +7531,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-1899 b\"",
@@ -6040,7 +7546,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-1937 A b\"",
@@ -6052,7 +7561,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-1994 b\"",
@@ -6064,7 +7576,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2010 b\"",
@@ -6076,7 +7591,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2025 b\"",
@@ -6088,7 +7606,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2031 A b\"",
@@ -6100,7 +7621,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2040 b\"",
@@ -6112,7 +7636,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2049 b\"",
@@ -6124,7 +7651,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "water",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2107 b\"",
@@ -6136,7 +7666,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2109 b\"",
@@ -6148,7 +7681,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-2147 b\"",
@@ -6160,7 +7696,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2152 A b\"",
@@ -6172,7 +7711,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2154 b\"",
@@ -6184,7 +7726,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2158 b\"",
@@ -6196,7 +7741,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2169 A b\"",
@@ -6208,7 +7756,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-2180 b\"",
@@ -6220,7 +7771,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2193 A b\"",
@@ -6232,7 +7786,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2207 b\"",
@@ -6244,7 +7801,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2236 b\"",
@@ -6256,7 +7816,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-2295 b\"",
@@ -6268,7 +7831,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2328 b\"",
@@ -6280,7 +7846,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2338 b\"",
@@ -6292,7 +7861,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2346 b\"",
@@ -6304,7 +7876,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2364 b\"",
@@ -6316,7 +7891,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2368 b\"",
@@ -6328,7 +7906,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2373 b\"",
@@ -6340,7 +7921,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2374 b\"",
@@ -6352,7 +7936,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2379 b\"",
@@ -6364,7 +7951,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2382 b\"",
@@ -6376,7 +7966,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2384 b\"",
@@ -6388,7 +7981,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2416 b\"",
@@ -6400,7 +7996,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2420 b\"",
@@ -6412,7 +8011,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2421 b\"",
@@ -6424,7 +8026,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2447 b\"",
@@ -6436,7 +8041,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2449 b\"",
@@ -6448,7 +8056,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-2485 b\"",
@@ -6460,7 +8071,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2497 b\"",
@@ -6472,7 +8086,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2498 b\"",
@@ -6484,7 +8101,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2524 b\"",
@@ -6496,7 +8116,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 7,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2529 b\"",
@@ -6508,7 +8131,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2537 b\"",
@@ -6520,7 +8146,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2567 b\"",
@@ -6532,7 +8161,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 6,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2570 b\"",
@@ -6544,7 +8176,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2578 b\"",
@@ -6556,7 +8191,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2580 b\"",
@@ -6568,7 +8206,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2583 A b\"",
@@ -6580,7 +8221,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 0,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2587 A b\"",
@@ -6592,7 +8236,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2589 b\"",
@@ -6604,7 +8251,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 3,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2641 b\"",
@@ -6616,7 +8266,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "terrain",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2714 b\"",
@@ -6628,7 +8281,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "water"
+    "favoured": [
+      "water",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2796 b\"",
@@ -6640,7 +8296,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "size",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2803 A b\"",
@@ -6652,7 +8311,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 1,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   },
   {
     "name": "\"TOI-2818 b\"",
@@ -6664,7 +8326,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 10,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2842 b\"",
@@ -6676,7 +8341,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-2876 b\"",
@@ -6688,7 +8356,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "terrain",
+      "colour"
+    ]
   },
   {
     "name": "\"TOI-2886 b\"",
@@ -6700,7 +8371,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 9,
     "craters": 0,
-    "favoured": "terrain"
+    "favoured": [
+      "terrain",
+      "water"
+    ]
   },
   {
     "name": "\"TOI-2977 b\"",
@@ -6712,7 +8386,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 5,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "terrain"
+    ]
   },
   {
     "name": "\"TOI-2981 b\"",
@@ -6724,7 +8401,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 8,
     "craters": 0,
-    "favoured": "colour"
+    "favoured": [
+      "colour",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2986 b\"",
@@ -6736,7 +8416,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "age"
+    "favoured": [
+      "age",
+      "moon"
+    ]
   },
   {
     "name": "\"TOI-2992 b\"",
@@ -6748,7 +8431,10 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 4,
     "craters": 0,
-    "favoured": "size"
+    "favoured": [
+      "moon",
+      "age"
+    ]
   },
   {
     "name": "\"TOI-3023 b\"",
@@ -6760,6 +8446,9 @@ export const realPlanets: Planet[] = [
     "water": 0,
     "moons": 2,
     "craters": 0,
-    "favoured": "moon"
+    "favoured": [
+      "moon",
+      "size"
+    ]
   }
 ];

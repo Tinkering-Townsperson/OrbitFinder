@@ -164,7 +164,7 @@ function randomizeFavoured(rand: () => number): FavouredTrait[] {
         favoured = [TRAITS[Math.floor(rand() * TRAITS.length)], TRAITS[Math.floor(rand() * TRAITS.length)]];
     }
 
-    return favoured
+    return favoured;
 }
 
 function classifyType(radiusEarth: number): PlanetType {

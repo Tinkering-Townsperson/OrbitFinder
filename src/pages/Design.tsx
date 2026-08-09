@@ -17,7 +17,7 @@ export function Design() {
     name: 'Kepler-452b',
     age: 1500,
     type: 'terrestrial',
-    favoured: 'water', // Default favoured trait
+    favoured: ['water'], // Default favoured trait
   });
 
   const handleContinue = () => {
@@ -81,20 +81,47 @@ export function Design() {
         {/* Favored Trait Select */}
         <div>
           <div className="flex justify-between items-center mb-1.5 text-sm font-bold text-white/90 font-fraunces">
-            <span>Most Important Factor</span>
+            <span>Important Factors (Max 2)</span>
           </div>
-          <select
-            value={config.favoured}
-            onChange={(e) => setConfig({ ...config, favoured: e.target.value as any })}
-            className="w-full bg-black/40 border border-[#f5b1eb]/30 rounded-md px-3 py-2 text-sm text-[#f5b1eb] focus:outline-none focus:border-[#f5b1eb] appearance-none shadow-[0_0_10px_rgba(245,177,235,0.1)]"
-          >
-            <option value="water">Wet / Dry Oceans</option>
-            <option value="terrain">Rugged / Smooth Terrain</option>
-            <option value="colour">Complementary Colors</option>
-            <option value="size">Similar Size</option>
-            <option value="age">Similar Age</option>
-            <option value="moon">Similar Moons</option>
-          </select>
+          <div className="grid grid-cols-2 gap-2">
+            {[
+              { id: 'water', label: 'Water' },
+              { id: 'terrain', label: 'Terrain' },
+              { id: 'colour', label: 'Color' },
+              { id: 'size', label: 'Size' },
+              { id: 'age', label: 'Age' },
+              { id: 'moon', label: 'Moons' }
+            ].map(trait => {
+              const isSelected = config.favoured.includes(trait.id as any);
+              return (
+                <button
+                  key={trait.id}
+                  onClick={() => {
+                    let newFavs = [...config.favoured];
+                    if (isSelected) {
+                      newFavs = newFavs.filter(f => f !== trait.id);
+                    } else {
+                      if (newFavs.length < 2) {
+                        newFavs.push(trait.id as any);
+                      } else {
+                        // Push out the oldest selection
+                        newFavs = [newFavs[1], trait.id as any];
+                      }
+                    }
+                    // Prevent empty selection? No, let them have 0 important factors if they want!
+                    setConfig({ ...config, favoured: newFavs });
+                  }}
+                  className={`py-1.5 px-2 text-[11px] uppercase tracking-wider rounded-md border font-bold transition-all ${
+                    isSelected 
+                      ? 'bg-[#f5b1eb]/20 border-[#f5b1eb] text-[#f5b1eb] shadow-[0_0_10px_rgba(245,177,235,0.15)]'
+                      : 'bg-black/40 border-white/10 text-white/40 hover:bg-white/5 hover:text-white/70'
+                  }`}
+                >
+                  {trait.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
         {/* Planet Size */}
