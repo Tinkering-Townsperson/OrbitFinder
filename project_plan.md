@@ -1,5 +1,6 @@
 # Orbit Finder
 
+Prompt: _Even wandering planets have a destination._
 
 Theme: space, kinda brutalist? Not tryna do like minimailistic like a vibe-coded site
 Layout: 
