@@ -14,6 +14,8 @@ Layout:
       -  Decision options?
 -  Match screen -> other wise continue
 -  idk what happens after?
+-  Explore page
+   -  List of user-created planets only (populate on scroll)
 
 Traits:
 (bold = implementing immediately as proof of concept)
@@ -27,8 +29,11 @@ Traits:
 - age
 
 
+
+
 Possible "extension" features (optional):
 
 - [ ] Multiple end cutscenes
 - [ ] Faces on the planets
 - [ ] Upload user planets
+- [ ] 
