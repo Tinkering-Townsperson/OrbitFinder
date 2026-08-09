@@ -7,7 +7,7 @@ import type { Planet } from "../planet";
 
 export const realPlanets: Planet[] = [
   {
-    "name": "\"EPIC 201595106 b\"",
+    "name": "EPIC 201595106 b",
     "age": 6000,
     "size": 0.14,
     "terrain": 0.18,
@@ -22,7 +22,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"GJ 3929 b\"",
+    "name": "GJ 3929 b",
     "age": 7100,
     "size": 0.1,
     "terrain": 0.37,
@@ -37,7 +37,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"GJ 806 b\"",
+    "name": "GJ 806 b",
     "age": 5000,
     "size": 0.12,
     "terrain": 0.01,
@@ -52,7 +52,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"GJ 9827 b\"",
+    "name": "GJ 9827 b",
     "age": 5465,
     "size": 0.13,
     "terrain": 0.49,
@@ -67,7 +67,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 136352 b\"",
+    "name": "HD 136352 b",
     "age": 12300,
     "size": 0.15,
     "terrain": 0.61,
@@ -82,7 +82,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 137496 b\"",
+    "name": "HD 137496 b",
     "age": 8300,
     "size": 0.12,
     "terrain": 0.41,
@@ -97,7 +97,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 20329 b\"",
+    "name": "HD 20329 b",
     "age": 11000,
     "size": 0.15,
     "terrain": 0.22,
@@ -112,7 +112,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 213885 b\"",
+    "name": "HD 213885 b",
     "age": 3800,
     "size": 0.16,
     "terrain": 0.58,
@@ -127,7 +127,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 219134 b\"",
+    "name": "HD 219134 b",
     "age": 11000,
     "size": 0.14,
     "terrain": 0.92,
@@ -142,7 +142,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 224018 b\"",
+    "name": "HD 224018 b",
     "age": 7000,
     "size": 0.08,
     "terrain": 0.93,
@@ -157,7 +157,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 260655 b\"",
+    "name": "HD 260655 b",
     "age": 5000,
     "size": 0.11,
     "terrain": 0.18,
@@ -172,7 +172,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 3167 b\"",
+    "name": "HD 3167 b",
     "age": 8400,
     "size": 0.14,
     "terrain": 0.88,
@@ -187,7 +187,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 80653 b\"",
+    "name": "HD 80653 b",
     "age": 3300,
     "size": 0.14,
     "terrain": 0.37,
@@ -202,7 +202,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 93963 A b\"",
+    "name": "HD 93963 A b",
     "age": 1300,
     "size": 0.13,
     "terrain": 0.01,
@@ -217,7 +217,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 29442 c\"",
+    "name": "HIP 29442 c",
     "age": 11200,
     "size": 0.14,
     "terrain": 0.49,
@@ -232,7 +232,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-131 b\"",
+    "name": "K2-131 b",
     "age": 5300,
     "size": 0.15,
     "terrain": 0.96,
@@ -247,7 +247,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-136 b\"",
+    "name": "K2-136 b",
     "age": 650,
     "size": 0.09,
     "terrain": 0.07,
@@ -262,7 +262,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-141 b\"",
+    "name": "K2-141 b",
     "age": 6300,
     "size": 0.13,
     "terrain": 0.01,
@@ -277,7 +277,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-157 b\"",
+    "name": "K2-157 b",
     "age": 8800,
     "size": 0.08,
     "terrain": 0.35,
@@ -292,7 +292,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-19 d\"",
+    "name": "K2-19 d",
     "age": 1700,
     "size": 0.09,
     "terrain": 0.77,
@@ -307,7 +307,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-199 b\"",
+    "name": "K2-199 b",
     "age": 5040,
     "size": 0.15,
     "terrain": 0.82,
@@ -322,7 +322,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-233 b\"",
+    "name": "K2-233 b",
     "age": 360,
     "size": 0.12,
     "terrain": 0.48,
@@ -337,7 +337,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-265 b\"",
+    "name": "K2-265 b",
     "age": 7800,
     "size": 0.15,
     "terrain": 0.79,
@@ -352,7 +352,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-38 b\"",
+    "name": "K2-38 b",
     "age": 6700,
     "size": 0.14,
     "terrain": 0.43,
@@ -367,7 +367,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KOI-4777.01\"",
+    "name": "KOI-4777.01",
     "age": 4000,
     "size": 0.05,
     "terrain": 0.31,
@@ -382,7 +382,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KOI-94 b\"",
+    "name": "KOI-94 b",
     "age": 3160,
     "size": 0.15,
     "terrain": 0.47,
@@ -397,7 +397,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-10 b\"",
+    "name": "Kepler-10 b",
     "age": 10600,
     "size": 0.13,
     "terrain": 0.96,
@@ -412,7 +412,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-102 b\"",
+    "name": "Kepler-102 b",
     "age": 1100,
     "size": 0.05,
     "terrain": 0.76,
@@ -427,7 +427,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-107 b\"",
+    "name": "Kepler-107 b",
     "age": 4290,
     "size": 0.14,
     "terrain": 0.65,
@@ -442,7 +442,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-1876 b\"",
+    "name": "Kepler-1876 b",
     "age": 4400,
     "size": 0.08,
     "terrain": 0.08,
@@ -457,7 +457,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-21 b\"",
+    "name": "Kepler-21 b",
     "age": 2840,
     "size": 0.15,
     "terrain": 0.15,
@@ -472,7 +472,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-323 b\"",
+    "name": "Kepler-323 b",
     "age": 5400,
     "size": 0.12,
     "terrain": 0.24,
@@ -487,7 +487,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-37 b\"",
+    "name": "Kepler-37 b",
     "age": 7600,
     "size": 0.05,
     "terrain": 0.66,
@@ -502,7 +502,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-409 b\"",
+    "name": "Kepler-409 b",
     "age": 5800,
     "size": 0.11,
     "terrain": 0.75,
@@ -517,7 +517,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-62 b\"",
+    "name": "Kepler-62 b",
     "age": 7000,
     "size": 0.12,
     "terrain": 0.68,
@@ -532,7 +532,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-93 b\"",
+    "name": "Kepler-93 b",
     "age": 6600,
     "size": 0.13,
     "terrain": 0.41,
@@ -547,7 +547,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"L 98-59 b\"",
+    "name": "L 98-59 b",
     "age": 4940,
     "size": 0.07,
     "terrain": 0.83,
@@ -562,7 +562,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"LHS 1140 b\"",
+    "name": "LHS 1140 b",
     "age": 5000,
     "size": 0.15,
     "terrain": 0.12,
@@ -577,7 +577,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"LHS 1903 b\"",
+    "name": "LHS 1903 b",
     "age": 7080,
     "size": 0.12,
     "terrain": 0.44,
@@ -592,7 +592,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"LHS 3844 b\"",
+    "name": "LHS 3844 b",
     "age": 7800,
     "size": 0.11,
     "terrain": 0.75,
@@ -607,7 +607,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"LP 890-9 b\"",
+    "name": "LP 890-9 b",
     "age": 7200,
     "size": 0.12,
     "terrain": 0.79,
@@ -622,7 +622,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"LTT 3780 b\"",
+    "name": "LTT 3780 b",
     "age": 3100,
     "size": 0.12,
     "terrain": 0.56,
@@ -637,7 +637,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1080 b\"",
+    "name": "TOI-1080 b",
     "age": 6000,
     "size": 0.11,
     "terrain": 0.78,
@@ -652,7 +652,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1203 b\"",
+    "name": "TOI-1203 b",
     "age": 12500,
     "size": 0.14,
     "terrain": 0.05,
@@ -667,7 +667,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1238 b\"",
+    "name": "TOI-1238 b",
     "age": 800,
     "size": 0.11,
     "terrain": 0.75,
@@ -682,7 +682,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1411 b\"",
+    "name": "TOI-1411 b",
     "age": 9600,
     "size": 0.11,
     "terrain": 0.02,
@@ -697,7 +697,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1416 b\"",
+    "name": "TOI-1416 b",
     "age": 6900,
     "size": 0.14,
     "terrain": 0.69,
@@ -712,7 +712,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1444 b\"",
+    "name": "TOI-1444 b",
     "age": 3800,
     "size": 0.13,
     "terrain": 0.63,
@@ -727,7 +727,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1453 b\"",
+    "name": "TOI-1453 b",
     "age": 12000,
     "size": 0.1,
     "terrain": 0.08,
@@ -742,7 +742,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1685 b\"",
+    "name": "TOI-1685 b",
     "age": 1400,
     "size": 0.13,
     "terrain": 0.42,
@@ -757,7 +757,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1749 b\"",
+    "name": "TOI-1749 b",
     "age": 800,
     "size": 0.12,
     "terrain": 0.08,
@@ -772,7 +772,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1776 b\"",
+    "name": "TOI-1776 b",
     "age": 5100,
     "size": 0.11,
     "terrain": 0.57,
@@ -787,7 +787,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1807 b\"",
+    "name": "TOI-1807 b",
     "age": 2100,
     "size": 0.13,
     "terrain": 0.6,
@@ -802,7 +802,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-198 b\"",
+    "name": "TOI-198 b",
     "age": 1000,
     "size": 0.12,
     "terrain": 0.22,
@@ -817,7 +817,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2095 b\"",
+    "name": "TOI-2095 b",
     "age": 1000,
     "size": 0.11,
     "terrain": 0.23,
@@ -832,7 +832,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2322 b\"",
+    "name": "TOI-2322 b",
     "age": 3900,
     "size": 0.09,
     "terrain": 0.96,
@@ -847,7 +847,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2345 b\"",
+    "name": "TOI-2345 b",
     "age": 6300,
     "size": 0.13,
     "terrain": 0.69,
@@ -862,7 +862,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-238 b\"",
+    "name": "TOI-238 b",
     "age": 7900,
     "size": 0.14,
     "terrain": 0.44,
@@ -877,7 +877,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2431 b\"",
+    "name": "TOI-2431 b",
     "age": 2000,
     "size": 0.14,
     "terrain": 0.55,
@@ -892,7 +892,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-244 b\"",
+    "name": "TOI-244 b",
     "age": 7000,
     "size": 0.14,
     "terrain": 0.6,
@@ -907,7 +907,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-4311 b\"",
+    "name": "TOI-4311 b",
     "age": 6600,
     "size": 0.12,
     "terrain": 0.03,
@@ -922,7 +922,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-500 b\"",
+    "name": "TOI-500 b",
     "age": 5000,
     "size": 0.1,
     "terrain": 0.65,
@@ -937,7 +937,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-512 b\"",
+    "name": "TOI-512 b",
     "age": 8235,
     "size": 0.14,
     "terrain": 0.74,
@@ -952,7 +952,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5720 b\"",
+    "name": "TOI-5720 b",
     "age": 5000,
     "size": 0.1,
     "terrain": 0.69,
@@ -967,7 +967,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5788 b\"",
+    "name": "TOI-5788 b",
     "age": 5720,
     "size": 0.14,
     "terrain": 0.81,
@@ -982,7 +982,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-6008 b\"",
+    "name": "TOI-6008 b",
     "age": 3000,
     "size": 0.09,
     "terrain": 0.18,
@@ -997,7 +997,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-836 b\"",
+    "name": "TOI-836 b",
     "age": 5400,
     "size": 0.15,
     "terrain": 0.09,
@@ -1012,7 +1012,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Wolf 327 b\"",
+    "name": "Wolf 327 b",
     "age": 4100,
     "size": 0.11,
     "terrain": 0.58,
@@ -1027,7 +1027,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"AU Mic b\"",
+    "name": "AU Mic b",
     "age": 19,
     "size": 0.43,
     "terrain": 0.47,
@@ -1042,7 +1042,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-22 b\"",
+    "name": "CoRoT-22 b",
     "age": 3300,
     "size": 0.44,
     "terrain": 0.05,
@@ -1057,7 +1057,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-24 b\"",
+    "name": "CoRoT-24 b",
     "age": 11000,
     "size": 0.33,
     "terrain": 0.28,
@@ -1072,7 +1072,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"EPIC 229004835 b\"",
+    "name": "EPIC 229004835 b",
     "age": 4900,
     "size": 0.21,
     "terrain": 0.64,
@@ -1087,7 +1087,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"EPIC 249893012 b\"",
+    "name": "EPIC 249893012 b",
     "age": 9000,
     "size": 0.17,
     "terrain": 0.8,
@@ -1102,7 +1102,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"GJ 143 b\"",
+    "name": "GJ 143 b",
     "age": 3800,
     "size": 0.23,
     "terrain": 0.59,
@@ -1117,7 +1117,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 106315 b\"",
+    "name": "HD 106315 b",
     "age": 4480,
     "size": 0.22,
     "terrain": 0.93,
@@ -1132,7 +1132,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 110067 b\"",
+    "name": "HD 110067 b",
     "age": 8100,
     "size": 0.2,
     "terrain": 0.09,
@@ -1147,7 +1147,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 110113 b\"",
+    "name": "HD 110113 b",
     "age": 4000,
     "size": 0.18,
     "terrain": 0.97,
@@ -1162,7 +1162,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 183579 b\"",
+    "name": "HD 183579 b",
     "age": 3100,
     "size": 0.31,
     "terrain": 0.6,
@@ -1177,7 +1177,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 191939 b\"",
+    "name": "HD 191939 b",
     "age": 8700,
     "size": 0.3,
     "terrain": 0.13,
@@ -1192,7 +1192,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 207496 b\"",
+    "name": "HD 207496 b",
     "age": 520,
     "size": 0.2,
     "terrain": 0.5,
@@ -1207,7 +1207,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 207897 b\"",
+    "name": "HD 207897 b",
     "age": 4700,
     "size": 0.21,
     "terrain": 0.64,
@@ -1222,7 +1222,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 21520 b\"",
+    "name": "HD 21520 b",
     "age": 5300,
     "size": 0.24,
     "terrain": 0.21,
@@ -1237,7 +1237,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 22946 d\"",
+    "name": "HD 22946 d",
     "age": 2500,
     "size": 0.23,
     "terrain": 0.55,
@@ -1252,7 +1252,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 25463 b\"",
+    "name": "HD 25463 b",
     "age": 2300,
     "size": 0.23,
     "terrain": 0.06,
@@ -1267,7 +1267,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 28109 b\"",
+    "name": "HD 28109 b",
     "age": 3200,
     "size": 0.24,
     "terrain": 0.3,
@@ -1282,7 +1282,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 35843 c\"",
+    "name": "HD 35843 c",
     "age": 2500,
     "size": 0.23,
     "terrain": 0.19,
@@ -1297,7 +1297,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 5278 b\"",
+    "name": "HD 5278 b",
     "age": 3000,
     "size": 0.22,
     "terrain": 0.51,
@@ -1312,7 +1312,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 6061 b\"",
+    "name": "HD 6061 b",
     "age": 2400,
     "size": 0.22,
     "terrain": 0.23,
@@ -1327,7 +1327,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 63433 b\"",
+    "name": "HD 63433 b",
     "age": 414,
     "size": 0.19,
     "terrain": 0.13,
@@ -1342,7 +1342,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 63935 b\"",
+    "name": "HD 63935 b",
     "age": 6600,
     "size": 0.26,
     "terrain": 0.83,
@@ -1357,7 +1357,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 73344 b\"",
+    "name": "HD 73344 b",
     "age": 1150,
     "size": 0.26,
     "terrain": 0.24,
@@ -1372,7 +1372,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 73583 b\"",
+    "name": "HD 73583 b",
     "age": 480,
     "size": 0.25,
     "terrain": 0.95,
@@ -1387,7 +1387,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 77946 b\"",
+    "name": "HD 77946 b",
     "age": 3100,
     "size": 0.26,
     "terrain": 0.17,
@@ -1402,7 +1402,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 86226 c\"",
+    "name": "HD 86226 c",
     "age": 4600,
     "size": 0.19,
     "terrain": 0.79,
@@ -1417,7 +1417,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 88986 b\"",
+    "name": "HD 88986 b",
     "age": 7900,
     "size": 0.22,
     "terrain": 0.13,
@@ -1432,7 +1432,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 97658 b\"",
+    "name": "HD 97658 b",
     "age": 3900,
     "size": 0.19,
     "terrain": 0.05,
@@ -1447,7 +1447,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 116454 b\"",
+    "name": "HIP 116454 b",
     "age": 5500,
     "size": 0.22,
     "terrain": 0.2,
@@ -1462,7 +1462,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 8152 b\"",
+    "name": "HIP 8152 b",
     "age": 6000,
     "size": 0.23,
     "terrain": 0.69,
@@ -1477,7 +1477,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 94235 b\"",
+    "name": "HIP 94235 b",
     "age": 118,
     "size": 0.27,
     "terrain": 0.28,
@@ -1492,7 +1492,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 9618 b\"",
+    "name": "HIP 9618 b",
     "age": 5600,
     "size": 0.34,
     "terrain": 0.16,
@@ -1507,7 +1507,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 97166 b\"",
+    "name": "HIP 97166 b",
     "age": 1200,
     "size": 0.22,
     "terrain": 0.81,
@@ -1522,7 +1522,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HR 858 b\"",
+    "name": "HR 858 b",
     "age": 2000,
     "size": 0.18,
     "terrain": 0.29,
@@ -1537,7 +1537,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-100 b\"",
+    "name": "K2-100 b",
     "age": 750,
     "size": 0.35,
     "terrain": 0.47,
@@ -1552,7 +1552,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-110 b\"",
+    "name": "K2-110 b",
     "age": 8000,
     "size": 0.23,
     "terrain": 0.55,
@@ -1567,7 +1567,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-111 b\"",
+    "name": "K2-111 b",
     "age": 12300,
     "size": 0.16,
     "terrain": 0.48,
@@ -1582,7 +1582,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-12 b\"",
+    "name": "K2-12 b",
     "age": 8900,
     "size": 0.22,
     "terrain": 0.56,
@@ -1597,7 +1597,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-180 b\"",
+    "name": "K2-180 b",
     "age": 7500,
     "size": 0.22,
     "terrain": 0.6,
@@ -1612,7 +1612,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-182 b\"",
+    "name": "K2-182 b",
     "age": 6200,
     "size": 0.24,
     "terrain": 0.48,
@@ -1627,7 +1627,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-222 b\"",
+    "name": "K2-222 b",
     "age": 7100,
     "size": 0.2,
     "terrain": 0.32,
@@ -1642,7 +1642,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-24 b\"",
+    "name": "K2-24 b",
     "age": 4900,
     "size": 0.5,
     "terrain": 0.27,
@@ -1657,7 +1657,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-25 b\"",
+    "name": "K2-25 b",
     "age": 730,
     "size": 0.31,
     "terrain": 0.56,
@@ -1672,7 +1672,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-263 b\"",
+    "name": "K2-263 b",
     "age": 7000,
     "size": 0.22,
     "terrain": 0.78,
@@ -1687,7 +1687,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-290 b\"",
+    "name": "K2-290 b",
     "age": 4000,
     "size": 0.27,
     "terrain": 0.84,
@@ -1702,7 +1702,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-292 b\"",
+    "name": "K2-292 b",
     "age": 6800,
     "size": 0.23,
     "terrain": 0.7,
@@ -1717,7 +1717,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-3 b\"",
+    "name": "K2-3 b",
     "age": 6900,
     "size": 0.19,
     "terrain": 0.81,
@@ -1732,7 +1732,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-79 b\"",
+    "name": "K2-79 b",
     "age": 6500,
     "size": 0.37,
     "terrain": 0,
@@ -1747,7 +1747,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-98 b\"",
+    "name": "K2-98 b",
     "age": 3400,
     "size": 0.45,
     "terrain": 0.69,
@@ -1762,7 +1762,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-101 b\"",
+    "name": "Kepler-101 b",
     "age": 5900,
     "size": 0.52,
     "terrain": 0.07,
@@ -1777,7 +1777,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-109 b\"",
+    "name": "Kepler-109 b",
     "age": 6200,
     "size": 0.22,
     "terrain": 0.09,
@@ -1792,7 +1792,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-1655 b\"",
+    "name": "Kepler-1655 b",
     "age": 2560,
     "size": 0.2,
     "terrain": 0.83,
@@ -1807,7 +1807,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-1661 b\"",
+    "name": "Kepler-1661 b",
     "age": 2000,
     "size": 0.35,
     "terrain": 0.78,
@@ -1822,7 +1822,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-19 b\"",
+    "name": "Kepler-19 b",
     "age": 1900,
     "size": 0.2,
     "terrain": 0.38,
@@ -1837,7 +1837,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-20 b\"",
+    "name": "Kepler-20 b",
     "age": 5600,
     "size": 0.16,
     "terrain": 0.84,
@@ -1852,7 +1852,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-22 b\"",
+    "name": "Kepler-22 b",
     "age": 7000,
     "size": 0.19,
     "terrain": 0.75,
@@ -1867,7 +1867,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-278 b\"",
+    "name": "Kepler-278 b",
     "age": 5761,
     "size": 0.35,
     "terrain": 0.83,
@@ -1882,7 +1882,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-38 b\"",
+    "name": "Kepler-38 b",
     "age": 10000,
     "size": 0.38,
     "terrain": 0.6,
@@ -1897,7 +1897,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-391 b\"",
+    "name": "Kepler-391 b",
     "age": 4365,
     "size": 0.22,
     "terrain": 0.41,
@@ -1912,7 +1912,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-4 b\"",
+    "name": "Kepler-4 b",
     "age": 4500,
     "size": 0.36,
     "terrain": 0.34,
@@ -1927,7 +1927,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-411 b\"",
+    "name": "Kepler-411 b",
     "age": 212,
     "size": 0.21,
     "terrain": 0.49,
@@ -1942,7 +1942,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-454 b\"",
+    "name": "Kepler-454 b",
     "age": 5250,
     "size": 0.21,
     "terrain": 0.64,
@@ -1957,7 +1957,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-538 b\"",
+    "name": "Kepler-538 b",
     "age": 5300,
     "size": 0.2,
     "terrain": 0.87,
@@ -1972,7 +1972,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-553 b\"",
+    "name": "Kepler-553 b",
     "age": 8800,
     "size": 0.42,
     "terrain": 0.7,
@@ -1987,7 +1987,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-68 b\"",
+    "name": "Kepler-68 b",
     "age": 6840,
     "size": 0.21,
     "terrain": 0.67,
@@ -2002,7 +2002,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"LP 714-47 b\"",
+    "name": "LP 714-47 b",
     "age": 2900,
     "size": 0.38,
     "terrain": 0.84,
@@ -2017,7 +2017,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"LTT 9779 b\"",
+    "name": "LTT 9779 b",
     "age": 2000,
     "size": 0.42,
     "terrain": 0.82,
@@ -2032,7 +2032,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-14 A b\"",
+    "name": "NGTS-14 A b",
     "age": 5900,
     "size": 0.44,
     "terrain": 0.48,
@@ -2047,7 +2047,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-34 b\"",
+    "name": "NGTS-34 b",
     "age": 2700,
     "size": 0.33,
     "terrain": 0.16,
@@ -2062,7 +2062,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Ross 176 b\"",
+    "name": "Ross 176 b",
     "age": 3000,
     "size": 0.16,
     "terrain": 0.77,
@@ -2077,7 +2077,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1052 b\"",
+    "name": "TOI-1052 b",
     "age": 2300,
     "size": 0.26,
     "terrain": 0.6,
@@ -2092,7 +2092,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1062 b\"",
+    "name": "TOI-1062 b",
     "age": 2500,
     "size": 0.2,
     "terrain": 0.45,
@@ -2107,7 +2107,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1064 b\"",
+    "name": "TOI-1064 b",
     "age": 9400,
     "size": 0.23,
     "terrain": 0.4,
@@ -2122,7 +2122,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1075 b\"",
+    "name": "TOI-1075 b",
     "age": 6000,
     "size": 0.16,
     "terrain": 0.62,
@@ -2137,7 +2137,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1117 b\"",
+    "name": "TOI-1117 b",
     "age": 4420,
     "size": 0.22,
     "terrain": 0.39,
@@ -2152,7 +2152,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1130 b\"",
+    "name": "TOI-1130 b",
     "age": 5400,
     "size": 0.33,
     "terrain": 0.51,
@@ -2167,7 +2167,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1221 b\"",
+    "name": "TOI-1221 b",
     "age": 10000,
     "size": 0.26,
     "terrain": 0.57,
@@ -2182,7 +2182,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1246 c\"",
+    "name": "TOI-1246 c",
     "age": 6300,
     "size": 0.22,
     "terrain": 0.53,
@@ -2197,7 +2197,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1249 b\"",
+    "name": "TOI-1249 b",
     "age": 4000,
     "size": 0.29,
     "terrain": 0.37,
@@ -2212,7 +2212,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-125 b\"",
+    "name": "TOI-125 b",
     "age": 6800,
     "size": 0.24,
     "terrain": 0.92,
@@ -2227,7 +2227,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1260 b\"",
+    "name": "TOI-1260 b",
     "age": 6700,
     "size": 0.22,
     "terrain": 0.3,
@@ -2242,7 +2242,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1266 b\"",
+    "name": "TOI-1266 b",
     "age": 4600,
     "size": 0.23,
     "terrain": 0.69,
@@ -2257,7 +2257,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1269 b\"",
+    "name": "TOI-1269 b",
     "age": 3100,
     "size": 0.21,
     "terrain": 0.17,
@@ -2272,7 +2272,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1272 b\"",
+    "name": "TOI-1272 b",
     "age": 7000,
     "size": 0.38,
     "terrain": 0.99,
@@ -2287,7 +2287,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1279 b\"",
+    "name": "TOI-1279 b",
     "age": 4200,
     "size": 0.24,
     "terrain": 0.03,
@@ -2302,7 +2302,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1288 b\"",
+    "name": "TOI-1288 b",
     "age": 6500,
     "size": 0.44,
     "terrain": 0.06,
@@ -2317,7 +2317,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-132 b\"",
+    "name": "TOI-132 b",
     "age": 6340,
     "size": 0.31,
     "terrain": 0.04,
@@ -2332,7 +2332,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1347 b\"",
+    "name": "TOI-1347 b",
     "age": 1400,
     "size": 0.16,
     "terrain": 0.12,
@@ -2347,7 +2347,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1410.01\"",
+    "name": "TOI-1410.01",
     "age": 6600,
     "size": 0.28,
     "terrain": 0.7,
@@ -2362,7 +2362,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1439 b\"",
+    "name": "TOI-1439 b",
     "age": 4600,
     "size": 0.38,
     "terrain": 0.16,
@@ -2377,7 +2377,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1443 b\"",
+    "name": "TOI-1443 b",
     "age": 7400,
     "size": 0.21,
     "terrain": 0.91,
@@ -2392,7 +2392,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1451 b\"",
+    "name": "TOI-1451 b",
     "age": 4000,
     "size": 0.23,
     "terrain": 0.49,
@@ -2407,7 +2407,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1470 b\"",
+    "name": "TOI-1470 b",
     "age": 1300,
     "size": 0.19,
     "terrain": 0.62,
@@ -2422,7 +2422,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1472 b\"",
+    "name": "TOI-1472 b",
     "age": 3100,
     "size": 0.36,
     "terrain": 0.67,
@@ -2437,7 +2437,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1648 b\"",
+    "name": "TOI-1648 b",
     "age": 5700,
     "size": 0.23,
     "terrain": 0.55,
@@ -2452,7 +2452,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1669 c\"",
+    "name": "TOI-1669 c",
     "age": 7700,
     "size": 0.21,
     "terrain": 0.69,
@@ -2467,7 +2467,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1670 b\"",
+    "name": "TOI-1670 b",
     "age": 2530,
     "size": 0.18,
     "terrain": 0.25,
@@ -2482,7 +2482,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1694 b\"",
+    "name": "TOI-1694 b",
     "age": 7800,
     "size": 0.47,
     "terrain": 0.94,
@@ -2497,7 +2497,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1728 b\"",
+    "name": "TOI-1728 b",
     "age": 7100,
     "size": 0.45,
     "terrain": 0.7,
@@ -2512,7 +2512,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1736 b\"",
+    "name": "TOI-1736 b",
     "age": 9200,
     "size": 0.28,
     "terrain": 0.02,
@@ -2527,7 +2527,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1742 b\"",
+    "name": "TOI-1742 b",
     "age": 3900,
     "size": 0.21,
     "terrain": 0.12,
@@ -2542,7 +2542,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1751 b\"",
+    "name": "TOI-1751 b",
     "age": 9000,
     "size": 0.26,
     "terrain": 0.37,
@@ -2557,7 +2557,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1753 b\"",
+    "name": "TOI-1753 b",
     "age": 5900,
     "size": 0.22,
     "terrain": 0.99,
@@ -2572,7 +2572,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1759 b\"",
+    "name": "TOI-1759 b",
     "age": 5000,
     "size": 0.28,
     "terrain": 0.4,
@@ -2587,7 +2587,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1794 b\"",
+    "name": "TOI-1794 b",
     "age": 10800,
     "size": 0.29,
     "terrain": 0.35,
@@ -2602,7 +2602,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1801 b\"",
+    "name": "TOI-1801 b",
     "age": 700,
     "size": 0.19,
     "terrain": 0.77,
@@ -2617,7 +2617,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1803 b\"",
+    "name": "TOI-1803 b",
     "age": 1400,
     "size": 0.27,
     "terrain": 0.56,
@@ -2632,7 +2632,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1824 b\"",
+    "name": "TOI-1824 b",
     "age": 2500,
     "size": 0.24,
     "terrain": 0.62,
@@ -2647,7 +2647,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2000 b\"",
+    "name": "TOI-2000 b",
     "age": 5300,
     "size": 0.24,
     "terrain": 0.38,
@@ -2662,7 +2662,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2015 b\"",
+    "name": "TOI-2015 b",
     "age": 5500,
     "size": 0.3,
     "terrain": 0.77,
@@ -2677,7 +2677,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2019 b\"",
+    "name": "TOI-2019 b",
     "age": 6400,
     "size": 0.48,
     "terrain": 0.24,
@@ -2692,7 +2692,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2076 b\"",
+    "name": "TOI-2076 b",
     "age": 210,
     "size": 0.23,
     "terrain": 0.68,
@@ -2707,7 +2707,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2088 b\"",
+    "name": "TOI-2088 b",
     "age": 4500,
     "size": 0.33,
     "terrain": 0.73,
@@ -2722,7 +2722,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2093 c\"",
+    "name": "TOI-2093 c",
     "age": 6600,
     "size": 0.21,
     "terrain": 0.11,
@@ -2737,7 +2737,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2128 b\"",
+    "name": "TOI-2128 b",
     "age": 4700,
     "size": 0.19,
     "terrain": 0.48,
@@ -2752,7 +2752,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2134 b\"",
+    "name": "TOI-2134 b",
     "age": 3800,
     "size": 0.24,
     "terrain": 0.41,
@@ -2767,7 +2767,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2136 b\"",
+    "name": "TOI-2136 b",
     "age": 4600,
     "size": 0.2,
     "terrain": 0.51,
@@ -2782,7 +2782,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2141 b\"",
+    "name": "TOI-2141 b",
     "age": 9000,
     "size": 0.28,
     "terrain": 0.49,
@@ -2797,7 +2797,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2196 b\"",
+    "name": "TOI-2196 b",
     "age": 4500,
     "size": 0.31,
     "terrain": 0.67,
@@ -2812,7 +2812,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-220 b\"",
+    "name": "TOI-220 b",
     "age": 10100,
     "size": 0.27,
     "terrain": 0.2,
@@ -2827,7 +2827,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2443 b\"",
+    "name": "TOI-2443 b",
     "age": 7500,
     "size": 0.21,
     "terrain": 0.18,
@@ -2842,7 +2842,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2458 b\"",
+    "name": "TOI-2458 b",
     "age": 5700,
     "size": 0.25,
     "terrain": 0.15,
@@ -2857,7 +2857,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-283 b\"",
+    "name": "TOI-283 b",
     "age": 10400,
     "size": 0.21,
     "terrain": 0.29,
@@ -2872,7 +2872,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-3261 b\"",
+    "name": "TOI-3261 b",
     "age": 6500,
     "size": 0.34,
     "terrain": 0.55,
@@ -2887,7 +2887,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-329 b\"",
+    "name": "TOI-329 b",
     "age": 8700,
     "size": 0.44,
     "terrain": 0.33,
@@ -2902,7 +2902,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-332 b\"",
+    "name": "TOI-332 b",
     "age": 5000,
     "size": 0.29,
     "terrain": 0.52,
@@ -2917,7 +2917,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-333 b\"",
+    "name": "TOI-333 b",
     "age": 1000,
     "size": 0.38,
     "terrain": 0.53,
@@ -2932,7 +2932,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-3493 b\"",
+    "name": "TOI-3493 b",
     "age": 7300,
     "size": 0.29,
     "terrain": 0.13,
@@ -2947,7 +2947,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-3568 b\"",
+    "name": "TOI-3568 b",
     "age": 6100,
     "size": 0.47,
     "terrain": 0.46,
@@ -2962,7 +2962,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-3785 b\"",
+    "name": "TOI-3785 b",
     "age": 8000,
     "size": 0.46,
     "terrain": 0.38,
@@ -2977,7 +2977,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-4010 b\"",
+    "name": "TOI-4010 b",
     "age": 6100,
     "size": 0.27,
     "terrain": 0.06,
@@ -2992,7 +2992,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-421 b\"",
+    "name": "TOI-421 b",
     "age": 10900,
     "size": 0.24,
     "terrain": 0.95,
@@ -3007,7 +3007,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-4438 b\"",
+    "name": "TOI-4438 b",
     "age": 4800,
     "size": 0.21,
     "terrain": 0.43,
@@ -3022,7 +3022,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-4495 b\"",
+    "name": "TOI-4495 b",
     "age": 1900,
     "size": 0.22,
     "terrain": 0.4,
@@ -3037,7 +3037,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-451 b\"",
+    "name": "TOI-451 b",
     "age": 125,
     "size": 0.16,
     "terrain": 0.58,
@@ -3052,7 +3052,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-480 b\"",
+    "name": "TOI-480 b",
     "age": 2700,
     "size": 0.25,
     "terrain": 0.59,
@@ -3067,7 +3067,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5076 b\"",
+    "name": "TOI-5076 b",
     "age": 8400,
     "size": 0.31,
     "terrain": 0.65,
@@ -3082,7 +3082,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-521 b\"",
+    "name": "TOI-521 b",
     "age": 800,
     "size": 0.18,
     "terrain": 0.34,
@@ -3097,7 +3097,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-532 b\"",
+    "name": "TOI-532 b",
     "age": 7100,
     "size": 0.52,
     "terrain": 0.82,
@@ -3112,7 +3112,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-544 b\"",
+    "name": "TOI-544 b",
     "age": 9000,
     "size": 0.18,
     "terrain": 0.38,
@@ -3127,7 +3127,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5624 b\"",
+    "name": "TOI-5624 b",
     "age": 5700,
     "size": 0.21,
     "terrain": 0.39,
@@ -3142,7 +3142,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5678 b\"",
+    "name": "TOI-5678 b",
     "age": 8500,
     "size": 0.44,
     "terrain": 0.62,
@@ -3157,7 +3157,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5734 b\"",
+    "name": "TOI-5734 b",
     "age": 500,
     "size": 0.19,
     "terrain": 0.86,
@@ -3172,7 +3172,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5789 c\"",
+    "name": "TOI-5789 c",
     "age": 9400,
     "size": 0.26,
     "terrain": 0.21,
@@ -3187,7 +3187,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5795 b\"",
+    "name": "TOI-5795 b",
     "age": 10200,
     "size": 0.5,
     "terrain": 0.37,
@@ -3202,7 +3202,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5800 b\"",
+    "name": "TOI-5800 b",
     "age": 8100,
     "size": 0.22,
     "terrain": 0,
@@ -3217,7 +3217,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-5817 b\"",
+    "name": "TOI-5817 b",
     "age": 9700,
     "size": 0.28,
     "terrain": 0.12,
@@ -3232,7 +3232,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-6041 b\"",
+    "name": "TOI-6041 b",
     "age": 7900,
     "size": 0.41,
     "terrain": 0.79,
@@ -3247,7 +3247,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-6054.01\"",
+    "name": "TOI-6054.01",
     "age": 6000,
     "size": 0.24,
     "terrain": 0.67,
@@ -3262,7 +3262,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-6651 b\"",
+    "name": "TOI-6651 b",
     "age": 3710,
     "size": 0.45,
     "terrain": 0.36,
@@ -3277,7 +3277,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-669 b\"",
+    "name": "TOI-669 b",
     "age": 7900,
     "size": 0.23,
     "terrain": 0.11,
@@ -3292,7 +3292,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-733 b\"",
+    "name": "TOI-733 b",
     "age": 4400,
     "size": 0.18,
     "terrain": 0.75,
@@ -3307,7 +3307,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-756 b\"",
+    "name": "TOI-756 b",
     "age": 3200,
     "size": 0.25,
     "terrain": 0.81,
@@ -3322,7 +3322,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-757 b\"",
+    "name": "TOI-757 b",
     "age": 7500,
     "size": 0.22,
     "terrain": 0.87,
@@ -3337,7 +3337,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-776 b\"",
+    "name": "TOI-776 b",
     "age": 6100,
     "size": 0.16,
     "terrain": 0.59,
@@ -3352,7 +3352,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-815 b\"",
+    "name": "TOI-815 b",
     "age": 200,
     "size": 0.26,
     "terrain": 0.4,
@@ -3367,7 +3367,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-824 b\"",
+    "name": "TOI-824 b",
     "age": 7500,
     "size": 0.26,
     "terrain": 0.92,
@@ -3382,7 +3382,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-908 b\"",
+    "name": "TOI-908 b",
     "age": 4600,
     "size": 0.28,
     "terrain": 0.48,
@@ -3397,7 +3397,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-912 b\"",
+    "name": "TOI-912 b",
     "age": 800,
     "size": 0.17,
     "terrain": 0.57,
@@ -3412,7 +3412,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-969 b\"",
+    "name": "TOI-969 b",
     "age": 2030,
     "size": 0.25,
     "terrain": 0.87,
@@ -3427,7 +3427,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Wolf 503 b\"",
+    "name": "Wolf 503 b",
     "age": 11000,
     "size": 0.18,
     "terrain": 0.94,
@@ -3442,7 +3442,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"2MASS J0249-0557 c\"",
+    "name": "2MASS J0249-0557 c",
     "age": 22,
     "size": 1,
     "terrain": 0.59,
@@ -3457,7 +3457,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"2MASS J12073346-3932539 b\"",
+    "name": "2MASS J12073346-3932539 b",
     "age": 10,
     "size": 1,
     "terrain": 0.03,
@@ -3472,7 +3472,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"BD+60 1417 b\"",
+    "name": "BD+60 1417 b",
     "age": 100,
     "size": 1,
     "terrain": 0.8,
@@ -3487,7 +3487,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"BD-14 3065 b\"",
+    "name": "BD-14 3065 b",
     "age": 2240,
     "size": 1,
     "terrain": 0.27,
@@ -3502,7 +3502,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CFHTWIR-Oph 98 b\"",
+    "name": "CFHTWIR-Oph 98 b",
     "age": 3,
     "size": 1,
     "terrain": 0.75,
@@ -3517,7 +3517,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"COCONUTS-2 b\"",
+    "name": "COCONUTS-2 b",
     "age": 414,
     "size": 1,
     "terrain": 0.6,
@@ -3532,7 +3532,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CT Cha b\"",
+    "name": "CT Cha b",
     "age": 2,
     "size": 1,
     "terrain": 0.75,
@@ -3547,7 +3547,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-10 b\"",
+    "name": "CoRoT-10 b",
     "age": 3000,
     "size": 0.97,
     "terrain": 0.76,
@@ -3562,7 +3562,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-11 b\"",
+    "name": "CoRoT-11 b",
     "age": 2000,
     "size": 1,
     "terrain": 0.69,
@@ -3577,7 +3577,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-12 b\"",
+    "name": "CoRoT-12 b",
     "age": 6300,
     "size": 1,
     "terrain": 0.18,
@@ -3592,7 +3592,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-13 b\"",
+    "name": "CoRoT-13 b",
     "age": 1635,
     "size": 0.89,
     "terrain": 0.25,
@@ -3607,7 +3607,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-14 b\"",
+    "name": "CoRoT-14 b",
     "age": 4200,
     "size": 1,
     "terrain": 0.45,
@@ -3622,7 +3622,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-17 b\"",
+    "name": "CoRoT-17 b",
     "age": 10700,
     "size": 1,
     "terrain": 0.25,
@@ -3637,7 +3637,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-19 b\"",
+    "name": "CoRoT-19 b",
     "age": 5000,
     "size": 1,
     "terrain": 0.96,
@@ -3652,7 +3652,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-23 b\"",
+    "name": "CoRoT-23 b",
     "age": 7200,
     "size": 1,
     "terrain": 0.13,
@@ -3667,7 +3667,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-25 b\"",
+    "name": "CoRoT-25 b",
     "age": 4500,
     "size": 1,
     "terrain": 0.92,
@@ -3682,7 +3682,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-26 b\"",
+    "name": "CoRoT-26 b",
     "age": 8600,
     "size": 1,
     "terrain": 0.1,
@@ -3697,7 +3697,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-27 b\"",
+    "name": "CoRoT-27 b",
     "age": 4210,
     "size": 1,
     "terrain": 0.45,
@@ -3712,7 +3712,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-35 b\"",
+    "name": "CoRoT-35 b",
     "age": 6100,
     "size": 1,
     "terrain": 0.84,
@@ -3727,7 +3727,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-36 b\"",
+    "name": "CoRoT-36 b",
     "age": 2100,
     "size": 1,
     "terrain": 0.01,
@@ -3742,7 +3742,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-4 b\"",
+    "name": "CoRoT-4 b",
     "age": 1000,
     "size": 1,
     "terrain": 0,
@@ -3757,7 +3757,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-5 b\"",
+    "name": "CoRoT-5 b",
     "age": 6900,
     "size": 1,
     "terrain": 0.84,
@@ -3772,7 +3772,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"CoRoT-9 b\"",
+    "name": "CoRoT-9 b",
     "age": 6000,
     "size": 1,
     "terrain": 0.8,
@@ -3787,7 +3787,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"EPIC 246851721 b\"",
+    "name": "EPIC 246851721 b",
     "age": 3020,
     "size": 1,
     "terrain": 0.03,
@@ -3802,7 +3802,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"GPX-1 b\"",
+    "name": "GPX-1 b",
     "age": 270,
     "size": 1,
     "terrain": 0.31,
@@ -3817,7 +3817,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"GQ Lup b\"",
+    "name": "GQ Lup b",
     "age": 1,
     "size": 1,
     "terrain": 0.87,
@@ -3832,7 +3832,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"GU Psc b\"",
+    "name": "GU Psc b",
     "age": 100,
     "size": 1,
     "terrain": 0.85,
@@ -3847,7 +3847,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-12 b\"",
+    "name": "HAT-P-12 b",
     "age": 2500,
     "size": 0.96,
     "terrain": 0.38,
@@ -3862,7 +3862,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-18 b\"",
+    "name": "HAT-P-18 b",
     "age": 12400,
     "size": 1,
     "terrain": 0.4,
@@ -3877,7 +3877,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-19 b\"",
+    "name": "HAT-P-19 b",
     "age": 7200,
     "size": 1,
     "terrain": 0.56,
@@ -3892,7 +3892,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-20 b\"",
+    "name": "HAT-P-20 b",
     "age": 6700,
     "size": 0.87,
     "terrain": 0.28,
@@ -3907,7 +3907,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-23 b\"",
+    "name": "HAT-P-23 b",
     "age": 4000,
     "size": 1,
     "terrain": 0.52,
@@ -3922,7 +3922,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-28 b\"",
+    "name": "HAT-P-28 b",
     "age": 6100,
     "size": 1,
     "terrain": 0.73,
@@ -3937,7 +3937,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-42 b\"",
+    "name": "HAT-P-42 b",
     "age": 5200,
     "size": 1,
     "terrain": 0.04,
@@ -3952,7 +3952,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-44 b\"",
+    "name": "HAT-P-44 b",
     "age": 7500,
     "size": 1,
     "terrain": 0.14,
@@ -3967,7 +3967,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-45 b\"",
+    "name": "HAT-P-45 b",
     "age": 2000,
     "size": 1,
     "terrain": 0.68,
@@ -3982,7 +3982,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-46 b\"",
+    "name": "HAT-P-46 b",
     "age": 2500,
     "size": 1,
     "terrain": 0.14,
@@ -3997,7 +3997,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-47 b\"",
+    "name": "HAT-P-47 b",
     "age": 1500,
     "size": 1,
     "terrain": 0.97,
@@ -4012,7 +4012,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-50 b\"",
+    "name": "HAT-P-50 b",
     "age": 3370,
     "size": 1,
     "terrain": 0.1,
@@ -4027,7 +4027,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-51 b\"",
+    "name": "HAT-P-51 b",
     "age": 8100,
     "size": 1,
     "terrain": 0.54,
@@ -4042,7 +4042,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-52 b\"",
+    "name": "HAT-P-52 b",
     "age": 9400,
     "size": 1,
     "terrain": 0.55,
@@ -4057,7 +4057,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-53 b\"",
+    "name": "HAT-P-53 b",
     "age": 4670,
     "size": 1,
     "terrain": 0.82,
@@ -4072,7 +4072,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-54 b\"",
+    "name": "HAT-P-54 b",
     "age": 3900,
     "size": 0.94,
     "terrain": 0.57,
@@ -4087,7 +4087,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-55 b\"",
+    "name": "HAT-P-55 b",
     "age": 5300,
     "size": 1,
     "terrain": 0.97,
@@ -4102,7 +4102,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-58 b\"",
+    "name": "HAT-P-58 b",
     "age": 7110,
     "size": 1,
     "terrain": 0.86,
@@ -4117,7 +4117,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-59 b\"",
+    "name": "HAT-P-59 b",
     "age": 7300,
     "size": 1,
     "terrain": 0.05,
@@ -4132,7 +4132,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-60 b\"",
+    "name": "HAT-P-60 b",
     "age": 2765,
     "size": 1,
     "terrain": 0.87,
@@ -4147,7 +4147,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-61 b\"",
+    "name": "HAT-P-61 b",
     "age": 2600,
     "size": 0.9,
     "terrain": 0.65,
@@ -4162,7 +4162,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-62 b\"",
+    "name": "HAT-P-62 b",
     "age": 8100,
     "size": 1,
     "terrain": 0.84,
@@ -4177,7 +4177,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-63 b\"",
+    "name": "HAT-P-63 b",
     "age": 9000,
     "size": 1,
     "terrain": 0.77,
@@ -4192,7 +4192,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-64 b\"",
+    "name": "HAT-P-64 b",
     "age": 2880,
     "size": 1,
     "terrain": 0.94,
@@ -4207,7 +4207,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-65 b\"",
+    "name": "HAT-P-65 b",
     "age": 3900,
     "size": 1,
     "terrain": 0.1,
@@ -4222,7 +4222,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-66 b\"",
+    "name": "HAT-P-66 b",
     "age": 4660,
     "size": 1,
     "terrain": 0.75,
@@ -4237,7 +4237,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-68 b\"",
+    "name": "HAT-P-68 b",
     "age": 11100,
     "size": 1,
     "terrain": 0.14,
@@ -4252,7 +4252,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-69 b\"",
+    "name": "HAT-P-69 b",
     "age": 1270,
     "size": 1,
     "terrain": 0.18,
@@ -4267,7 +4267,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HAT-P-70 b\"",
+    "name": "HAT-P-70 b",
     "age": 600,
     "size": 1,
     "terrain": 0.71,
@@ -4282,7 +4282,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-10 b\"",
+    "name": "HATS-10 b",
     "age": 3300,
     "size": 0.97,
     "terrain": 0.23,
@@ -4297,7 +4297,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-13 b\"",
+    "name": "HATS-13 b",
     "age": 2500,
     "size": 1,
     "terrain": 0.66,
@@ -4312,7 +4312,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-14 b\"",
+    "name": "HATS-14 b",
     "age": 4900,
     "size": 1,
     "terrain": 0.04,
@@ -4327,7 +4327,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-15 b\"",
+    "name": "HATS-15 b",
     "age": 11000,
     "size": 1,
     "terrain": 0.16,
@@ -4342,7 +4342,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-16 b\"",
+    "name": "HATS-16 b",
     "age": 9500,
     "size": 1,
     "terrain": 0.9,
@@ -4357,7 +4357,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-17 b\"",
+    "name": "HATS-17 b",
     "age": 2100,
     "size": 0.78,
     "terrain": 0.47,
@@ -4372,7 +4372,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-2 b\"",
+    "name": "HATS-2 b",
     "age": 7200,
     "size": 1,
     "terrain": 0.88,
@@ -4387,7 +4387,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-23 b\"",
+    "name": "HATS-23 b",
     "age": 4200,
     "size": 1,
     "terrain": 0.4,
@@ -4402,7 +4402,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-24 b\"",
+    "name": "HATS-24 b",
     "age": 3700,
     "size": 1,
     "terrain": 0.22,
@@ -4417,7 +4417,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-25 b\"",
+    "name": "HATS-25 b",
     "age": 7500,
     "size": 1,
     "terrain": 0.86,
@@ -4432,7 +4432,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-26 b\"",
+    "name": "HATS-26 b",
     "age": 4040,
     "size": 1,
     "terrain": 0.19,
@@ -4447,7 +4447,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-27 b\"",
+    "name": "HATS-27 b",
     "age": 2300,
     "size": 1,
     "terrain": 0.89,
@@ -4462,7 +4462,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-28 b\"",
+    "name": "HATS-28 b",
     "age": 6200,
     "size": 1,
     "terrain": 0.42,
@@ -4477,7 +4477,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-29 b\"",
+    "name": "HATS-29 b",
     "age": 5500,
     "size": 1,
     "terrain": 0.9,
@@ -4492,7 +4492,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-3 b\"",
+    "name": "HATS-3 b",
     "age": 3200,
     "size": 1,
     "terrain": 0.07,
@@ -4507,7 +4507,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-30 b\"",
+    "name": "HATS-30 b",
     "age": 2300,
     "size": 1,
     "terrain": 0.9,
@@ -4522,7 +4522,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-31 b\"",
+    "name": "HATS-31 b",
     "age": 4300,
     "size": 1,
     "terrain": 0.83,
@@ -4537,7 +4537,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-32 b\"",
+    "name": "HATS-32 b",
     "age": 3500,
     "size": 1,
     "terrain": 0.08,
@@ -4552,7 +4552,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-33 b\"",
+    "name": "HATS-33 b",
     "age": 3000,
     "size": 1,
     "terrain": 0.25,
@@ -4567,7 +4567,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-34 b\"",
+    "name": "HATS-34 b",
     "age": 7700,
     "size": 1,
     "terrain": 0.68,
@@ -4582,7 +4582,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-35 b\"",
+    "name": "HATS-35 b",
     "age": 2130,
     "size": 1,
     "terrain": 0.42,
@@ -4597,7 +4597,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-37 A b\"",
+    "name": "HATS-37 A b",
     "age": 11460,
     "size": 0.61,
     "terrain": 0.29,
@@ -4612,7 +4612,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-38 b\"",
+    "name": "HATS-38 b",
     "age": 11890,
     "size": 0.61,
     "terrain": 0.13,
@@ -4627,7 +4627,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-39 b\"",
+    "name": "HATS-39 b",
     "age": 2060,
     "size": 1,
     "terrain": 0.77,
@@ -4642,7 +4642,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-4 b\"",
+    "name": "HATS-4 b",
     "age": 2100,
     "size": 1,
     "terrain": 0.67,
@@ -4657,7 +4657,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-40 b\"",
+    "name": "HATS-40 b",
     "age": 2070,
     "size": 1,
     "terrain": 0.76,
@@ -4672,7 +4672,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-41 b\"",
+    "name": "HATS-41 b",
     "age": 1340,
     "size": 1,
     "terrain": 0.56,
@@ -4687,7 +4687,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-42 b\"",
+    "name": "HATS-42 b",
     "age": 3260,
     "size": 1,
     "terrain": 0.21,
@@ -4702,7 +4702,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-43 b\"",
+    "name": "HATS-43 b",
     "age": 8600,
     "size": 1,
     "terrain": 0.59,
@@ -4717,7 +4717,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-44 b\"",
+    "name": "HATS-44 b",
     "age": 9700,
     "size": 1,
     "terrain": 0.94,
@@ -4732,7 +4732,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-45 b\"",
+    "name": "HATS-45 b",
     "age": 1520,
     "size": 1,
     "terrain": 0.64,
@@ -4747,7 +4747,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-46 b\"",
+    "name": "HATS-46 b",
     "age": 3000,
     "size": 0.9,
     "terrain": 0.37,
@@ -4762,7 +4762,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-47 b\"",
+    "name": "HATS-47 b",
     "age": 8100,
     "size": 1,
     "terrain": 0.54,
@@ -4777,7 +4777,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-48 A b\"",
+    "name": "HATS-48 A b",
     "age": 11970,
     "size": 0.8,
     "terrain": 0.35,
@@ -4792,7 +4792,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-49 b\"",
+    "name": "HATS-49 b",
     "age": 10500,
     "size": 0.77,
     "terrain": 0.29,
@@ -4807,7 +4807,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-5 b\"",
+    "name": "HATS-5 b",
     "age": 3600,
     "size": 0.91,
     "terrain": 0.57,
@@ -4822,7 +4822,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-51 b\"",
+    "name": "HATS-51 b",
     "age": 4740,
     "size": 1,
     "terrain": 0.85,
@@ -4837,7 +4837,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-52 b\"",
+    "name": "HATS-52 b",
     "age": 1200,
     "size": 1,
     "terrain": 0.22,
@@ -4852,7 +4852,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-53 b\"",
+    "name": "HATS-53 b",
     "age": 9000,
     "size": 1,
     "terrain": 0.68,
@@ -4867,7 +4867,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-54 b\"",
+    "name": "HATS-54 b",
     "age": 7960,
     "size": 1,
     "terrain": 0.17,
@@ -4882,7 +4882,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-55 b\"",
+    "name": "HATS-55 b",
     "age": 400,
     "size": 1,
     "terrain": 0.6,
@@ -4897,7 +4897,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-56 b\"",
+    "name": "HATS-56 b",
     "age": 1894,
     "size": 1,
     "terrain": 0.32,
@@ -4912,7 +4912,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-57 b\"",
+    "name": "HATS-57 b",
     "age": 2500,
     "size": 1,
     "terrain": 0.32,
@@ -4927,7 +4927,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-58 A b\"",
+    "name": "HATS-58 A b",
     "age": 310,
     "size": 1,
     "terrain": 0.38,
@@ -4942,7 +4942,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-59 b\"",
+    "name": "HATS-59 b",
     "age": 4300,
     "size": 1,
     "terrain": 0.85,
@@ -4957,7 +4957,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-6 b\"",
+    "name": "HATS-6 b",
     "age": 8100,
     "size": 1,
     "terrain": 0.38,
@@ -4972,7 +4972,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-60 b\"",
+    "name": "HATS-60 b",
     "age": 7550,
     "size": 1,
     "terrain": 0.6,
@@ -4987,7 +4987,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-61 b\"",
+    "name": "HATS-61 b",
     "age": 8900,
     "size": 1,
     "terrain": 0.34,
@@ -5002,7 +5002,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-62 b\"",
+    "name": "HATS-62 b",
     "age": 9550,
     "size": 1,
     "terrain": 0.71,
@@ -5017,7 +5017,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-63 b\"",
+    "name": "HATS-63 b",
     "age": 10300,
     "size": 1,
     "terrain": 0.28,
@@ -5032,7 +5032,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-64 b\"",
+    "name": "HATS-64 b",
     "age": 1861,
     "size": 1,
     "terrain": 0.84,
@@ -5047,7 +5047,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-65 b\"",
+    "name": "HATS-65 b",
     "age": 1780,
     "size": 1,
     "terrain": 0.02,
@@ -5062,7 +5062,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-66 b\"",
+    "name": "HATS-66 b",
     "age": 2170,
     "size": 1,
     "terrain": 0.61,
@@ -5077,7 +5077,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-67 b\"",
+    "name": "HATS-67 b",
     "age": 510,
     "size": 1,
     "terrain": 0.31,
@@ -5092,7 +5092,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-68 b\"",
+    "name": "HATS-68 b",
     "age": 3020,
     "size": 1,
     "terrain": 0.79,
@@ -5107,7 +5107,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-69 b\"",
+    "name": "HATS-69 b",
     "age": 8000,
     "size": 0.95,
     "terrain": 0.26,
@@ -5122,7 +5122,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-7 b\"",
+    "name": "HATS-7 b",
     "age": 7800,
     "size": 0.56,
     "terrain": 0.01,
@@ -5137,7 +5137,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-70 b\"",
+    "name": "HATS-70 b",
     "age": 810,
     "size": 1,
     "terrain": 0.36,
@@ -5152,7 +5152,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-71 b\"",
+    "name": "HATS-71 b",
     "age": 3200,
     "size": 1,
     "terrain": 0.96,
@@ -5167,7 +5167,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-72 b\"",
+    "name": "HATS-72 b",
     "age": 12170,
     "size": 0.72,
     "terrain": 0.26,
@@ -5182,7 +5182,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-74 A b\"",
+    "name": "HATS-74 A b",
     "age": 11000,
     "size": 1,
     "terrain": 0.78,
@@ -5197,7 +5197,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-75 b\"",
+    "name": "HATS-75 b",
     "age": 14900,
     "size": 0.88,
     "terrain": 0.94,
@@ -5212,7 +5212,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-76 b\"",
+    "name": "HATS-76 b",
     "age": 4600,
     "size": 1,
     "terrain": 0.51,
@@ -5227,7 +5227,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-77 b\"",
+    "name": "HATS-77 b",
     "age": 12100,
     "size": 1,
     "terrain": 0.72,
@@ -5242,7 +5242,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HATS-8 b\"",
+    "name": "HATS-8 b",
     "age": 5100,
     "size": 0.87,
     "terrain": 0.54,
@@ -5257,7 +5257,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 118203 b\"",
+    "name": "HD 118203 b",
     "age": 4730,
     "size": 1,
     "terrain": 0.02,
@@ -5272,7 +5272,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 1397 b\"",
+    "name": "HD 1397 b",
     "age": 4510,
     "size": 1,
     "terrain": 0.72,
@@ -5287,7 +5287,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 17156 b\"",
+    "name": "HD 17156 b",
     "age": 3300,
     "size": 1,
     "terrain": 0.29,
@@ -5302,7 +5302,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 202772 A b\"",
+    "name": "HD 202772 A b",
     "age": 1630,
     "size": 1,
     "terrain": 0.33,
@@ -5317,7 +5317,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 203030 b\"",
+    "name": "HD 203030 b",
     "age": 100,
     "size": 1,
     "terrain": 0.82,
@@ -5332,7 +5332,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 2685 b\"",
+    "name": "HD 2685 b",
     "age": 1310,
     "size": 1,
     "terrain": 0.89,
@@ -5347,7 +5347,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 332231 b\"",
+    "name": "HD 332231 b",
     "age": 2900,
     "size": 0.81,
     "terrain": 0.22,
@@ -5362,7 +5362,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HD 89345 b\"",
+    "name": "HD 89345 b",
     "age": 7530,
     "size": 0.66,
     "terrain": 0.22,
@@ -5377,7 +5377,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 65 A b\"",
+    "name": "HIP 65 A b",
     "age": 4100,
     "size": 1,
     "terrain": 0.43,
@@ -5392,7 +5392,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HIP 65426 b\"",
+    "name": "HIP 65426 b",
     "age": 14,
     "size": 1,
     "terrain": 0.1,
@@ -5407,7 +5407,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"HR 8799 e\"",
+    "name": "HR 8799 e",
     "age": 30,
     "size": 1,
     "terrain": 0.54,
@@ -5422,7 +5422,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-114 b\"",
+    "name": "K2-114 b",
     "age": 7600,
     "size": 0.95,
     "terrain": 0.63,
@@ -5437,7 +5437,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-115 b\"",
+    "name": "K2-115 b",
     "age": 2200,
     "size": 1,
     "terrain": 0.15,
@@ -5452,7 +5452,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-140 b\"",
+    "name": "K2-140 b",
     "age": 9800,
     "size": 1,
     "terrain": 0.31,
@@ -5467,7 +5467,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-232 b\"",
+    "name": "K2-232 b",
     "age": 1430,
     "size": 1,
     "terrain": 0.61,
@@ -5482,7 +5482,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-237 b\"",
+    "name": "K2-237 b",
     "age": 1090,
     "size": 1,
     "terrain": 0.95,
@@ -5497,7 +5497,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-238 b\"",
+    "name": "K2-238 b",
     "age": 5630,
     "size": 1,
     "terrain": 0.5,
@@ -5512,7 +5512,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-260 b\"",
+    "name": "K2-260 b",
     "age": 650,
     "size": 1,
     "terrain": 0.75,
@@ -5527,7 +5527,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-261 b\"",
+    "name": "K2-261 b",
     "age": 8800,
     "size": 0.83,
     "terrain": 0.66,
@@ -5542,7 +5542,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-280 b\"",
+    "name": "K2-280 b",
     "age": 8960,
     "size": 0.67,
     "terrain": 0.54,
@@ -5557,7 +5557,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-287 b\"",
+    "name": "K2-287 b",
     "age": 4500,
     "size": 0.85,
     "terrain": 0.75,
@@ -5572,7 +5572,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-29 b\"",
+    "name": "K2-29 b",
     "age": 2600,
     "size": 1,
     "terrain": 0.34,
@@ -5587,7 +5587,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-30 b\"",
+    "name": "K2-30 b",
     "age": 3900,
     "size": 1,
     "terrain": 0.97,
@@ -5602,7 +5602,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-329 b\"",
+    "name": "K2-329 b",
     "age": 1800,
     "size": 0.77,
     "terrain": 0.82,
@@ -5617,7 +5617,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-419 A b\"",
+    "name": "K2-419 A b",
     "age": 7400,
     "size": 0.94,
     "terrain": 0.99,
@@ -5632,7 +5632,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-60 b\"",
+    "name": "K2-60 b",
     "age": 10000,
     "size": 0.68,
     "terrain": 0.67,
@@ -5647,7 +5647,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-97 b\"",
+    "name": "K2-97 b",
     "age": 7500,
     "size": 1,
     "terrain": 0.69,
@@ -5662,7 +5662,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"K2-99 b\"",
+    "name": "K2-99 b",
     "age": 3700,
     "size": 1,
     "terrain": 0.25,
@@ -5677,7 +5677,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-10 b\"",
+    "name": "KELT-10 b",
     "age": 4500,
     "size": 1,
     "terrain": 0.26,
@@ -5692,7 +5692,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-12 b\"",
+    "name": "KELT-12 b",
     "age": 2200,
     "size": 1,
     "terrain": 0.17,
@@ -5707,7 +5707,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-14 b\"",
+    "name": "KELT-14 b",
     "age": 5110,
     "size": 1,
     "terrain": 0.34,
@@ -5722,7 +5722,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-16 b\"",
+    "name": "KELT-16 b",
     "age": 3100,
     "size": 1,
     "terrain": 0.76,
@@ -5737,7 +5737,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-17 b\"",
+    "name": "KELT-17 b",
     "age": 650,
     "size": 1,
     "terrain": 0.47,
@@ -5752,7 +5752,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-18 b\"",
+    "name": "KELT-18 b",
     "age": 1900,
     "size": 1,
     "terrain": 0.69,
@@ -5767,7 +5767,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-20 b\"",
+    "name": "KELT-20 b",
     "age": 600,
     "size": 1,
     "terrain": 0.85,
@@ -5782,7 +5782,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-21 b\"",
+    "name": "KELT-21 b",
     "age": 1600,
     "size": 1,
     "terrain": 0.98,
@@ -5797,7 +5797,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-23 A b\"",
+    "name": "KELT-23 A b",
     "age": 6400,
     "size": 1,
     "terrain": 0.37,
@@ -5812,7 +5812,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-24 b\"",
+    "name": "KELT-24 b",
     "age": 1980,
     "size": 1,
     "terrain": 0.76,
@@ -5827,7 +5827,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-4 A b\"",
+    "name": "KELT-4 A b",
     "age": 4440,
     "size": 1,
     "terrain": 0.72,
@@ -5842,7 +5842,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KELT-9 b\"",
+    "name": "KELT-9 b",
     "age": 450,
     "size": 1,
     "terrain": 0.79,
@@ -5857,7 +5857,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KOI-1257 b\"",
+    "name": "KOI-1257 b",
     "age": 9300,
     "size": 0.94,
     "terrain": 0.43,
@@ -5872,7 +5872,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"KOI-3680 b\"",
+    "name": "KOI-3680 b",
     "age": 3200,
     "size": 0.99,
     "terrain": 0.46,
@@ -5887,7 +5887,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-111 c\"",
+    "name": "Kepler-111 c",
     "age": 3400,
     "size": 0.63,
     "terrain": 0.15,
@@ -5902,7 +5902,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-117 b\"",
+    "name": "Kepler-117 b",
     "age": 5300,
     "size": 0.72,
     "terrain": 0.43,
@@ -5917,7 +5917,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-1514 b\"",
+    "name": "Kepler-1514 b",
     "age": 2900,
     "size": 1,
     "terrain": 0.27,
@@ -5932,7 +5932,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-1654 b\"",
+    "name": "Kepler-1654 b",
     "age": 5000,
     "size": 0.82,
     "terrain": 0.38,
@@ -5947,7 +5947,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-167 e\"",
+    "name": "Kepler-167 e",
     "age": 7100,
     "size": 0.91,
     "terrain": 0.4,
@@ -5962,7 +5962,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-1704 b\"",
+    "name": "Kepler-1704 b",
     "age": 7400,
     "size": 1,
     "terrain": 0.99,
@@ -5977,7 +5977,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-39 b\"",
+    "name": "Kepler-39 b",
     "age": 2100,
     "size": 1,
     "terrain": 0.37,
@@ -5992,7 +5992,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-40 b\"",
+    "name": "Kepler-40 b",
     "age": 2800,
     "size": 1,
     "terrain": 0.88,
@@ -6007,7 +6007,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-41 b\"",
+    "name": "Kepler-41 b",
     "age": 4400,
     "size": 1,
     "terrain": 0.78,
@@ -6022,7 +6022,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-423 b\"",
+    "name": "Kepler-423 b",
     "age": 11000,
     "size": 1,
     "terrain": 0.86,
@@ -6037,7 +6037,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-425 b\"",
+    "name": "Kepler-425 b",
     "age": 5000,
     "size": 0.98,
     "terrain": 0.22,
@@ -6052,7 +6052,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-426 b\"",
+    "name": "Kepler-426 b",
     "age": 6000,
     "size": 1,
     "terrain": 0.87,
@@ -6067,7 +6067,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-427 b\"",
+    "name": "Kepler-427 b",
     "age": 7000,
     "size": 1,
     "terrain": 0.81,
@@ -6082,7 +6082,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-428 b\"",
+    "name": "Kepler-428 b",
     "age": 5000,
     "size": 1,
     "terrain": 0.17,
@@ -6097,7 +6097,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-433 b\"",
+    "name": "Kepler-433 b",
     "age": 2670,
     "size": 1,
     "terrain": 0.99,
@@ -6112,7 +6112,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-434 b\"",
+    "name": "Kepler-434 b",
     "age": 4000,
     "size": 1,
     "terrain": 0.49,
@@ -6127,7 +6127,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-435 b\"",
+    "name": "Kepler-435 b",
     "age": 2250,
     "size": 1,
     "terrain": 0.2,
@@ -6142,7 +6142,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-44 b\"",
+    "name": "Kepler-44 b",
     "age": 5800,
     "size": 1,
     "terrain": 0.03,
@@ -6157,7 +6157,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-45 b\"",
+    "name": "Kepler-45 b",
     "age": 500,
     "size": 0.96,
     "terrain": 0.56,
@@ -6172,7 +6172,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-46 b\"",
+    "name": "Kepler-46 b",
     "age": 9700,
     "size": 0.81,
     "terrain": 0.21,
@@ -6187,7 +6187,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-51 b\"",
+    "name": "Kepler-51 b",
     "age": 300,
     "size": 0.63,
     "terrain": 0.42,
@@ -6202,7 +6202,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-74 b\"",
+    "name": "Kepler-74 b",
     "age": 800,
     "size": 0.96,
     "terrain": 0.87,
@@ -6217,7 +6217,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-75 b\"",
+    "name": "Kepler-75 b",
     "age": 6200,
     "size": 1,
     "terrain": 0.27,
@@ -6232,7 +6232,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-77 b\"",
+    "name": "Kepler-77 b",
     "age": 7500,
     "size": 0.96,
     "terrain": 0.03,
@@ -6247,7 +6247,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-849 b\"",
+    "name": "Kepler-849 b",
     "age": 4700,
     "size": 0.72,
     "terrain": 0.9,
@@ -6262,7 +6262,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Kepler-87 b\"",
+    "name": "Kepler-87 b",
     "age": 7500,
     "size": 1,
     "terrain": 0.33,
@@ -6277,7 +6277,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-10 b\"",
+    "name": "NGTS-10 b",
     "age": 10400,
     "size": 1,
     "terrain": 0.29,
@@ -6292,7 +6292,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-11 b\"",
+    "name": "NGTS-11 b",
     "age": 3900,
     "size": 0.82,
     "terrain": 0.8,
@@ -6307,7 +6307,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-12 b\"",
+    "name": "NGTS-12 b",
     "age": 9400,
     "size": 1,
     "terrain": 0.49,
@@ -6322,7 +6322,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-13 b\"",
+    "name": "NGTS-13 b",
     "age": 4230,
     "size": 1,
     "terrain": 0.91,
@@ -6337,7 +6337,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-15 b\"",
+    "name": "NGTS-15 b",
     "age": 3280,
     "size": 1,
     "terrain": 0.04,
@@ -6352,7 +6352,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-16 b\"",
+    "name": "NGTS-16 b",
     "age": 10290,
     "size": 1,
     "terrain": 0.34,
@@ -6367,7 +6367,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-17 b\"",
+    "name": "NGTS-17 b",
     "age": 9220,
     "size": 1,
     "terrain": 0.22,
@@ -6382,7 +6382,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-18 b\"",
+    "name": "NGTS-18 b",
     "age": 10840,
     "size": 1,
     "terrain": 0.58,
@@ -6397,7 +6397,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-2 b\"",
+    "name": "NGTS-2 b",
     "age": 2170,
     "size": 1,
     "terrain": 0.16,
@@ -6412,7 +6412,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-20 b\"",
+    "name": "NGTS-20 b",
     "age": 4100,
     "size": 1,
     "terrain": 0.43,
@@ -6427,7 +6427,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-21 b\"",
+    "name": "NGTS-21 b",
     "age": 10020,
     "size": 1,
     "terrain": 0.77,
@@ -6442,7 +6442,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-23 b\"",
+    "name": "NGTS-23 b",
     "age": 6390,
     "size": 1,
     "terrain": 0.46,
@@ -6457,7 +6457,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-24 b\"",
+    "name": "NGTS-24 b",
     "age": 4770,
     "size": 1,
     "terrain": 0.22,
@@ -6472,7 +6472,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-25 b\"",
+    "name": "NGTS-25 b",
     "age": 3490,
     "size": 1,
     "terrain": 0.58,
@@ -6487,7 +6487,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-26 b\"",
+    "name": "NGTS-26 b",
     "age": 11500,
     "size": 1,
     "terrain": 0.67,
@@ -6502,7 +6502,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-27 b\"",
+    "name": "NGTS-27 b",
     "age": 7900,
     "size": 1,
     "terrain": 0.37,
@@ -6517,7 +6517,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-30 b\"",
+    "name": "NGTS-30 b",
     "age": 1100,
     "size": 0.93,
     "terrain": 0.96,
@@ -6532,7 +6532,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-31 b\"",
+    "name": "NGTS-31 b",
     "age": 9970,
     "size": 1,
     "terrain": 0.37,
@@ -6547,7 +6547,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-32 b\"",
+    "name": "NGTS-32 b",
     "age": 8030,
     "size": 1,
     "terrain": 0.93,
@@ -6562,7 +6562,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-33 b\"",
+    "name": "NGTS-33 b",
     "age": 30,
     "size": 1,
     "terrain": 0.39,
@@ -6577,7 +6577,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-35 b\"",
+    "name": "NGTS-35 b",
     "age": 1500,
     "size": 0.97,
     "terrain": 0.62,
@@ -6592,7 +6592,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-38 b\"",
+    "name": "NGTS-38 b",
     "age": 2200,
     "size": 1,
     "terrain": 0.35,
@@ -6607,7 +6607,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-39 b\"",
+    "name": "NGTS-39 b",
     "age": 2200,
     "size": 1,
     "terrain": 0.59,
@@ -6622,7 +6622,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-6 b\"",
+    "name": "NGTS-6 b",
     "age": 9770,
     "size": 1,
     "terrain": 0.5,
@@ -6637,7 +6637,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-8 b\"",
+    "name": "NGTS-8 b",
     "age": 12480,
     "size": 1,
     "terrain": 0.69,
@@ -6652,7 +6652,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"NGTS-9 b\"",
+    "name": "NGTS-9 b",
     "age": 960,
     "size": 1,
     "terrain": 0.9,
@@ -6667,7 +6667,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"OGLE-TR-132 b\"",
+    "name": "OGLE-TR-132 b",
     "age": 1200,
     "size": 1,
     "terrain": 0.88,
@@ -6682,7 +6682,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"PDS 70 b\"",
+    "name": "PDS 70 b",
     "age": 8,
     "size": 1,
     "terrain": 0.95,
@@ -6697,7 +6697,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"PH1 b\"",
+    "name": "PH1 b",
     "age": 2000,
     "size": 0.55,
     "terrain": 0.28,
@@ -6712,7 +6712,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"PH2 b\"",
+    "name": "PH2 b",
     "age": 4100,
     "size": 0.83,
     "terrain": 0.57,
@@ -6727,7 +6727,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-10 b\"",
+    "name": "Qatar-10 b",
     "age": 3200,
     "size": 1,
     "terrain": 0.87,
@@ -6742,7 +6742,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-2 b\"",
+    "name": "Qatar-2 b",
     "age": 5000,
     "size": 1,
     "terrain": 0.25,
@@ -6757,7 +6757,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-3 b\"",
+    "name": "Qatar-3 b",
     "age": 310,
     "size": 1,
     "terrain": 0.85,
@@ -6772,7 +6772,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-4 b\"",
+    "name": "Qatar-4 b",
     "age": 170,
     "size": 1,
     "terrain": 0.52,
@@ -6787,7 +6787,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-5 b\"",
+    "name": "Qatar-5 b",
     "age": 530,
     "size": 1,
     "terrain": 0.39,
@@ -6802,7 +6802,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-6 b\"",
+    "name": "Qatar-6 b",
     "age": 1020,
     "size": 1,
     "terrain": 0.59,
@@ -6817,7 +6817,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-7 b\"",
+    "name": "Qatar-7 b",
     "age": 1690,
     "size": 1,
     "terrain": 0.35,
@@ -6832,7 +6832,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-8 b\"",
+    "name": "Qatar-8 b",
     "age": 8300,
     "size": 1,
     "terrain": 0.85,
@@ -6847,7 +6847,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"Qatar-9 b\"",
+    "name": "Qatar-9 b",
     "age": 7500,
     "size": 1,
     "terrain": 0.93,
@@ -6862,7 +6862,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 139270665 b\"",
+    "name": "TIC 139270665 b",
     "age": 3400,
     "size": 0.65,
     "terrain": 0.8,
@@ -6877,7 +6877,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 147027702 b\"",
+    "name": "TIC 147027702 b",
     "age": 2700,
     "size": 0.98,
     "terrain": 0.14,
@@ -6892,7 +6892,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 183374187 b\"",
+    "name": "TIC 183374187 b",
     "age": 12310,
     "size": 1,
     "terrain": 0.51,
@@ -6907,7 +6907,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 237913194 b\"",
+    "name": "TIC 237913194 b",
     "age": 5700,
     "size": 1,
     "terrain": 0.45,
@@ -6922,7 +6922,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 245076932 b\"",
+    "name": "TIC 245076932 b",
     "age": 4500,
     "size": 0.97,
     "terrain": 0.46,
@@ -6937,7 +6937,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 257060897 b\"",
+    "name": "TIC 257060897 b",
     "age": 5600,
     "size": 1,
     "terrain": 0.4,
@@ -6952,7 +6952,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 393818343 b\"",
+    "name": "TIC 393818343 b",
     "age": 3800,
     "size": 1,
     "terrain": 0.54,
@@ -6967,7 +6967,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 46432937 b\"",
+    "name": "TIC 46432937 b",
     "age": 7400,
     "size": 1,
     "terrain": 0.32,
@@ -6982,7 +6982,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 4672985 b\"",
+    "name": "TIC 4672985 b",
     "age": 7710,
     "size": 1,
     "terrain": 0.59,
@@ -6997,7 +6997,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 52059926 b\"",
+    "name": "TIC 52059926 b",
     "age": 8200,
     "size": 0.96,
     "terrain": 0.44,
@@ -7012,7 +7012,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 87422071 b\"",
+    "name": "TIC 87422071 b",
     "age": 3500,
     "size": 0.97,
     "terrain": 0.76,
@@ -7027,7 +7027,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TIC 9344899 b\"",
+    "name": "TIC 9344899 b",
     "age": 6100,
     "size": 0.82,
     "terrain": 0.37,
@@ -7042,7 +7042,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1107 b\"",
+    "name": "TOI-1107 b",
     "age": 2600,
     "size": 1,
     "terrain": 0.63,
@@ -7057,7 +7057,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1135 b\"",
+    "name": "TOI-1135 b",
     "age": 3300,
     "size": 0.89,
     "terrain": 0.94,
@@ -7072,7 +7072,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1173 b\"",
+    "name": "TOI-1173 b",
     "age": 8700,
     "size": 0.82,
     "terrain": 0.63,
@@ -7087,7 +7087,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1194 b\"",
+    "name": "TOI-1194 b",
     "age": 4900,
     "size": 0.78,
     "terrain": 0.64,
@@ -7102,7 +7102,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1199 b\"",
+    "name": "TOI-1199 b",
     "age": 4200,
     "size": 0.94,
     "terrain": 0.98,
@@ -7117,7 +7117,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1248 b\"",
+    "name": "TOI-1248 b",
     "age": 5500,
     "size": 0.61,
     "terrain": 0.47,
@@ -7132,7 +7132,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1268 b\"",
+    "name": "TOI-1268 b",
     "age": 245,
     "size": 0.81,
     "terrain": 0.85,
@@ -7147,7 +7147,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1273 b\"",
+    "name": "TOI-1273 b",
     "age": 3100,
     "size": 0.99,
     "terrain": 0.37,
@@ -7162,7 +7162,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1294 b\"",
+    "name": "TOI-1294 b",
     "age": 6200,
     "size": 0.9,
     "terrain": 0.04,
@@ -7177,7 +7177,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1295 b\"",
+    "name": "TOI-1295 b",
     "age": 2000,
     "size": 1,
     "terrain": 0.47,
@@ -7192,7 +7192,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1296 b\"",
+    "name": "TOI-1296 b",
     "age": 7100,
     "size": 1,
     "terrain": 0.64,
@@ -7207,7 +7207,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1298 b\"",
+    "name": "TOI-1298 b",
     "age": 4300,
     "size": 0.86,
     "terrain": 0.91,
@@ -7222,7 +7222,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1333 b\"",
+    "name": "TOI-1333 b",
     "age": 2330,
     "size": 1,
     "terrain": 0.8,
@@ -7237,7 +7237,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1386 b\"",
+    "name": "TOI-1386 b",
     "age": 3200,
     "size": 0.56,
     "terrain": 0.83,
@@ -7252,7 +7252,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1420 b\"",
+    "name": "TOI-1420 b",
     "age": 10700,
     "size": 1,
     "terrain": 0.46,
@@ -7267,7 +7267,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1431 b\"",
+    "name": "TOI-1431 b",
     "age": 290,
     "size": 1,
     "terrain": 0.14,
@@ -7282,7 +7282,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-150.01\"",
+    "name": "TOI-150.01",
     "age": 2346,
     "size": 1,
     "terrain": 0.07,
@@ -7297,7 +7297,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-157 b\"",
+    "name": "TOI-157 b",
     "age": 12820,
     "size": 1,
     "terrain": 0.19,
@@ -7312,7 +7312,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-159 b\"",
+    "name": "TOI-159 b",
     "age": 145,
     "size": 1,
     "terrain": 0.32,
@@ -7327,7 +7327,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1601 b\"",
+    "name": "TOI-1601 b",
     "age": 2400,
     "size": 1,
     "terrain": 0.03,
@@ -7342,7 +7342,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-163 b\"",
+    "name": "TOI-163 b",
     "age": 1823,
     "size": 1,
     "terrain": 0.7,
@@ -7357,7 +7357,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-169 b\"",
+    "name": "TOI-169 b",
     "age": 4700,
     "size": 1,
     "terrain": 0.6,
@@ -7372,7 +7372,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-172 b\"",
+    "name": "TOI-172 b",
     "age": 7400,
     "size": 0.97,
     "terrain": 0.95,
@@ -7387,7 +7387,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1775 b\"",
+    "name": "TOI-1775 b",
     "age": 800,
     "size": 0.72,
     "terrain": 0.67,
@@ -7402,7 +7402,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1789 b\"",
+    "name": "TOI-1789 b",
     "age": 2730,
     "size": 1,
     "terrain": 0.16,
@@ -7417,7 +7417,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-181 b\"",
+    "name": "TOI-181 b",
     "age": 5400,
     "size": 0.62,
     "terrain": 0.11,
@@ -7432,7 +7432,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1811 b\"",
+    "name": "TOI-1811 b",
     "age": 5900,
     "size": 0.99,
     "terrain": 0.53,
@@ -7447,7 +7447,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1820 b\"",
+    "name": "TOI-1820 b",
     "age": 11000,
     "size": 1,
     "terrain": 0.64,
@@ -7462,7 +7462,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1823 b\"",
+    "name": "TOI-1823 b",
     "age": 6300,
     "size": 0.67,
     "terrain": 0.18,
@@ -7477,7 +7477,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1836 b\"",
+    "name": "TOI-1836 b",
     "age": 6600,
     "size": 0.71,
     "terrain": 0.31,
@@ -7492,7 +7492,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1842 b\"",
+    "name": "TOI-1842 b",
     "age": 2500,
     "size": 1,
     "terrain": 0.29,
@@ -7507,7 +7507,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1855 b\"",
+    "name": "TOI-1855 b",
     "age": 8200,
     "size": 1,
     "terrain": 0.84,
@@ -7522,7 +7522,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1898 b\"",
+    "name": "TOI-1898 b",
     "age": 3100,
     "size": 0.84,
     "terrain": 0.2,
@@ -7537,7 +7537,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1899 b\"",
+    "name": "TOI-1899 b",
     "age": 7100,
     "size": 0.99,
     "terrain": 0.9,
@@ -7552,7 +7552,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1937 A b\"",
+    "name": "TOI-1937 A b",
     "age": 3600,
     "size": 1,
     "terrain": 0.33,
@@ -7567,7 +7567,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-1994 b\"",
+    "name": "TOI-1994 b",
     "age": 940,
     "size": 1,
     "terrain": 0.61,
@@ -7582,7 +7582,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2010 b\"",
+    "name": "TOI-2010 b",
     "age": 1900,
     "size": 1,
     "terrain": 0.39,
@@ -7597,7 +7597,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2025 b\"",
+    "name": "TOI-2025 b",
     "age": 4500,
     "size": 1,
     "terrain": 0.13,
@@ -7612,7 +7612,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2031 A b\"",
+    "name": "TOI-2031 A b",
     "age": 2000,
     "size": 1,
     "terrain": 0.28,
@@ -7627,7 +7627,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2040 b\"",
+    "name": "TOI-2040 b",
     "age": 8700,
     "size": 0.92,
     "terrain": 0.3,
@@ -7642,7 +7642,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2049 b\"",
+    "name": "TOI-2049 b",
     "age": 2200,
     "size": 1,
     "terrain": 0.41,
@@ -7657,7 +7657,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2107 b\"",
+    "name": "TOI-2107 b",
     "age": 4000,
     "size": 1,
     "terrain": 0.84,
@@ -7672,7 +7672,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2109 b\"",
+    "name": "TOI-2109 b",
     "age": 1770,
     "size": 1,
     "terrain": 0.58,
@@ -7687,7 +7687,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2147 b\"",
+    "name": "TOI-2147 b",
     "age": 8000,
     "size": 0.94,
     "terrain": 0.2,
@@ -7702,7 +7702,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2152 A b\"",
+    "name": "TOI-2152 A b",
     "age": 830,
     "size": 1,
     "terrain": 0.39,
@@ -7717,7 +7717,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2154 b\"",
+    "name": "TOI-2154 b",
     "age": 2900,
     "size": 1,
     "terrain": 0.71,
@@ -7732,7 +7732,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2158 b\"",
+    "name": "TOI-2158 b",
     "age": 8000,
     "size": 0.96,
     "terrain": 0.98,
@@ -7747,7 +7747,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2169 A b\"",
+    "name": "TOI-2169 A b",
     "age": 2510,
     "size": 1,
     "terrain": 0.45,
@@ -7762,7 +7762,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2180 b\"",
+    "name": "TOI-2180 b",
     "age": 8100,
     "size": 1,
     "terrain": 0.78,
@@ -7777,7 +7777,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2193 A b\"",
+    "name": "TOI-2193 A b",
     "age": 5500,
     "size": 1,
     "terrain": 0.35,
@@ -7792,7 +7792,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2207 b\"",
+    "name": "TOI-2207 b",
     "age": 3300,
     "size": 1,
     "terrain": 0.16,
@@ -7807,7 +7807,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2236 b\"",
+    "name": "TOI-2236 b",
     "age": 2520,
     "size": 1,
     "terrain": 0.78,
@@ -7822,7 +7822,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2295 b\"",
+    "name": "TOI-2295 b",
     "age": 10500,
     "size": 1,
     "terrain": 0.16,
@@ -7837,7 +7837,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2328 b\"",
+    "name": "TOI-2328 b",
     "age": 4000,
     "size": 0.89,
     "terrain": 0.89,
@@ -7852,7 +7852,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2338 b\"",
+    "name": "TOI-2338 b",
     "age": 7000,
     "size": 1,
     "terrain": 0.22,
@@ -7867,7 +7867,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2346 b\"",
+    "name": "TOI-2346 b",
     "age": 1900,
     "size": 1,
     "terrain": 0.08,
@@ -7882,7 +7882,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2364 b\"",
+    "name": "TOI-2364 b",
     "age": 3500,
     "size": 0.77,
     "terrain": 0.4,
@@ -7897,7 +7897,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2368 b\"",
+    "name": "TOI-2368 b",
     "age": 4200,
     "size": 0.97,
     "terrain": 0.96,
@@ -7912,7 +7912,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2373 b\"",
+    "name": "TOI-2373 b",
     "age": 5900,
     "size": 0.93,
     "terrain": 0.96,
@@ -7927,7 +7927,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2374 b\"",
+    "name": "TOI-2374 b",
     "age": 4500,
     "size": 0.67,
     "terrain": 0.04,
@@ -7942,7 +7942,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2379 b\"",
+    "name": "TOI-2379 b",
     "age": 10400,
     "size": 1,
     "terrain": 0.67,
@@ -7957,7 +7957,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2382 b\"",
+    "name": "TOI-2382 b",
     "age": 3100,
     "size": 1,
     "terrain": 0.07,
@@ -7972,7 +7972,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2384 b\"",
+    "name": "TOI-2384 b",
     "age": 9400,
     "size": 1,
     "terrain": 0.06,
@@ -7987,7 +7987,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2416 b\"",
+    "name": "TOI-2416 b",
     "age": 4900,
     "size": 0.88,
     "terrain": 0.89,
@@ -8002,7 +8002,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2420 b\"",
+    "name": "TOI-2420 b",
     "age": 5300,
     "size": 1,
     "terrain": 0.31,
@@ -8017,7 +8017,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2421 b\"",
+    "name": "TOI-2421 b",
     "age": 7500,
     "size": 0.93,
     "terrain": 0.01,
@@ -8032,7 +8032,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2447 b\"",
+    "name": "TOI-2447 b",
     "age": 2100,
     "size": 0.86,
     "terrain": 0.32,
@@ -8047,7 +8047,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2449 b\"",
+    "name": "TOI-2449 b",
     "age": 2500,
     "size": 1,
     "terrain": 0.46,
@@ -8062,7 +8062,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2485 b\"",
+    "name": "TOI-2485 b",
     "age": 6000,
     "size": 1,
     "terrain": 0.45,
@@ -8077,7 +8077,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2497 b\"",
+    "name": "TOI-2497 b",
     "age": 1000,
     "size": 0.99,
     "terrain": 0.95,
@@ -8092,7 +8092,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2498 b\"",
+    "name": "TOI-2498 b",
     "age": 3600,
     "size": 0.54,
     "terrain": 0.52,
@@ -8107,7 +8107,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2524 b\"",
+    "name": "TOI-2524 b",
     "age": 6700,
     "size": 1,
     "terrain": 0.94,
@@ -8122,7 +8122,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2529 b\"",
+    "name": "TOI-2529 b",
     "age": 7230,
     "size": 1,
     "terrain": 0.03,
@@ -8137,7 +8137,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2537 b\"",
+    "name": "TOI-2537 b",
     "age": 1100,
     "size": 1,
     "terrain": 0.18,
@@ -8152,7 +8152,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2567 b\"",
+    "name": "TOI-2567 b",
     "age": 7600,
     "size": 0.98,
     "terrain": 0.37,
@@ -8167,7 +8167,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2570 b\"",
+    "name": "TOI-2570 b",
     "age": 4400,
     "size": 1,
     "terrain": 0.11,
@@ -8182,7 +8182,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2578 b\"",
+    "name": "TOI-2578 b",
     "age": 5600,
     "size": 1,
     "terrain": 0.35,
@@ -8197,7 +8197,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2580 b\"",
+    "name": "TOI-2580 b",
     "age": 2000,
     "size": 1,
     "terrain": 0.7,
@@ -8212,7 +8212,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2583 A b\"",
+    "name": "TOI-2583 A b",
     "age": 4400,
     "size": 1,
     "terrain": 0.22,
@@ -8227,7 +8227,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2587 A b\"",
+    "name": "TOI-2587 A b",
     "age": 6700,
     "size": 1,
     "terrain": 0.85,
@@ -8242,7 +8242,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2589 b\"",
+    "name": "TOI-2589 b",
     "age": 11000,
     "size": 1,
     "terrain": 0.78,
@@ -8257,7 +8257,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2641 b\"",
+    "name": "TOI-2641 b",
     "age": 10800,
     "size": 1,
     "terrain": 0.09,
@@ -8272,7 +8272,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2714 b\"",
+    "name": "TOI-2714 b",
     "age": 5500,
     "size": 1,
     "terrain": 0.35,
@@ -8287,7 +8287,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2796 b\"",
+    "name": "TOI-2796 b",
     "age": 4000,
     "size": 1,
     "terrain": 1,
@@ -8302,7 +8302,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2803 A b\"",
+    "name": "TOI-2803 A b",
     "age": 3700,
     "size": 1,
     "terrain": 0.07,
@@ -8317,7 +8317,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2818 b\"",
+    "name": "TOI-2818 b",
     "age": 9500,
     "size": 1,
     "terrain": 0.85,
@@ -8332,7 +8332,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2842 b\"",
+    "name": "TOI-2842 b",
     "age": 4700,
     "size": 1,
     "terrain": 0.11,
@@ -8347,7 +8347,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2876 b\"",
+    "name": "TOI-2876 b",
     "age": 3800,
     "size": 0.86,
     "terrain": 0.99,
@@ -8362,7 +8362,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2886 b\"",
+    "name": "TOI-2886 b",
     "age": 1700,
     "size": 1,
     "terrain": 0.32,
@@ -8377,7 +8377,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2977 b\"",
+    "name": "TOI-2977 b",
     "age": 9800,
     "size": 1,
     "terrain": 0.41,
@@ -8392,7 +8392,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2981 b\"",
+    "name": "TOI-2981 b",
     "age": 4500,
     "size": 1,
     "terrain": 0.8,
@@ -8407,7 +8407,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2986 b\"",
+    "name": "TOI-2986 b",
     "age": 6300,
     "size": 0.83,
     "terrain": 0.59,
@@ -8422,7 +8422,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-2992 b\"",
+    "name": "TOI-2992 b",
     "age": 4600,
     "size": 1,
     "terrain": 0.57,
@@ -8437,7 +8437,7 @@ export const realPlanets: Planet[] = [
     ]
   },
   {
-    "name": "\"TOI-3023 b\"",
+    "name": "TOI-3023 b",
     "age": 7000,
     "size": 1,
     "terrain": 0.31,

@@ -108,8 +108,10 @@ function createPlanetTexture(
       const nz = sinPhi * Math.sin(theta);
 
       const idx = (y * canvas.width + x) * 4;
-      let r: number, g: number, b: number;
-      let bumpVal: number;
+      let r: number = 0;
+      let b: number = 0;
+      let g: number = 0;
+      let bumpVal: number = 0;
 
       if (planetType === 'gas' || planetType === 'ice') {
         // Banded noise for giants
