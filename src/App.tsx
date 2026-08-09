@@ -11,8 +11,8 @@ function Stars() {
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 6 + 0.5, 
-      opacity: Math.random() * 0.6 + 0.2, 
+      size: Math.random() * 6 + 0.5,
+      opacity: Math.random() * 0.6 + 0.2,
     }));
   }, []);
 
@@ -45,11 +45,14 @@ function Home() {
             OrbitFinder
           </h1>
           <p className="text-8xl text-[#f5b1eb] font-fraunces font-bold">
-            It starts with a <span className="italic">swipe</span>. 
+            It starts with a <span className="italic">swipe</span>.
           </p>
           <div className="flex justify-center gap-6 pt-6">
             <Link to="/design">
               <Button variant="primary">Design Your Planet &rarr;</Button>
+            </Link>
+            <Link to="/explore">
+              <Button variant="secondary">Explore Planets &rarr;</Button>
             </Link>
           </div>
         </div>

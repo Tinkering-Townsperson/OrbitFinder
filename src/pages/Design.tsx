@@ -15,7 +15,7 @@ export function Design() {
     terrain: 0.45,
     water: 0.5,  // Corresponds to 0.45 visual water (0.5 * 0.9)
     type: 'terrestrial',
-    colour: '#2a5b84', // A nice Earth-like blue
+    colour: '#2b8a3e', // Earthy green
     age: 4500,
     moons: 1,
     craters: 0.2, // Visual craters

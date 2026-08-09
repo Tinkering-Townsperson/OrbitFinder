@@ -508,7 +508,8 @@ export function PlanetCanvas({ config }: PlanetCanvasProps) {
           const moonSize = 0.05 + Math.random() * 0.1;
           mesh.scale.setScalar(moonSize);
           
-          const distance = 2.2 + Math.random() * 1.8;
+          const visualRadius = 0.6 + config.size * 1.6;
+          const distance = visualRadius + 0.5 + Math.random() * 1.8;
           const speed = (0.005 + Math.random() * 0.015) * (Math.random() > 0.5 ? 1 : -1);
           const angle = Math.random() * Math.PI * 2;
           mesh.userData.inclination = (Math.random() - 0.5) * Math.PI * 0.5;
