@@ -262,7 +262,7 @@ function toPlanet(row: RawRow): Planet {
     const rand = mulberry32(seedFromName(row.pl_name));
     const type = classifyType(row.pl_rade);
     return {
-        name: row.pl_name,
+        name: row.pl_name.replace(/"/g, ""),
         age: deriveAge(row.st_age),
         size: deriveSize(row.pl_rade),
         terrain: deriveTerrain(type, rand),
