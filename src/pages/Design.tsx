@@ -1,27 +1,41 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { PlanetCanvas } from '../components/PlanetCanvas';
 import type { Planet } from '../planet';
+import { upload_planet } from '../upload';
 
 export function Design() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const [config, setConfig] = useState<Planet>({
+  const [config, setConfig] = useState<Planet>(location.state?.config || {
+    name: '',
     size: 0.375, // Corresponds to 1.2 visual size (0.6 + 0.375 * 1.6)
     terrain: 0.45,
     water: 0.5,  // Corresponds to 0.45 visual water (0.5 * 0.9)
-    colour: '#2b8a3e',
-    moons: 2,
-    craters: 0.2, // Corresponds to 20 visual craters
-    name: 'Kepler-452b',
-    age: 1500,
     type: 'terrestrial',
+    colour: '#2a5b84', // A nice Earth-like blue
+    age: 4500,
+    moons: 1,
+    craters: 0.2, // Visual craters
     favoured: ['water'], // Default favoured trait
   });
 
-  const handleContinue = () => {
-    navigate('/match', { state: { userPlanet: config } });
+  const [isPublic, setIsPublic] = useState(location.state?.isPublic || false);
+  const [planetId, setPlanetId] = useState<string | null>(location.state?.planetId || null);
+
+  const handleContinue = async () => {
+    let currentId = planetId;
+    if (isPublic) {
+      try {
+        currentId = await upload_planet(config, currentId || undefined) || currentId;
+        setPlanetId(currentId);
+      } catch (error) {
+        console.error("Failed to upload planet:", error);
+      }
+    }
+    navigate('/match', { state: { userPlanet: config, planetId: currentId, isPublic } });
   };
 
   const getProgress = (value: number, min: number, max: number) => {
@@ -252,9 +266,16 @@ export function Design() {
         </div>
       </aside>
 
-      {/* Floating Continue Button */}
-      <footer className="absolute bottom-8 right-8 z-20">
-        <Button variant="primary" onClick={handleContinue} className="text-lg px-9 py-4">
+      {/* Floating Continue Button and Public Toggle */}
+      <footer className="absolute bottom-8 right-8 z-20 flex flex-col items-end gap-3 w-48">
+        <Button 
+          variant={isPublic ? "primary" : "secondary"} 
+          onClick={() => setIsPublic(!isPublic)} 
+          className="w-full text-sm py-3 shadow-md"
+        >
+          {isPublic ? "Public Planet ✓" : "Make Public"}
+        </Button>
+        <Button variant="primary" onClick={handleContinue} className="w-full text-lg py-4 shadow-xl">
           Continue
         </Button>
       </footer>

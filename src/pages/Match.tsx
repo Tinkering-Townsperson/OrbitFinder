@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { PlanetCanvas } from '../components/PlanetCanvas';
 import { planets } from '../data/planets-all';
 import { getPerspectives, type Planet } from '../planet';
 
 export function Match() {
   const location = useLocation();
+  const navigate = useNavigate();
   const userPlanet = location.state?.userPlanet as Planet | undefined;
 
   const [currentMatch, setCurrentMatch] = useState<Planet | null>(null);
@@ -62,11 +63,25 @@ export function Match() {
       
       {/* Left Panel: Info and Actions */}
       <div className="w-1/3 min-w-[350px] max-w-[450px] h-full bg-[#16191e] border-r border-white/10 flex flex-col relative z-20 shadow-2xl">
-        {/* Top Logo */}
-        <div className="p-8 pb-4">
+        {/* Top Logo and Edit Button */}
+        <div className="p-8 pb-4 flex justify-between items-center">
           <h1 className="text-3xl font-bold tracking-tighter text-[#8f6589] bg-clip-text font-fraunces drop-shadow-md">
             OrbitFinder
           </h1>
+          {userPlanet && (
+            <button 
+              onClick={() => navigate('/design', { 
+                state: { 
+                  config: userPlanet, 
+                  planetId: location.state?.planetId, 
+                  isPublic: location.state?.isPublic 
+                } 
+              })}
+              className="text-xs uppercase tracking-widest font-bold text-white/50 transition-colors border border-white/20 rounded-md px-3 py-1.5"
+            >
+              Edit
+            </button>
+          )}
         </div>
 
         {/* Content (Name, Traits) */}
