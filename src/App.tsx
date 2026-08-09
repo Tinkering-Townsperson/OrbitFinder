@@ -4,36 +4,8 @@ import "./App.css";
 import { Button } from "./components/Button";
 import { Design } from "./pages/Design";
 import { Match } from "./pages/Match";
-
-function Stars() {
-  const stars = useMemo(() => {
-    return Array.from({ length: 100 }).map((_, i) => ({
-      id: i,
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      size: Math.random() * 6 + 0.5,
-      opacity: Math.random() * 0.6 + 0.2,
-    }));
-  }, []);
-
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {stars.map((star) => (
-        <div
-          key={star.id}
-          className="absolute bg-white rounded-full"
-          style={{
-            left: `${star.x}%`,
-            top: `${star.y}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            opacity: star.opacity,
-          }}
-        />
-      ))}
-    </div>
-  );
-}
+import { Explore } from "./pages/Explore";
+import { Stars } from "./components/Stars";
 
 function Home() {
   return (
@@ -68,6 +40,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/design" element={<Design />} />
         <Route path="/match" element={<Match />} />
+        <Route path="/explore" element={<Explore />} />
       </Routes>
     </BrowserRouter>
   );
